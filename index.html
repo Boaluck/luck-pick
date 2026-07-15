@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>運命の舟券 〜Luck Pick〜 β版</title>
+  <meta name="description" content="期待度をゲージに設定し、1000回シミュレーションから3連単ランキングと運命の1点を抽選する娯楽用ツールです。" />
+  <meta name="theme-color" content="#1677ff" />
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: rgba(255,255,255,.97);
+      --text: #172033;
+      --sub: #697386;
+      --line: #dde3ec;
+      --accent: #1677ff;
+      --accent-dark: #0d5fd1;
+      --gold: #d89b12;
+      --shadow: 0 18px 50px rgba(32,52,89,.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px 16px;
+      background:
+        radial-gradient(circle at top left, rgba(22,119,255,.13), transparent 34%),
+        linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", sans-serif;
+    }
+
+    button, input { font: inherit; }
+
+    .app {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.9);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      backdrop-filter: blur(18px);
+    }
+
+    .header {
+      padding: 32px 28px 24px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: clamp(28px, 6vw, 42px);
+      letter-spacing: .04em;
+    }
+
+    .brand-subtitle {
+      margin-top: 4px;
+      color: var(--accent);
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .catchcopy {
+      margin: 16px 0 0;
+      font-size: clamp(16px, 3vw, 20px);
+      font-weight: 800;
+    }
+
+    .instruction {
+      margin: 8px 0 0;
+      color: var(--sub);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .content { padding: 24px 28px 30px; }
+
+    .section-title {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .section-lead {
+      margin: 0 0 16px;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .boat-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .boat-row {
+      padding: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .boat-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+
+    .boat-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .slider-wrap {
+      display: block;
+    }
+
+    .boat-slider {
+      --value-percent: 0%;
+      --thumb-color: #ffffff;
+      --thumb-outline: rgba(26,39,60,.28);
+      width: 100%;
+      height: 12px;
+      margin: 0;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 999px;
+      cursor: pointer;
+      background:
+        linear-gradient(
+          90deg,
+          transparent 0%,
+          transparent var(--value-percent),
+          #e8edf3 var(--value-percent),
+          #e8edf3 100%
+        ),
+        linear-gradient(
+          90deg,
+          #f5aaaa 0%,
+          #f7c48f 25%,
+          #f5e79a 45%,
+          #a9ddb8 70%,
+          #a7c8f7 100%
+        );
+      border: 1px solid rgba(26,39,60,.16);
+    }
+
+    .boat-slider::-webkit-slider-thumb {
+      width: 24px;
+      height: 24px;
+      appearance: none;
+      -webkit-appearance: none;
+      border-radius: 50%;
+      background: var(--thumb-color);
+      border: 3px solid #fff;
+      box-shadow:
+        0 0 0 1px var(--thumb-outline),
+        0 3px 9px rgba(31,43,63,.22);
+    }
+
+    .boat-slider::-moz-range-thumb {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--thumb-color);
+      border: 3px solid #fff;
+      box-shadow:
+        0 0 0 1px var(--thumb-outline),
+        0 3px 9px rgba(31,43,63,.22);
+    }
+
+    .balance-card {
+      margin-top: 16px;
+      padding: 14px 16px;
+      background: #f8fbff;
+      border: 1px solid rgba(22,119,255,.18);
+      border-radius: 14px;
+    }
+
+    .balance-title {
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .balance-text {
+      margin-top: 4px;
+      color: var(--sub);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 14px;
+      padding: 15px 20px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: transform .15s ease, opacity .15s ease;
+    }
+
+    button:active { transform: translateY(1px) scale(.99); }
+    button:disabled { cursor: not-allowed; opacity: .55; }
+
+    .primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      box-shadow: 0 10px 24px rgba(22,119,255,.28);
+    }
+
+    .secondary {
+      color: var(--text);
+      background: #edf1f6;
+    }
+
+    .error {
+      min-height: 20px;
+      margin-top: 12px;
+      color: #c62828;
+      font-size: 13px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .progress-card,
+    .ranking-card,
+    .fate-card,
+    .explanation {
+      margin-top: 24px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+
+    .hidden { display: none !important; }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+      color: var(--sub);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .progress-track {
+      height: 12px;
+      overflow: hidden;
+      background: #edf1f6;
+      border-radius: 999px;
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #57a1ff);
+      border-radius: 999px;
+      transition: width .12s ease;
+    }
+
+    .ranking-head,
+    .fate-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .ranking-head h2,
+    .fate-head h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .simulation-note {
+      color: var(--sub);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .ranking-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .ranking-row {
+      display: grid;
+      grid-template-columns: 54px 116px 1fr 78px;
+      gap: 10px;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fbfcfe;
+    }
+
+    .rank {
+      font-weight: 900;
+      color: var(--sub);
+    }
+
+    .combination {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .mini-boat,
+    .fate-boat {
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(0,0,0,.12);
+      font-weight: 900;
+    }
+
+    .mini-boat {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+    }
+
+    .bar-track {
+      height: 10px;
+      overflow: hidden;
+      background: #e9eef5;
+      border-radius: 999px;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #74b3ff);
+      border-radius: 999px;
+    }
+
+    .stats {
+      text-align: right;
+      color: var(--sub);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 800;
+    }
+
+    .fate-card {
+      text-align: center;
+      border-color: rgba(216,155,18,.32);
+      background:
+        linear-gradient(135deg, rgba(245,190,55,.10), rgba(255,255,255,.96)),
+        #fff;
+    }
+
+    .fate-description {
+      margin: 0 auto 18px;
+      max-width: 560px;
+      color: var(--sub);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .fate-button {
+      color: #fff;
+      background: linear-gradient(135deg, #e9ad24, #c97f00);
+      box-shadow: 0 10px 24px rgba(216,155,18,.28);
+    }
+
+    .fate-result {
+      min-height: 88px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      font-size: clamp(34px, 8vw, 54px);
+      font-weight: 900;
+    }
+
+    .fate-boat {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      box-shadow: 0 7px 16px rgba(30,45,70,.12);
+    }
+
+    .hyphen {
+      color: var(--sub);
+      font-size: 28px;
+    }
+
+    .fate-meta {
+      margin-top: 6px;
+      color: var(--sub);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .explanation {
+      background: #f8fbff;
+      border-color: rgba(22,119,255,.18);
+    }
+
+    .explanation h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    .explanation p {
+      margin: 0;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .boat-result-1 { background: #fff; color: #111; }
+    .boat-result-2 { background: #333; color: #fff; }
+    .boat-result-3 { background: #e84d4d; color: #fff; }
+    .boat-result-4 { background: #4e75e8; color: #fff; }
+    .boat-result-5 { background: #f2d84a; color: #111; }
+    .boat-result-6 { background: #49b86b; color: #fff; }
+
+    .drawing-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: rgba(5,10,18,.82);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .22s ease, visibility .22s ease;
+    }
+
+    .drawing-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drawing-panel {
+      width: min(92vw, 360px);
+      padding: 32px 24px 28px;
+      text-align: center;
+      color: #fff;
+      background: rgba(12,19,30,.86);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 22px;
+      box-shadow: 0 28px 70px rgba(0,0,0,.45);
+    }
+
+    .drawing-title {
+      margin-bottom: 28px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: clamp(21px, 6vw, 28px);
+      font-weight: 800;
+      letter-spacing: .04em;
+    }
+
+    .pixel-stage {
+      position: relative;
+      height: 130px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    .pixel-boat-wrap {
+      position: relative;
+      width: 190px;
+      height: 96px;
+      animation: boatBob .62s steps(2, end) infinite;
+      filter: drop-shadow(0 8px 5px rgba(0,0,0,.32));
+    }
+
+    .pixel-boat-svg {
+      display: block;
+      width: 190px;
+      height: 96px;
+      overflow: visible;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      shape-rendering: crispEdges;
+    }
+
+    .pixel-main { fill: var(--boat-main, #e83b30); }
+    .pixel-dark { fill: var(--boat-dark, #9e1d18); }
+    .pixel-light { fill: var(--boat-light, #ff756d); }
+    .pixel-number-fill { fill: var(--number-fill, #fff); }
+    .pixel-number-stroke {
+      stroke: var(--number-stroke, #111);
+      stroke-width: 4px;
+      paint-order: stroke fill;
+      stroke-linejoin: miter;
+    }
+
+    .pixel-spray-group {
+      animation: sprayMove .44s steps(2, end) infinite;
+      transform-origin: center;
+    }
+
+    .pixel-wave {
+      position: absolute;
+      left: 50%;
+      bottom: 5px;
+      width: 230px;
+      height: 6px;
+      transform: translateX(-50%);
+      background:
+        repeating-linear-gradient(
+          90deg,
+          #228bd8 0 9px,
+          transparent 9px 15px,
+          #8bd9ff 15px 23px,
+          transparent 23px 31px
+        );
+      clip-path: polygon(
+        0 50%, 4% 0, 8% 50%, 12% 100%, 16% 50%,
+        20% 0, 24% 50%, 28% 100%, 32% 50%,
+        36% 0, 40% 50%, 44% 100%, 48% 50%,
+        52% 0, 56% 50%, 60% 100%, 64% 50%,
+        68% 0, 72% 50%, 76% 100%, 80% 50%,
+        84% 0, 88% 50%, 92% 100%, 96% 50%,
+        100% 0, 100% 100%, 0 100%
+      );
+      animation: waveMove .72s steps(8, end) infinite;
+    }
+
+    .loading-dots {
+      display: flex;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .loading-dots span {
+      width: 8px;
+      height: 8px;
+      border: 1px solid rgba(255,255,255,.75);
+      border-radius: 50%;
+      animation: dotBlink 1.05s infinite;
+    }
+
+    .loading-dots span:nth-child(2) { animation-delay: .18s; }
+    .loading-dots span:nth-child(3) { animation-delay: .36s; }
+
+    @keyframes boatBob {
+      0%   { transform: translate(-5px, 2px) rotate(-1deg); }
+      50%  { transform: translate(5px, -4px) rotate(1deg); }
+      100% { transform: translate(-5px, 2px) rotate(-1deg); }
+    }
+
+    @keyframes sprayMove {
+      0%   { transform: translateX(5px); opacity: 1; }
+      100% { transform: translateX(-7px); opacity: .42; }
+    }
+
+    @keyframes waveMove {
+      from { background-position-x: 0; }
+      to   { background-position-x: -31px; }
+    }
+
+    @keyframes dotBlink {
+      0%, 65%, 100% { background: transparent; transform: scale(.9); }
+      30% { background: #fff; transform: scale(1.15); }
+    }
+
+
+    /* Phase 4: responsive and touch usability adjustments */
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      overflow-x: hidden;
+      padding-left: max(16px, env(safe-area-inset-left));
+      padding-right: max(16px, env(safe-area-inset-right));
+      padding-bottom: max(24px, env(safe-area-inset-bottom));
+    }
+
+    .app,
+    .content,
+    .boat-row,
+    .ranking-row {
+      min-width: 0;
+    }
+
+    button {
+      min-height: 50px;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .boat-slider {
+      height: 14px;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .boat-slider::-webkit-slider-thumb {
+      width: 28px;
+      height: 28px;
+    }
+
+    .boat-slider::-moz-range-thumb {
+      width: 22px;
+      height: 22px;
+    }
+
+    .combination,
+    .fate-result {
+      min-width: 0;
+    }
+
+    .drawing-panel {
+      max-height: calc(100dvh - 32px);
+      overflow: hidden;
+    }
+
+    @media (min-width: 900px) {
+      body { padding-top: 36px; padding-bottom: 36px; }
+      .app { width: min(100%, 820px); }
+      .header { padding-top: 38px; padding-bottom: 28px; }
+      .content { padding: 30px 36px 38px; }
+      .boat-list { grid-template-columns: 1fr; }
+      .boat-row { padding: 16px; }
+      .actions { margin-top: 26px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+      }
+    }
+
+    @media (max-width: 620px) {
+      body {
+        padding-top: 10px;
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+        padding-bottom: max(14px, env(safe-area-inset-bottom));
+      }
+
+      .app {
+        border-radius: 20px;
+      }
+
+      .header {
+        padding: 24px 16px 20px;
+      }
+
+      .header h1 {
+        font-size: clamp(27px, 9vw, 36px);
+      }
+
+      .brand-subtitle { font-size: 14px; }
+      .catchcopy { margin-top: 13px; }
+      .instruction { margin-top: 6px; }
+
+      .content {
+        padding: 20px 14px 24px;
+      }
+
+      .section-title { font-size: 17px; }
+      .section-lead { margin-bottom: 14px; }
+      .boat-list { gap: 10px; }
+      .boat-row { padding: 13px 12px 15px; border-radius: 14px; }
+      .boat-head { margin-bottom: 13px; }
+
+      .boat-slider {
+        height: 15px;
+      }
+
+      .boat-slider::-webkit-slider-thumb {
+        width: 30px;
+        height: 30px;
+      }
+
+      .balance-card { margin-top: 14px; }
+
+      .actions {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .actions button,
+      .fate-button {
+        width: 100%;
+      }
+
+      .progress-card,
+      .ranking-card,
+      .fate-card,
+      .explanation {
+        margin-top: 18px;
+        padding: 16px 13px;
+        border-radius: 16px;
+      }
+
+      .ranking-head,
+      .fate-head {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 13px;
+      }
+
+      .ranking-head h2,
+      .fate-head h2 { font-size: 18px; }
+
+      .ranking-list { gap: 8px; }
+
+      .ranking-row {
+        grid-template-columns: 40px minmax(0, 1fr) 64px;
+        gap: 8px;
+        padding: 10px 9px;
+      }
+
+      .rank { font-size: 13px; }
+      .combination { gap: 4px; font-size: 16px; white-space: nowrap; }
+      .mini-boat { width: 28px; height: 28px; border-radius: 8px; }
+
+      .bar-track {
+        grid-column: 2 / 4;
+        grid-row: 2;
+      }
+
+      .stats { font-size: 11px; }
+
+      .fate-description { font-size: 13px; margin-bottom: 15px; }
+      .fate-result { min-height: 74px; margin-top: 16px; gap: 7px; font-size: 32px; }
+      .fate-boat { width: 52px; height: 52px; border-radius: 14px; }
+      .hyphen { font-size: 23px; }
+      .fate-meta { font-size: 12px; line-height: 1.55; }
+
+      .drawing-overlay {
+        padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
+      }
+
+      .drawing-panel {
+        width: min(100%, 340px);
+        padding: 25px 16px 22px;
+        border-radius: 19px;
+      }
+
+      .drawing-title { margin-bottom: 18px; }
+      .pixel-stage { height: 116px; }
+      .pixel-boat-wrap,
+      .pixel-boat-svg { width: 172px; height: 87px; }
+      .pixel-wave { width: 210px; }
+      .loading-dots { margin-top: 14px; }
+    }
+
+    @media (max-width: 380px) {
+      .content { padding-left: 11px; padding-right: 11px; }
+      .boat-row { padding-left: 10px; padding-right: 10px; }
+      .ranking-row { grid-template-columns: 34px minmax(0, 1fr) 58px; gap: 6px; }
+      .mini-boat { width: 26px; height: 26px; }
+      .combination { font-size: 15px; }
+      .fate-result { gap: 5px; }
+      .fate-boat { width: 46px; height: 46px; border-radius: 13px; }
+      .hyphen { font-size: 20px; }
+    }
+
+    @media (max-height: 520px) and (orientation: landscape) {
+      .drawing-panel { padding-top: 16px; padding-bottom: 14px; }
+      .drawing-title { margin-bottom: 8px; }
+      .pixel-stage { height: 88px; }
+      .pixel-boat-wrap,
+      .pixel-boat-svg { width: 150px; height: 76px; }
+      .pixel-wave { width: 184px; }
+      .loading-dots { margin-top: 7px; }
+    }
+
+    .beta-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(22,119,255,.1);
+      color: var(--accent-dark);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .05em;
+    }
+
+    .quick-guide {
+      margin-bottom: 20px;
+      padding: 15px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fbfcff;
+    }
+
+    .quick-guide h2 {
+      margin: 0 0 10px;
+      font-size: 15px;
+    }
+
+    .quick-guide ol {
+      margin: 0;
+      padding-left: 1.4em;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .release-footer {
+      padding: 20px 28px calc(22px + env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line);
+      background: #f8faff;
+      text-align: center;
+    }
+
+    .release-footer p {
+      margin: 0;
+      color: var(--sub);
+      font-size: 11px;
+      line-height: 1.75;
+    }
+
+    .release-footer .version {
+      margin-top: 9px;
+      color: #8791a3;
+      font-weight: 700;
+    }
+
+    @media (max-width: 600px) {
+      .quick-guide { padding: 13px 14px; }
+      .release-footer { padding-left: 16px; padding-right: 16px; }
+    }
+
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>運命の舟券</h1>
+      <div class="brand-subtitle">〜 Luck Pick 〜</div>
+      <p class="catchcopy">期待が導く、運命の舟券。</p>
+      <p class="instruction">期待度をゲージに設定して抽選！</p>
+      <div class="beta-badge">β版</div>
+    </header>
+
+    <section class="content">
+      <section class="quick-guide" aria-labelledby="quickGuideTitle">
+        <h2 id="quickGuideTitle">かんたんな使い方</h2>
+        <ol>
+          <li>来そうだと思う艇ほどゲージを右へ動かします。</li>
+          <li>「1000回シミュレーション」を押してランキングを確認します。</li>
+          <li>最後に「運命の1点を決める」で買い目を1つ抽選します。</li>
+        </ol>
+      </section>
+
+      <h2 class="section-title">1. 各艇の期待度を設定</h2>
+      <p class="section-lead">「来そう」と感じる艇ほど、ゲージを右へ動かしてください。</p>
+
+      <div class="boat-list" id="boatList"></div>
+
+      <section class="balance-card" id="balanceCard" aria-live="polite">
+        <div class="balance-title" id="balanceTitle">期待度バランス：均等な設定</div>
+        <div class="balance-text" id="balanceText">各艇の期待度が近い状態です。</div>
+      </section>
+
+      <div class="actions">
+        <button class="primary" id="simulateButton" type="button">1000回シミュレーション</button>
+        <button class="secondary" id="resetButton" type="button">リセット</button>
+      </div>
+
+      <div class="error" id="errorMessage" aria-live="polite"></div>
+
+      <section class="progress-card hidden" id="progressCard">
+        <div class="progress-label">
+          <span>シミュレーション中…</span>
+          <span id="progressText">0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </section>
+
+      <section class="ranking-card hidden" id="rankingCard">
+        <div class="ranking-head">
+          <h2>2. シミュレーションランキング</h2>
+          <span class="simulation-note">上位10通り</span>
+        </div>
+        <div class="ranking-list" id="rankingList"></div>
+      </section>
+
+      <section class="fate-card hidden" id="fateCard">
+        <div class="fate-head">
+          <h2>3. 運命の1点</h2>
+        </div>
+
+        <p class="fate-description">
+          シミュレーションで多く出た買い目ほど選ばれやすくなる抽選です。
+          ランキング1位が必ず選ばれるわけではありません。
+        </p>
+
+        <button class="fate-button" id="fateButton" type="button">運命の1点を決める</button>
+
+        <div class="fate-result" id="fateResult" aria-live="polite">
+          <span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>
+        </div>
+
+        <div class="fate-meta" id="fateMeta"></div>
+      </section>
+
+      <section class="explanation">
+        <h3>このアプリの抽選方法</h3>
+        <p>
+          各艇に設定した期待度をもとに、1着・2着・3着を順番に抽選します。
+          これを1000回繰り返して、出やすかった3連単をランキング化します。
+          「運命の1点」は、全シミュレーション結果の出現回数を重みとして1点を決定します。
+        </p>
+      </section>
+    </section>
+
+    <footer class="release-footer">
+      <p>本サービスは、設定した期待度をもとにランダム抽選を行う娯楽用ツールです。的中や利益を保証するものではありません。舟券の購入はご自身の判断と責任で行ってください。</p>
+      <p class="version">Luck Pick β v0.9.0</p>
+    </footer>
+  </main>
+
+  <div class="drawing-overlay" id="drawingOverlay" aria-hidden="true">
+    <div class="drawing-panel" role="status" aria-live="polite">
+      <div class="drawing-title">Drawing...</div>
+      <div class="pixel-stage">
+        <div class="pixel-boat-wrap" id="pixelBoatWrap">
+          <svg
+            class="pixel-boat-svg"
+            id="pixelBoatSvg"
+            viewBox="0 0 190 96"
+            role="img"
+            aria-label="抽選中のボート"
+          >
+            <g class="pixel-spray-group">
+              <rect x="2" y="64" width="10" height="8" fill="#dff6ff"/>
+              <rect x="12" y="55" width="9" height="8" fill="#ffffff"/>
+              <rect x="20" y="68" width="12" height="7" fill="#81d2ff"/>
+              <rect x="28" y="58" width="8" height="8" fill="#dff6ff"/>
+              <rect x="36" y="71" width="10" height="6" fill="#ffffff"/>
+              <rect x="5" y="76" width="8" height="6" fill="#72c8f5"/>
+              <rect x="18" y="79" width="12" height="6" fill="#dff6ff"/>
+            </g>
+
+            <rect x="40" y="45" width="14" height="23" fill="#171a1f"/>
+            <rect x="34" y="51" width="8" height="14" fill="#464b52"/>
+            <rect x="43" y="38" width="10" height="8" fill="#a9adb3"/>
+            <rect x="47" y="32" width="6" height="7" fill="#d9dde2"/>
+
+            <rect x="51" y="70" width="91" height="8" class="pixel-dark"/>
+            <rect x="68" y="78" width="56" height="6" class="pixel-dark"/>
+            <rect x="137" y="64" width="23" height="7" class="pixel-dark"/>
+
+            <rect x="49" y="52" width="98" height="19" class="pixel-main"/>
+            <rect x="58" y="45" width="79" height="10" class="pixel-main"/>
+            <rect x="68" y="41" width="56" height="7" class="pixel-light"/>
+            <rect x="145" y="56" width="21" height="12" class="pixel-main"/>
+            <rect x="157" y="60" width="18" height="7" class="pixel-main"/>
+            <rect x="165" y="63" width="16" height="5" class="pixel-light"/>
+            <rect x="56" y="66" width="84" height="5" fill="#f0f3f6"/>
+            <rect x="72" y="71" width="53" height="4" fill="#d7dde4"/>
+
+            <rect x="79" y="34" width="48" height="13" fill="#12161d"/>
+            <rect x="87" y="29" width="31" height="9" fill="#303740"/>
+            <rect x="102" y="36" width="28" height="7" fill="#bfe8ff"/>
+            <rect x="107" y="38" width="18" height="5" fill="#71b7df"/>
+
+            <rect x="67" y="17" width="25" height="22" class="pixel-main"/>
+            <rect x="62" y="21" width="8" height="16" class="pixel-main"/>
+            <rect x="72" y="12" width="16" height="7" class="pixel-light"/>
+            <rect x="82" y="20" width="13" height="11" fill="#f4f4f2"/>
+            <rect x="84" y="22" width="10" height="7" fill="#23272d"/>
+            <rect x="66" y="38" width="31" height="12" class="pixel-main"/>
+            <rect x="91" y="41" width="18" height="6" fill="#f4f4f2"/>
+            <rect x="105" y="43" width="13" height="5" fill="#282d34"/>
+
+            <rect x="139" y="18" width="4" height="31" fill="#e8edf3"/>
+            <rect x="143" y="20" width="17" height="7" class="pixel-main"/>
+            <rect x="143" y="27" width="11" height="7" class="pixel-main"/>
+
+            <rect x="91" y="51" width="26" height="17" fill="#f4f4f1"/>
+            <rect x="94" y="54" width="20" height="11" fill="#ffffff"/>
+            <text
+              id="pixelBoatNumber"
+              x="104"
+              y="64"
+              text-anchor="middle"
+              font-size="15"
+              font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+              font-weight="1000"
+              class="pixel-number-fill pixel-number-stroke"
+            >1</text>
+
+            <rect x="142" y="52" width="15" height="4" class="pixel-light"/>
+            <rect x="160" y="58" width="10" height="3" fill="#ffffff"/>
+          </svg>
+        </div>
+        <div class="pixel-wave"></div>
+      </div>
+      <div class="loading-dots" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    "use strict";
+
+    const CONFIG = Object.freeze({
+      initialValue: 1,
+      boatCount: 6,
+      simulationCount: 1000,
+      rankingLimit: 10,
+      drawingDuration: 2200
+    });
+
+    const BOAT_PALETTE = Object.freeze({
+      1: { main: "#f4f4ef", dark: "#969690", light: "#ffffff" },
+      2: { main: "#292b2f", dark: "#090a0c", light: "#555960" },
+      3: { main: "#e83b30", dark: "#941b17", light: "#ff766d" },
+      4: { main: "#1677e8", dark: "#093f8e", light: "#61a7ff" },
+      5: { main: "#f2be18", dark: "#9f7000", light: "#ffe06c" },
+      6: { main: "#2fa548", dark: "#155d28", light: "#69d47f" }
+    });
+
+    const AppState = {
+      boats: [],
+      simulation: {
+        isRunning: false,
+        worker: null,
+        workerUrl: "",
+        allResults: [],
+        ranking: []
+      },
+      fate: {
+        isDrawing: false,
+        selected: null
+      }
+    };
+
+    const Elements = {
+      boatList: document.getElementById("boatList"),
+      simulateButton: document.getElementById("simulateButton"),
+      resetButton: document.getElementById("resetButton"),
+      errorMessage: document.getElementById("errorMessage"),
+      progressCard: document.getElementById("progressCard"),
+      progressBar: document.getElementById("progressBar"),
+      progressText: document.getElementById("progressText"),
+      rankingCard: document.getElementById("rankingCard"),
+      rankingList: document.getElementById("rankingList"),
+      fateCard: document.getElementById("fateCard"),
+      fateButton: document.getElementById("fateButton"),
+      fateResult: document.getElementById("fateResult"),
+      fateMeta: document.getElementById("fateMeta"),
+      balanceTitle: document.getElementById("balanceTitle"),
+      balanceText: document.getElementById("balanceText"),
+      drawingOverlay: document.getElementById("drawingOverlay"),
+      pixelBoatSvg: document.getElementById("pixelBoatSvg"),
+      pixelBoatNumber: document.getElementById("pixelBoatNumber")
+    };
+
+    const SimulationEngine = {
+      createWorker() {
+        const workerSource = `
+          "use strict";
+
+          function weightedRandom(items) {
+            let total = 0;
+            for (const item of items) total += item.weight;
+            if (total <= 0) return null;
+
+            let random = Math.random() * total;
+            for (const item of items) {
+              random -= item.weight;
+              if (random < 0) return item;
+            }
+            return items[items.length - 1] || null;
+          }
+
+          function drawSingleTrifecta(boats) {
+            const remaining = boats.map(item => ({ boat: item.boat, weight: item.weight }));
+            const selected = [];
+
+            for (let place = 0; place < 3; place += 1) {
+              const chosen = weightedRandom(remaining);
+              if (!chosen) return null;
+              selected.push(chosen.boat);
+              const index = remaining.findIndex(item => item.boat === chosen.boat);
+              remaining.splice(index, 1);
+            }
+            return selected;
+          }
+
+          function compareBoatArrays(a, b) {
+            for (let i = 0; i < Math.min(a.length, b.length); i += 1) {
+              if (a[i] !== b[i]) return a[i] - b[i];
+            }
+            return a.length - b.length;
+          }
+
+          self.onmessage = event => {
+            const { boats, simulationCount, progressStep } = event.data;
+            const counts = new Map();
+            const allResults = [];
+
+            for (let i = 0; i < simulationCount; i += 1) {
+              const result = drawSingleTrifecta(boats);
+              if (!result) continue;
+
+              const key = result.join("-");
+              allResults.push(key);
+              counts.set(key, (counts.get(key) || 0) + 1);
+
+              if ((i + 1) % progressStep === 0 || i + 1 === simulationCount) {
+                self.postMessage({
+                  type: "progress",
+                  completed: i + 1,
+                  total: simulationCount
+                });
+              }
+            }
+
+            const ranking = Array.from(counts.entries())
+              .map(([key, count]) => ({
+                key,
+                boats: key.split("-").map(Number),
+                count,
+                rate: (count / simulationCount) * 100
+              }))
+              .sort((a, b) =>
+                b.count - a.count ||
+                compareBoatArrays(a.boats, b.boats)
+              );
+
+            self.postMessage({
+              type: "complete",
+              ranking,
+              allResults
+            });
+          };
+        `;
+
+        const blob = new Blob([workerSource], { type: "text/javascript" });
+        const url = URL.createObjectURL(blob);
+
+        try {
+          const worker = new Worker(url);
+          AppState.simulation.workerUrl = url;
+          AppState.simulation.worker = worker;
+          return worker;
+        } catch (error) {
+          URL.revokeObjectURL(url);
+          throw error;
+        }
+      },
+
+      terminateWorker() {
+        if (AppState.simulation.worker) {
+          AppState.simulation.worker.terminate();
+          AppState.simulation.worker = null;
+        }
+        if (AppState.simulation.workerUrl) {
+          URL.revokeObjectURL(AppState.simulation.workerUrl);
+          AppState.simulation.workerUrl = "";
+        }
+      },
+
+      run(boats) {
+        return new Promise((resolve, reject) => {
+          const worker = this.createWorker();
+
+          worker.onmessage = event => {
+            const message = event.data;
+
+            if (message.type === "progress") {
+              const percent = Math.round((message.completed / message.total) * 100);
+              UiRenderer.renderProgress(percent);
+              return;
+            }
+
+            if (message.type === "complete") {
+              this.terminateWorker();
+              resolve(message);
+            }
+          };
+
+          worker.onerror = error => {
+            this.terminateWorker();
+            reject(error);
+          };
+
+          worker.postMessage({
+            boats,
+            simulationCount: CONFIG.simulationCount,
+            progressStep: 25
+          });
+        });
+      }
+    };
+
+    const BalanceAnalyzer = {
+      analyze(values) {
+        const sorted = [...values].sort((a, b) => b - a);
+        const max = sorted[0];
+        const min = sorted[sorted.length - 1];
+        const mean = values.reduce((sum, value) => sum + value, 0) / values.length;
+        const variance = values.reduce((sum, value) => sum + ((value - mean) ** 2), 0) / values.length;
+        const coefficient = mean === 0 ? 0 : Math.sqrt(variance) / mean;
+        const topTwoShare = mean === 0 ? 0 : (sorted[0] + sorted[1]) / values.reduce((a, b) => a + b, 0);
+
+        if (max - min <= 5 || coefficient < 0.12) {
+          return {
+            label: "均等な設定",
+            description: "各艇の期待度が近い状態です。"
+          };
+        }
+
+        if (topTwoShare >= 0.62 || coefficient >= 0.75) {
+          return {
+            label: "堅めの設定",
+            description: "上位の艇に期待度が強く集中しています。"
+          };
+        }
+
+        if (topTwoShare >= 0.48 || coefficient >= 0.45) {
+          return {
+            label: "やや絞った設定",
+            description: "一部の艇を中心に期待度が設定されています。"
+          };
+        }
+
+        return {
+          label: "広めの設定",
+          description: "複数の艇に期待度が分散しています。"
+        };
+      }
+    };
+
+    const UiRenderer = {
+      renderBoatRows() {
+        const fragment = document.createDocumentFragment();
+
+        for (let boatNumber = 1; boatNumber <= CONFIG.boatCount; boatNumber += 1) {
+          const row = document.createElement("div");
+          row.className = "boat-row";
+          row.innerHTML = `
+            <div class="boat-head">
+              <label class="boat-label" for="boat-${boatNumber}">
+                ${boatNumber}号艇
+              </label>
+            </div>
+            <div class="slider-wrap">
+              <input
+                id="boat-${boatNumber}"
+                class="boat-slider"
+                type="range"
+                min="1"
+                max="100"
+                step="1"
+                value="${CONFIG.initialValue}"
+                data-boat="${boatNumber}"
+              />
+            </div>
+          `;
+          fragment.appendChild(row);
+        }
+
+        Elements.boatList.appendChild(fragment);
+      },
+
+      updateSlider(slider) {
+        const value = Number(slider.value);
+        const percent = ((value - 1) / 99) * 100;
+        const boatNumber = Number(slider.dataset.boat);
+        const thumbColors = {
+          1: { color: "#ffffff", outline: "rgba(26,39,60,.38)" },
+          2: { color: "#333333", outline: "rgba(26,39,60,.28)" },
+          3: { color: "#e84d4d", outline: "rgba(174,36,36,.34)" },
+          4: { color: "#4e75e8", outline: "rgba(44,79,182,.34)" },
+          5: { color: "#f2d84a", outline: "rgba(166,137,16,.38)" },
+          6: { color: "#49b86b", outline: "rgba(39,132,67,.34)" }
+        };
+        const thumb = thumbColors[boatNumber] || thumbColors[1];
+
+        slider.style.setProperty("--value-percent", `${percent}%`);
+        slider.style.setProperty("--thumb-color", thumb.color);
+        slider.style.setProperty("--thumb-outline", thumb.outline);
+      },
+
+      renderBalance() {
+        const values = AppState.boats.map(item => item.weight);
+        const result = BalanceAnalyzer.analyze(values);
+        Elements.balanceTitle.textContent = `期待度バランス：${result.label}`;
+        Elements.balanceText.textContent = result.description;
+      },
+
+      renderProgress(percent) {
+        Elements.progressBar.style.width = `${percent}%`;
+        Elements.progressText.textContent = `${percent}%`;
+      },
+
+      renderRanking() {
+        Elements.rankingList.innerHTML = "";
+        const topItems = AppState.simulation.ranking.slice(0, CONFIG.rankingLimit);
+        const topCount = topItems[0]?.count || 1;
+
+        topItems.forEach((item, index) => {
+          const row = document.createElement("div");
+          row.className = "ranking-row";
+          row.innerHTML = `
+            <div class="rank">${index + 1}位</div>
+            <div class="combination">${renderMiniCombination(item.boats)}</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width:${(item.count / topCount) * 100}%"></div>
+            </div>
+            <div class="stats">
+              ${item.count}回<br>
+              ${item.rate.toFixed(1)}%
+            </div>
+          `;
+          Elements.rankingList.appendChild(row);
+        });
+      },
+
+      setBusy(isBusy) {
+        Elements.simulateButton.disabled = isBusy;
+        Elements.resetButton.disabled = isBusy;
+        Elements.fateButton.disabled = isBusy || AppState.simulation.ranking.length === 0;
+        document.querySelectorAll(".boat-slider").forEach(slider => {
+          slider.disabled = isBusy;
+        });
+      },
+
+      clearResults() {
+        AppState.simulation.allResults = [];
+        AppState.simulation.ranking = [];
+        AppState.fate.selected = null;
+
+        Elements.rankingCard.classList.add("hidden");
+        Elements.fateCard.classList.add("hidden");
+        Elements.progressCard.classList.add("hidden");
+        this.renderProgress(0);
+        Elements.rankingList.innerHTML = "";
+        Elements.fateResult.innerHTML =
+          '<span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>';
+        Elements.fateMeta.textContent = "";
+        Elements.fateButton.textContent = "運命の1点を決める";
+      }
+    };
+
+    function interpolateColor(startHex, endHex, ratio) {
+      const start = startHex.match(/\w\w/g).map(value => parseInt(value, 16));
+      const end = endHex.match(/\w\w/g).map(value => parseInt(value, 16));
+      const rgb = start.map((channel, index) =>
+        Math.round(channel + (end[index] - channel) * ratio)
+      );
+      return `#${rgb.map(value => value.toString(16).padStart(2, "0")).join("")}`;
+    }
+
+    function getGaugeColor(value) {
+      const stops = [
+        { value: 1, color: "#e84d4d" },
+        { value: 25, color: "#f28b32" },
+        { value: 45, color: "#f2d84a" },
+        { value: 70, color: "#49b86b" },
+        { value: 100, color: "#3987ff" }
+      ];
+
+      for (let index = 0; index < stops.length - 1; index += 1) {
+        const current = stops[index];
+        const next = stops[index + 1];
+
+        if (value <= next.value) {
+          const ratio = (value - current.value) / (next.value - current.value);
+          return interpolateColor(current.color, next.color, Math.max(0, Math.min(1, ratio)));
+        }
+      }
+      return stops[stops.length - 1].color;
+    }
+
+    function collectBoatExpectations() {
+      AppState.boats = Array.from(document.querySelectorAll(".boat-slider")).map(slider => ({
+        boat: Number(slider.dataset.boat),
+        weight: Number(slider.value)
+      }));
+      return AppState.boats;
+    }
+
+    function weightedRandom(items, weightKey) {
+      const total = items.reduce((sum, item) => sum + Number(item[weightKey] || 0), 0);
+      if (total <= 0) return null;
+
+      let random = Math.random() * total;
+      for (const item of items) {
+        random -= Number(item[weightKey] || 0);
+        if (random < 0) return item;
+      }
+      return items[items.length - 1] || null;
+    }
+
+    function renderMiniCombination(boats) {
+      return boats.map((boatNumber, index) => {
+        const boat = `<span class="mini-boat boat-result-${boatNumber}">${boatNumber}</span>`;
+        return index < boats.length - 1 ? `${boat}<span>-</span>` : boat;
+      }).join("");
+    }
+
+    function renderFateCombination(boats) {
+      return boats.map((boatNumber, index) => {
+        const boat = `<span class="fate-boat boat-result-${boatNumber}">${boatNumber}</span>`;
+        return index < boats.length - 1
+          ? `${boat}<span class="hyphen">-</span>`
+          : boat;
+      }).join("");
+    }
+
+    function delay(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function runSimulation() {
+      if (AppState.simulation.isRunning || AppState.fate.isDrawing) return;
+
+      AppState.simulation.isRunning = true;
+      Elements.errorMessage.textContent = "";
+      collectBoatExpectations();
+      UiRenderer.clearResults();
+      UiRenderer.setBusy(true);
+      Elements.progressCard.classList.remove("hidden");
+
+      try {
+        const result = await SimulationEngine.run(AppState.boats);
+        AppState.simulation.ranking = result.ranking;
+        AppState.simulation.allResults = result.allResults;
+
+        UiRenderer.renderRanking();
+        Elements.progressCard.classList.add("hidden");
+        Elements.rankingCard.classList.remove("hidden");
+        Elements.fateCard.classList.remove("hidden");
+      } catch (error) {
+        console.error(error);
+        Elements.progressCard.classList.add("hidden");
+        UiRenderer.renderProgress(0);
+        Elements.errorMessage.textContent =
+          "シミュレーションを実行できませんでした。ブラウザを再読み込みしてください。";
+      } finally {
+        AppState.simulation.isRunning = false;
+        UiRenderer.setBusy(false);
+      }
+    }
+
+    function setDrawingBoat(boatNumber) {
+      const palette = BOAT_PALETTE[boatNumber];
+      Elements.pixelBoatSvg.style.setProperty("--boat-main", palette.main);
+      Elements.pixelBoatSvg.style.setProperty("--boat-dark", palette.dark);
+      Elements.pixelBoatSvg.style.setProperty("--boat-light", palette.light);
+      Elements.pixelBoatSvg.style.setProperty(
+        "--number-fill",
+        boatNumber === 1 || boatNumber === 5 ? "#111" : "#fff"
+      );
+      Elements.pixelBoatSvg.style.setProperty(
+        "--number-stroke",
+        boatNumber === 1 || boatNumber === 5 ? "#fff" : "#111"
+      );
+      Elements.pixelBoatNumber.textContent = String(boatNumber);
+    }
+
+    function showDrawingOverlay() {
+      const randomBoat = Math.floor(Math.random() * CONFIG.boatCount) + 1;
+      setDrawingBoat(randomBoat);
+      Elements.drawingOverlay.classList.add("show");
+      Elements.drawingOverlay.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function hideDrawingOverlay() {
+      Elements.drawingOverlay.classList.remove("show");
+      Elements.drawingOverlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    async function drawFatePick() {
+      if (
+        AppState.fate.isDrawing ||
+        AppState.simulation.isRunning ||
+        AppState.simulation.ranking.length === 0
+      ) return;
+
+      AppState.fate.isDrawing = true;
+      UiRenderer.setBusy(true);
+      Elements.fateMeta.textContent = "";
+      showDrawingOverlay();
+
+      try {
+        await delay(CONFIG.drawingDuration);
+
+        // ランキング上位だけではなく、1000回分すべての出現結果を抽選対象にする。
+        // 同じ買い目が多く出ているほど配列内に多く存在するため、
+        // 出現回数そのものを重みにした抽選と同じ結果になる。
+        if (AppState.simulation.allResults.length === 0) {
+          throw new Error("抽選対象となる結果がありません。");
+        }
+
+        const randomIndex = Math.floor(Math.random() * AppState.simulation.allResults.length);
+        const selectedKey = AppState.simulation.allResults[randomIndex];
+        const selected = AppState.simulation.ranking.find(item => item.key === selectedKey);
+
+        if (!selected) throw new Error("抽選結果が見つかりません。");
+
+        AppState.fate.selected = selected;
+        Elements.fateResult.innerHTML = renderFateCombination(selected.boats);
+
+        const rank = AppState.simulation.ranking.findIndex(item => item.key === selected.key) + 1;
+        Elements.fateMeta.textContent =
+          `ランキング${rank}位・シミュレーション出現率 ${selected.rate.toFixed(1)}%`;
+        Elements.fateButton.textContent = "もう一度、運命の1点を決める";
+      } catch (error) {
+        console.error(error);
+        Elements.errorMessage.textContent = "運命の1点を抽選できませんでした。";
+      } finally {
+        hideDrawingOverlay();
+        AppState.fate.isDrawing = false;
+        UiRenderer.setBusy(false);
+      }
+    }
+
+    function resetApp() {
+      if (AppState.simulation.isRunning || AppState.fate.isDrawing) return;
+
+      document.querySelectorAll(".boat-slider").forEach(slider => {
+        slider.value = String(CONFIG.initialValue);
+        UiRenderer.updateSlider(slider);
+      });
+
+      collectBoatExpectations();
+      UiRenderer.renderBalance();
+      UiRenderer.clearResults();
+      Elements.errorMessage.textContent = "";
+    }
+
+    function initializeApp() {
+      UiRenderer.renderBoatRows();
+
+      document.querySelectorAll(".boat-slider").forEach(slider => {
+        UiRenderer.updateSlider(slider);
+        slider.addEventListener("input", () => {
+          if (AppState.simulation.isRunning || AppState.fate.isDrawing) return;
+          UiRenderer.updateSlider(slider);
+          collectBoatExpectations();
+          UiRenderer.renderBalance();
+          UiRenderer.clearResults();
+          Elements.errorMessage.textContent = "";
+        });
+      });
+
+      collectBoatExpectations();
+      UiRenderer.renderBalance();
+
+      Elements.simulateButton.addEventListener("click", runSimulation);
+      Elements.resetButton.addEventListener("click", resetApp);
+      Elements.fateButton.addEventListener("click", drawFatePick);
+
+      const cleanupWorker = () => {
+        SimulationEngine.terminateWorker();
+      };
+
+      window.addEventListener("pagehide", cleanupWorker);
+      window.addEventListener("beforeunload", cleanupWorker);
+    }
+
+    initializeApp();
+  </script>
+</body>
+</html>
