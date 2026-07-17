@@ -1,0 +1,23 @@
+{
+  "name": "運命の舟券 ～Luck Pick～",
+  "short_name": "Luck Pick",
+  "description": "期待度を設定して3連単のランキングと運命の1点を抽選できるボートレース買い目シミュレーター",
+  "start_url": "/luck-pick/",
+  "scope": "/luck-pick/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
