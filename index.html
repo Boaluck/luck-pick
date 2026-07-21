@@ -908,10 +908,106 @@
       .release-footer { padding-left: 16px; padding-right: 16px; }
     }
 
+
+    /* Phase2: settings/results screen separation */
+    .screen { min-width: 0; }
+
+    .return-notice {
+      margin: 0 0 16px;
+      padding: 11px 14px;
+      border: 1px solid rgba(22,119,255,.22);
+      border-radius: 13px;
+      background: rgba(22,119,255,.07);
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .results-grid .ranking-card,
+    .results-grid .fate-card {
+      margin-top: 0;
+    }
+
+    .results-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .adjust-button {
+      width: 100%;
+      color: var(--text);
+      background: #edf1f6;
+    }
+
+    .ranking-toggle {
+      width: 100%;
+      min-height: 42px;
+      margin-top: 10px;
+      padding: 9px 12px;
+      color: var(--accent-dark);
+      background: rgba(22,119,255,.08);
+      border: 1px solid rgba(22,119,255,.16);
+      font-size: 13px;
+    }
+
+    .result-lead {
+      margin: 0 0 16px;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.65;
+      text-align: center;
+    }
+
+    @media (max-width: 760px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .results-grid .fate-card { margin-top: 0; }
+    }
+
+
+    .app.results-mode .header {
+      padding-top: 18px;
+      padding-bottom: 16px;
+    }
+
+    .app.results-mode .header h1 {
+      font-size: clamp(24px, 5vw, 32px);
+    }
+
+    .app.results-mode .catchcopy,
+    .app.results-mode .instruction,
+    .app.results-mode .beta-badge {
+      display: none;
+    }
+
+    @media (max-width: 620px) {
+      .app.results-mode .content { padding-top: 14px; }
+      .result-lead { margin-bottom: 10px; }
+      .results-grid { gap: 10px; }
+      .results-grid .ranking-card,
+      .results-grid .fate-card { padding: 13px 11px; }
+      .results-grid .ranking-row { padding-top: 8px; padding-bottom: 8px; }
+      .results-grid .bar-track { display: none; }
+      .results-grid .ranking-row {
+        grid-template-columns: 36px minmax(0, 1fr) 60px;
+      }
+      .results-grid .fate-description { margin-bottom: 10px; }
+      .results-grid .fate-result { min-height: 62px; margin-top: 10px; }
+      #resultsScreen .explanation { margin-top: 12px; }
+    }
+
   </style>
 </head>
 <body>
-  <main class="app">
+  <main class="app" id="appRoot">
     <header class="header">
       <h1>運命の舟券</h1>
       <div class="brand-subtitle">〜 Luck Pick 〜</div>
@@ -921,82 +1017,107 @@
     </header>
 
     <section class="content">
-      <section class="quick-guide" aria-labelledby="quickGuideTitle">
-        <h2 id="quickGuideTitle">かんたんな使い方</h2>
-        <ol>
-          <li>来そうだと思う艇ほどゲージを右へ動かします。</li>
-          <li>「1000回シミュレーション」を押してランキングを確認します。</li>
-          <li>最後に「運命の1点を決める」で買い目を1つ抽選します。</li>
-        </ol>
-      </section>
+      <section id="settingsScreen" class="screen" aria-label="期待度設定画面">
+        <section class="quick-guide" aria-labelledby="quickGuideTitle">
+          <h2 id="quickGuideTitle">かんたんな使い方</h2>
+          <ol>
+            <li>来そうだと思う艇ほどゲージを右へ動かします。</li>
+            <li>「1000回シミュレーション」を押してランキングを確認します。</li>
+            <li>最後に「運命の1点を決める」で買い目を1つ抽選します。</li>
+          </ol>
+        </section>
 
-      <h2 class="section-title">1. 各艇の期待度を設定</h2>
-      <p class="section-lead">「来そう」と感じる艇ほど、ゲージを右へ動かしてください。</p>
-
-      <div class="boat-list" id="boatList"></div>
-
-      <section class="balance-card" id="balanceCard" aria-live="polite">
-        <div class="balance-title" id="balanceTitle">期待度バランス：均等な設定</div>
-        <div class="balance-text" id="balanceText">各艇の期待度が近い状態です。</div>
-      </section>
-
-      <div class="actions">
-        <button class="primary" id="simulateButton" type="button">1000回シミュレーション</button>
-        <button class="secondary" id="resetButton" type="button">リセット</button>
-      </div>
-
-      <div class="error" id="errorMessage" aria-live="polite"></div>
-
-      <section class="progress-card hidden" id="progressCard">
-        <div class="progress-label">
-          <span>シミュレーション中…</span>
-          <span id="progressText">0%</span>
-        </div>
-        <div class="progress-track">
-          <div class="progress-bar" id="progressBar"></div>
-        </div>
-      </section>
-
-      <section class="ranking-card hidden" id="rankingCard">
-        <div class="ranking-head">
-          <h2>2. シミュレーションランキング</h2>
-          <span class="simulation-note">上位10通り</span>
-        </div>
-        <div class="ranking-list" id="rankingList"></div>
-      </section>
-
-      <section class="fate-card hidden" id="fateCard">
-        <div class="fate-head">
-          <h2>3. 運命の1点</h2>
+        <div class="return-notice hidden" id="returnNotice" aria-live="polite">
+          前回の設定を保持しています
         </div>
 
-        <p class="fate-description">
-          シミュレーションで多く出た買い目ほど選ばれやすくなる抽選です。
-          ランキング1位が必ず選ばれるわけではありません。
-        </p>
+        <h2 class="section-title">1. 各艇の期待度を設定</h2>
+        <p class="section-lead">「来そう」と感じる艇ほど、ゲージを右へ動かしてください。</p>
 
-        <button class="fate-button" id="fateButton" type="button">運命の1点を決める</button>
+        <div class="boat-list" id="boatList"></div>
 
-        <div class="fate-result" id="fateResult" aria-live="polite">
-          <span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>
+        <section class="balance-card" id="balanceCard" aria-live="polite">
+          <div class="balance-title" id="balanceTitle">期待度バランス：均等な設定</div>
+          <div class="balance-text" id="balanceText">各艇の期待度が近い状態です。</div>
+        </section>
+
+        <div class="actions">
+          <button class="primary" id="simulateButton" type="button">1000回シミュレーション</button>
+          <button class="secondary" id="resetButton" type="button">ゲージを初期値に戻す</button>
         </div>
 
-        <div class="fate-meta" id="fateMeta"></div>
+        <div class="error" id="errorMessage" aria-live="polite"></div>
+
+        <section class="progress-card hidden" id="progressCard" aria-live="polite">
+          <div class="progress-label">
+            <span>シミュレーション中…</span>
+            <span id="progressText">0%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+        </section>
+
+        <section class="explanation">
+          <h3>このアプリの抽選方法</h3>
+          <p>
+            各艇に設定した期待度をもとに、1着・2着・3着を順番に抽選します。
+            これを1000回繰り返して、出やすかった3連単をランキング化します。
+          </p>
+        </section>
       </section>
 
-      <section class="explanation">
-        <h3>このアプリの抽選方法</h3>
-        <p>
-          各艇に設定した期待度をもとに、1着・2着・3着を順番に抽選します。
-          これを1000回繰り返して、出やすかった3連単をランキング化します。
-          「運命の1点」は、全シミュレーション結果の出現回数を重みとして1点を決定します。
-        </p>
+      <section id="resultsScreen" class="screen hidden" aria-label="シミュレーション結果画面">
+        <p class="result-lead">ランキングを確認して、そのまま運命の1点を決められます。</p>
+
+        <div class="results-grid">
+          <section class="ranking-card" id="rankingCard">
+            <div class="ranking-head">
+              <h2>シミュレーションランキング</h2>
+              <span class="simulation-note" id="rankingNote">上位5通り</span>
+            </div>
+            <div class="ranking-list" id="rankingList"></div>
+            <button class="ranking-toggle" id="rankingToggleButton" type="button">10位まで見る</button>
+          </section>
+
+          <section class="fate-card" id="fateCard">
+            <div class="fate-head">
+              <h2>運命の1点</h2>
+            </div>
+
+            <p class="fate-description">
+              シミュレーションで多く出た買い目ほど選ばれやすくなります。
+            </p>
+
+            <button class="fate-button" id="fateButton" type="button">運命の1点を決める</button>
+
+            <div class="fate-result" id="fateResult" aria-live="polite">
+              <span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>
+            </div>
+
+            <div class="fate-meta" id="fateMeta"></div>
+
+            <div class="results-actions">
+              <button class="adjust-button" id="adjustSettingsButton" type="button">設定を調整する</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="error" id="resultsErrorMessage" aria-live="polite"></div>
+
+        <section class="explanation">
+          <h3>このアプリの抽選方法</h3>
+          <p>
+            「運命の1点」は、1000回分すべてのシミュレーション結果から、
+            出現回数を重みとして1点を決定します。ランキング1位が必ず選ばれるわけではありません。
+          </p>
+        </section>
       </section>
     </section>
 
     <footer class="release-footer">
       <p>本サービスは、設定した期待度をもとにランダム抽選を行う娯楽用ツールです。的中や利益を保証するものではありません。舟券の購入はご自身の判断と責任で行ってください。</p>
-      <p class="version">Luck Pick β v0.9.0</p>
+      <p class="version">Luck Pick β v0.10.0 Phase2</p>
     </footer>
   </main>
 
@@ -1091,7 +1212,8 @@
       boatCount: 6,
       simulationCount: 1000,
       rankingLimit: 10,
-      drawingDuration: 2200
+      initialRankingDisplay: 5,
+      drawingDuration: 900
     });
 
     const BOAT_PALETTE = Object.freeze({
@@ -1104,7 +1226,14 @@
     });
 
     const AppState = {
+      screenMode: "settings",
       boats: [],
+      gaugeValues: Array(CONFIG.boatCount).fill(CONFIG.initialValue),
+      savedGaugeValues: Array(CONFIG.boatCount).fill(CONFIG.initialValue),
+      ui: {
+        isReturningToSettings: false,
+        rankingExpanded: false
+      },
       simulation: {
         isRunning: false,
         worker: null,
@@ -1119,6 +1248,10 @@
     };
 
     const Elements = {
+      appRoot: document.getElementById("appRoot"),
+      settingsScreen: document.getElementById("settingsScreen"),
+      resultsScreen: document.getElementById("resultsScreen"),
+      returnNotice: document.getElementById("returnNotice"),
       boatList: document.getElementById("boatList"),
       simulateButton: document.getElementById("simulateButton"),
       resetButton: document.getElementById("resetButton"),
@@ -1132,6 +1265,10 @@
       fateButton: document.getElementById("fateButton"),
       fateResult: document.getElementById("fateResult"),
       fateMeta: document.getElementById("fateMeta"),
+      adjustSettingsButton: document.getElementById("adjustSettingsButton"),
+      rankingToggleButton: document.getElementById("rankingToggleButton"),
+      rankingNote: document.getElementById("rankingNote"),
+      resultsErrorMessage: document.getElementById("resultsErrorMessage"),
       balanceTitle: document.getElementById("balanceTitle"),
       balanceText: document.getElementById("balanceText"),
       drawingOverlay: document.getElementById("drawingOverlay"),
@@ -1381,7 +1518,10 @@
 
       renderRanking() {
         Elements.rankingList.innerHTML = "";
-        const topItems = AppState.simulation.ranking.slice(0, CONFIG.rankingLimit);
+        const displayLimit = AppState.ui.rankingExpanded
+          ? CONFIG.rankingLimit
+          : CONFIG.initialRankingDisplay;
+        const topItems = AppState.simulation.ranking.slice(0, displayLimit);
         const topCount = topItems[0]?.count || 1;
 
         topItems.forEach((item, index) => {
@@ -1400,12 +1540,25 @@
           `;
           Elements.rankingList.appendChild(row);
         });
+
+        Elements.rankingToggleButton.classList.toggle(
+          "hidden",
+          AppState.simulation.ranking.length <= CONFIG.initialRankingDisplay
+        );
+        Elements.rankingToggleButton.textContent = AppState.ui.rankingExpanded
+          ? "上位5通りに戻す"
+          : "10位まで見る";
+        Elements.rankingNote.textContent = AppState.ui.rankingExpanded
+          ? "上位10通り"
+          : "上位5通り";
       },
 
       setBusy(isBusy) {
         Elements.simulateButton.disabled = isBusy;
         Elements.resetButton.disabled = isBusy;
         Elements.fateButton.disabled = isBusy || AppState.simulation.ranking.length === 0;
+        Elements.adjustSettingsButton.disabled = isBusy;
+        Elements.rankingToggleButton.disabled = isBusy;
         document.querySelectorAll(".boat-slider").forEach(slider => {
           slider.disabled = isBusy;
         });
@@ -1416,8 +1569,7 @@
         AppState.simulation.ranking = [];
         AppState.fate.selected = null;
 
-        Elements.rankingCard.classList.add("hidden");
-        Elements.fateCard.classList.add("hidden");
+        AppState.ui.rankingExpanded = false;
         Elements.progressCard.classList.add("hidden");
         this.renderProgress(0);
         Elements.rankingList.innerHTML = "";
@@ -1425,6 +1577,20 @@
           '<span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>';
         Elements.fateMeta.textContent = "";
         Elements.fateButton.textContent = "運命の1点を決める";
+        Elements.resultsErrorMessage.textContent = "";
+        Elements.rankingToggleButton.classList.add("hidden");
+      },
+
+      showScreen(mode) {
+        AppState.screenMode = mode;
+        const showSettings = mode === "settings" || mode === "running";
+        Elements.settingsScreen.classList.toggle("hidden", !showSettings);
+        Elements.resultsScreen.classList.toggle("hidden", mode !== "results");
+        Elements.appRoot.classList.toggle("results-mode", mode === "results");
+        Elements.returnNotice.classList.toggle(
+          "hidden",
+          !(showSettings && AppState.ui.isReturningToSettings)
+        );
       }
     };
 
@@ -1463,6 +1629,7 @@
         boat: Number(slider.dataset.boat),
         weight: Number(slider.value)
       }));
+      AppState.gaugeValues = AppState.boats.map(item => item.weight);
       return AppState.boats;
     }
 
@@ -1504,8 +1671,11 @@
       AppState.simulation.isRunning = true;
       Elements.errorMessage.textContent = "";
       collectBoatExpectations();
+      AppState.savedGaugeValues = [...AppState.gaugeValues];
+      AppState.ui.isReturningToSettings = false;
       UiRenderer.clearResults();
       UiRenderer.setBusy(true);
+      UiRenderer.showScreen("running");
       Elements.progressCard.classList.remove("hidden");
 
       try {
@@ -1515,14 +1685,15 @@
 
         UiRenderer.renderRanking();
         Elements.progressCard.classList.add("hidden");
-        Elements.rankingCard.classList.remove("hidden");
-        Elements.fateCard.classList.remove("hidden");
+        UiRenderer.showScreen("results");
+        window.scrollTo({ top: 0, behavior: "auto" });
       } catch (error) {
         console.error(error);
         Elements.progressCard.classList.add("hidden");
         UiRenderer.renderProgress(0);
+        UiRenderer.showScreen("settings");
         Elements.errorMessage.textContent =
-          "シミュレーションを実行できませんでした。ブラウザを再読み込みしてください。";
+          "シミュレーションを実行できませんでした。もう一度お試しください。";
       } finally {
         AppState.simulation.isRunning = false;
         UiRenderer.setBusy(false);
@@ -1596,7 +1767,7 @@
         Elements.fateButton.textContent = "もう一度、運命の1点を決める";
       } catch (error) {
         console.error(error);
-        Elements.errorMessage.textContent = "運命の1点を抽選できませんでした。";
+        Elements.resultsErrorMessage.textContent = "運命の1点を抽選できませんでした。";
       } finally {
         hideDrawingOverlay();
         AppState.fate.isDrawing = false;
@@ -1613,9 +1784,35 @@
       });
 
       collectBoatExpectations();
+      AppState.savedGaugeValues = Array(CONFIG.boatCount).fill(CONFIG.initialValue);
+      AppState.ui.isReturningToSettings = false;
       UiRenderer.renderBalance();
       UiRenderer.clearResults();
+      UiRenderer.showScreen("settings");
       Elements.errorMessage.textContent = "";
+    }
+
+    function adjustSettings() {
+      if (AppState.simulation.isRunning || AppState.fate.isDrawing) return;
+
+      const sliders = document.querySelectorAll(".boat-slider");
+      sliders.forEach((slider, index) => {
+        slider.value = String(AppState.savedGaugeValues[index] ?? CONFIG.initialValue);
+        UiRenderer.updateSlider(slider);
+      });
+
+      collectBoatExpectations();
+      UiRenderer.renderBalance();
+      AppState.ui.isReturningToSettings = true;
+      UiRenderer.showScreen("settings");
+      Elements.errorMessage.textContent = "";
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
+
+    function toggleRanking() {
+      if (AppState.simulation.isRunning || AppState.fate.isDrawing) return;
+      AppState.ui.rankingExpanded = !AppState.ui.rankingExpanded;
+      UiRenderer.renderRanking();
     }
 
     function initializeApp() {
@@ -1639,6 +1836,10 @@
       Elements.simulateButton.addEventListener("click", runSimulation);
       Elements.resetButton.addEventListener("click", resetApp);
       Elements.fateButton.addEventListener("click", drawFatePick);
+      Elements.adjustSettingsButton.addEventListener("click", adjustSettings);
+      Elements.rankingToggleButton.addEventListener("click", toggleRanking);
+
+      UiRenderer.showScreen("settings");
 
       const cleanupWorker = () => {
         SimulationEngine.terminateWorker();
