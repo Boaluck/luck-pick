@@ -15,10 +15,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Brand fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Outfit:wght@300;500;600;700&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
   <title>運命の舟券 ～Luck Pick～｜ボートレース買い目シミュレーター</title>
   <meta
     name="description"
-    content="期待度を設定して3連単のランキングと運命の1点を抽選！ボートレースの買い目を楽しく決められるLuck Pick（運命の舟券）です。"
+    content="予想をゲージに込めて3連単をシミュレーション。最後の一点は運任せで決める、Luck Pick（運命の舟券）です。"
   />
   <link rel="canonical" href="https://boaluck.github.io/luck-pick/" />
 
@@ -41,7 +49,7 @@
   <meta property="og:title" content="運命の舟券 ～Luck Pick～" />
   <meta
     property="og:description"
-    content="期待度を設定して3連単のランキングと運命の1点を抽選！ボートレースの買い目を楽しく決められるLuck Pickです。"
+    content="予想をゲージに込めて3連単をシミュレーション。最後の一点は運任せで決めるLuck Pickです。"
   />
   <meta property="og:url" content="https://boaluck.github.io/luck-pick/" />
   <meta property="og:image" content="https://boaluck.github.io/luck-pick/ogp/og-image.png" />
@@ -54,7 +62,7 @@
   <meta name="twitter:title" content="運命の舟券 ～Luck Pick～" />
   <meta
     name="twitter:description"
-    content="期待度を設定して3連単のランキングと運命の1点を抽選！"
+    content="予想をゲージに込めるシミュレーション。最後の一点は、運任せ！！"
   />
   <meta name="twitter:image" content="https://boaluck.github.io/luck-pick/ogp/og-image.png" />
   <meta name="twitter:image:alt" content="運命の舟券 ～Luck Pick～ の紹介画像" />
@@ -68,7 +76,9 @@
       --line: #dde3ec;
       --accent: #1677ff;
       --accent-dark: #0d5fd1;
-      --gold: #d89b12;
+      --gold: #c89b3c;
+      --brand-amber: #c89b3c;
+      --brand-black: #232323;
       --shadow: 0 18px 50px rgba(32,52,89,.12);
     }
 
@@ -83,7 +93,7 @@
         linear-gradient(180deg, #f9fbff 0%, var(--bg) 100%);
       color: var(--text);
       font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
         "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", sans-serif;
     }
 
@@ -108,29 +118,107 @@
 
     .header h1 {
       margin: 0;
+      color: var(--brand-black);
+      font-family: "Dela Gothic One", "Noto Sans JP", sans-serif;
       font-size: clamp(28px, 6vw, 42px);
-      letter-spacing: .04em;
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: .045em;
+    }
+
+    .app-title-button {
+      display: inline-block;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      color: inherit;
+      background: transparent;
+      border: 0;
+      border-radius: 10px;
+      box-shadow: none;
+      font: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: opacity .16s ease, transform .16s ease, box-shadow .16s ease;
+    }
+
+    .app-title-button:hover {
+      opacity: .84;
+    }
+
+    .app-title-button:active {
+      transform: scale(.985);
+    }
+
+    .app-title-button:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 4px rgba(73,97,133,.16);
+    }
+
+        .title-luck {
+      display: inline-block;
+      margin-right: .015em;
+      color: var(--brand-amber);
+      font-size: 1.24em;
+      line-height: .8;
+      text-shadow: 0 1px 2px rgba(84, 58, 10, .14);
+      transform: translateY(.025em);
+    }
+
+    .brand-divider {
+      width: 96px;
+      height: 1px;
+      margin: 10px auto 8px;
+      background: #d8d5cf;
     }
 
     .brand-subtitle {
-      margin-top: 4px;
-      color: var(--accent);
-      font-size: 16px;
-      font-weight: 900;
-      letter-spacing: .08em;
+      margin-top: 0;
+      color: var(--brand-black);
+      font-family: "Outfit", "Noto Sans JP", sans-serif;
+      font-size: clamp(18px, 3vw, 22px);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: .17em;
+    }
+
+    .brand-initial {
+      color: var(--brand-amber);
+    }
+
+    .brand-descriptor {
+      margin-top: 5px;
+      color: #88837a;
+      font-family: "Outfit", "Noto Sans JP", sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: .22em;
     }
 
     .catchcopy {
-      margin: 16px 0 0;
-      font-size: clamp(16px, 3vw, 20px);
-      font-weight: 800;
+      margin: 18px 0 0;
+      color: #6d6a65;
+      font-size: clamp(13px, 2.6vw, 15px);
+      font-weight: 400;
+      line-height: 1.7;
+      letter-spacing: .015em;
     }
 
     .instruction {
-      margin: 8px 0 0;
-      color: var(--sub);
-      font-size: 14px;
+      margin: 4px 0 0;
+      color: #57544f;
+      font-size: clamp(13px, 2.6vw, 15px);
+      font-weight: 500;
       line-height: 1.7;
+      letter-spacing: .015em;
+    }
+
+    .accent-word {
+      color: var(--brand-amber);
+      font-weight: 700;
     }
 
     .content { padding: 24px 28px 30px; }
@@ -274,8 +362,30 @@
 
     .primary {
       color: #fff;
-      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-      box-shadow: 0 10px 24px rgba(22,119,255,.28);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,0) 36%),
+        linear-gradient(180deg, #496185 0%, #2e476b 100%);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow:
+        0 6px 14px rgba(30,48,74,.15),
+        inset 0 1px 0 rgba(255,255,255,.08);
+      transition: transform .16s ease, filter .16s ease, box-shadow .16s ease;
+    }
+
+    .primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+      box-shadow:
+        0 8px 17px rgba(30,48,74,.17),
+        inset 0 1px 0 rgba(255,255,255,.10);
+    }
+
+    .primary:active:not(:disabled) {
+      transform: translateY(1px) scale(.985);
+      filter: brightness(.98);
+      box-shadow:
+        0 3px 9px rgba(30,48,74,.14),
+        inset 0 1px 0 rgba(255,255,255,.06);
     }
 
     .secondary {
@@ -382,10 +492,13 @@
 
     .mini-boat,
     .fate-boat {
-      display: inline-grid;
-      place-items: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       border: 1px solid rgba(0,0,0,.12);
       font-weight: 900;
+      line-height: 1;
+      padding: 0;
     }
 
     .mini-boat {
@@ -416,11 +529,20 @@
     }
 
     .fate-card {
+      min-height: 286px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
       text-align: center;
-      border-color: rgba(216,155,18,.32);
-      background:
-        linear-gradient(135deg, rgba(245,190,55,.10), rgba(255,255,255,.96)),
-        #fff;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      transition: padding .2s ease;
+    }
+
+    .fate-card.has-result {
+      justify-content: flex-start;
     }
 
     .fate-description {
@@ -432,15 +554,64 @@
     }
 
     .fate-button {
-      color: #fff;
-      background: linear-gradient(135deg, #e9ad24, #c97f00);
-      box-shadow: 0 10px 24px rgba(216,155,18,.28);
+      order: 1;
+      width: 86%;
+      max-width: 360px;
+      min-height: 66px;
+      margin-inline: auto;
+      padding: 13px 22px 15px;
+      color: #ffffff;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,0) 36%),
+        linear-gradient(180deg, #496185 0%, #2e476b 100%);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      box-shadow:
+        0 6px 14px rgba(30,48,74,.15),
+        inset 0 1px 0 rgba(255,255,255,.08);
+      font-family: "Outfit", "Noto Sans JP", sans-serif;
+      font-size: clamp(21px, 4.5vw, 27px);
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: .03em;
+      transition:
+        transform .16s ease,
+        filter .16s ease,
+        box-shadow .16s ease;
+    }
+
+    .fate-button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      filter: brightness(1.04);
+      box-shadow:
+        0 8px 17px rgba(30,48,74,.17),
+        inset 0 1px 0 rgba(255,255,255,.10);
+    }
+
+    .fate-button:active:not(:disabled) {
+      transform: translateY(1px) scale(.985);
+      filter: brightness(.98);
+      box-shadow:
+        0 3px 9px rgba(30,48,74,.14),
+        inset 0 1px 0 rgba(255,255,255,.06);
+    }
+
+    .fate-button-luck {
+      display: inline-block;
+      margin-right: .01em;
+      color: var(--brand-amber);
+      font-size: 1.22em;
+      font-weight: 600;
+      line-height: .82;
+      text-shadow: none;
+      transform: translateY(.025em);
     }
 
     .fate-result {
-      min-height: 88px;
-      margin-top: 20px;
-      display: flex;
+      order: 2;
+      min-height: 0;
+      margin-top: 0;
+      display: none;
       justify-content: center;
       align-items: center;
       gap: 12px;
@@ -461,10 +632,35 @@
     }
 
     .fate-meta {
-      margin-top: 6px;
+      order: 3;
+      display: none;
+      margin-top: 10px;
       color: var(--sub);
       font-size: 13px;
       font-weight: 800;
+    }
+
+
+    .fate-card.has-result .fate-result {
+      order: 1;
+      min-height: 88px;
+      display: flex;
+      margin-top: 2px;
+    }
+
+    .fate-card.has-result .fate-meta {
+      order: 2;
+      display: block;
+    }
+
+    .fate-card.has-result .fate-button {
+      order: 3;
+      min-height: 58px;
+      margin-top: auto;
+      margin-inline: auto;
+      padding-top: 12px;
+      padding-bottom: 13px;
+      font-size: clamp(20px, 4vw, 25px);
     }
 
     .explanation {
@@ -728,7 +924,6 @@
         font-size: clamp(27px, 9vw, 36px);
       }
 
-      .brand-subtitle { font-size: 14px; }
       .catchcopy { margin-top: 13px; }
       .instruction { margin-top: 6px; }
 
@@ -759,9 +954,12 @@
         margin-top: 18px;
       }
 
-      .actions button,
-      .fate-button {
+      .actions button {
         width: 100%;
+      }
+
+      .fate-button {
+        width: 88%;
       }
 
       .progress-card,
@@ -944,8 +1142,31 @@
 
     .adjust-button {
       width: 100%;
-      color: var(--text);
-      background: #edf1f6;
+      color: #4d6079;
+      background: #f1f4f8;
+      border: 1px solid #dbe3ed;
+    }
+
+    .adjust-button:hover:not(:disabled) {
+      background: #e9eef5;
+      color: #354a66;
+    }
+
+    .ranking-controls {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .ranking-controls .ranking-toggle,
+    .ranking-controls .adjust-button {
+      width: 100%;
+      min-width: 0;
+      min-height: 42px;
+      margin-top: 0;
+      padding: 9px 12px;
+      font-size: 13px;
     }
 
     .ranking-toggle {
@@ -953,10 +1174,16 @@
       min-height: 42px;
       margin-top: 10px;
       padding: 9px 12px;
-      color: var(--accent-dark);
-      background: rgba(22,119,255,.08);
-      border: 1px solid rgba(22,119,255,.16);
+      color: #355377;
+      background: #eef4fc;
+      border: 1px solid #c7d8f3;
       font-size: 13px;
+    }
+
+    .ranking-toggle:hover:not(:disabled) {
+      color: #294767;
+      background: #e5eef9;
+      border-color: #b8cdea;
     }
 
     .result-lead {
@@ -994,36 +1221,189 @@
       .results-grid { gap: 10px; }
       .results-grid .ranking-card,
       .results-grid .fate-card { padding: 13px 11px; }
+      .results-grid .fate-card { min-height: 250px; }
+      .results-grid .fate-card.has-result { min-height: 300px; }
       .results-grid .ranking-row { padding-top: 8px; padding-bottom: 8px; }
       .results-grid .bar-track { display: none; }
       .results-grid .ranking-row {
         grid-template-columns: 36px minmax(0, 1fr) 60px;
       }
       .results-grid .fate-description { margin-bottom: 10px; }
+      .ranking-controls {
+        gap: 8px;
+      }
+
+      .ranking-controls .ranking-toggle,
+      .ranking-controls .adjust-button {
+        min-height: 44px;
+        padding: 9px 8px;
+        font-size: 12px;
+      }
+
       .results-grid .fate-result { min-height: 62px; margin-top: 10px; }
       #resultsScreen .explanation { margin-top: 12px; }
     }
 
-  </style>
+  
+
+    /* Visual system unification: navy / white / amber */
+    :root {
+      --navy-main: #496185;
+      --navy-dark: #2e476b;
+      --navy-soft: #eef3f9;
+      --navy-soft-2: #f6f8fb;
+      --navy-line: #cbd7e7;
+      --navy-text: #405877;
+      --card-radius: 18px;
+      --item-radius: 14px;
+      --shadow-card: 0 10px 30px rgba(46,71,107,.08);
+      --shadow-button: 0 7px 16px rgba(46,71,107,.18);
+    }
+
+    .progress-card,
+    .ranking-card,
+    .fate-card,
+    .explanation {
+      border-radius: var(--card-radius);
+      box-shadow: var(--shadow-card);
+    }
+
+    .boat-row,
+    .balance-card,
+    .quick-guide,
+    .ranking-row,
+    .return-notice {
+      border-radius: var(--item-radius);
+    }
+
+    .progress-bar,
+    .bar-fill {
+      background: linear-gradient(90deg, var(--navy-main), #7890b1);
+    }
+
+    .progress-track,
+    .bar-track {
+      background: #e8edf4;
+    }
+
+    .beta-badge {
+      background: var(--navy-soft);
+      color: var(--navy-text);
+      border: 1px solid #d5deeb;
+      font-weight: 700;
+    }
+
+    .return-notice {
+      background: var(--navy-soft);
+      border-color: var(--navy-line);
+      color: var(--navy-text);
+    }
+
+    .balance-card,
+    .explanation,
+    .quick-guide {
+      background: #fafbfd;
+      border-color: #dce3ec;
+    }
+
+    .balance-title,
+    .ranking-head h2,
+    .fate-head h2,
+    .section-title,
+    .quick-guide h2,
+    .explanation h3 {
+      font-weight: 700;
+    }
+
+    .rank,
+    .stats,
+    .simulation-note,
+    .balance-text {
+      font-weight: 600;
+    }
+
+    .ranking-row {
+      background: #fbfcfe;
+      border-color: #dce3ec;
+    }
+
+    .primary,
+    .fate-button {
+      box-shadow:
+        var(--shadow-button),
+        inset 0 1px 0 rgba(255,255,255,.09);
+    }
+
+    .primary:hover:not(:disabled),
+    .fate-button:hover:not(:disabled) {
+      box-shadow:
+        0 9px 20px rgba(46,71,107,.20),
+        inset 0 1px 0 rgba(255,255,255,.11);
+    }
+
+    .primary:active:not(:disabled),
+    .fate-button:active:not(:disabled) {
+      box-shadow:
+        0 4px 10px rgba(46,71,107,.16),
+        inset 0 1px 0 rgba(255,255,255,.07);
+    }
+
+    .ranking-toggle {
+      background: var(--navy-soft);
+      border-color: var(--navy-line);
+      color: var(--navy-text);
+    }
+
+    .adjust-button,
+    .secondary {
+      background: #f1f4f8;
+      color: #4d6079;
+      border: 1px solid #dde4ee;
+    }
+
+    .ranking-toggle:hover:not(:disabled),
+    .adjust-button:hover:not(:disabled),
+    .secondary:hover:not(:disabled) {
+      filter: brightness(.985);
+    }
+
+    @media (max-width: 620px) {
+      .progress-card,
+      .ranking-card,
+      .fate-card,
+      .explanation {
+        border-radius: 16px;
+      }
+    }
+</style>
 </head>
 <body>
   <main class="app" id="appRoot">
     <header class="header">
-      <h1>運命の舟券</h1>
-      <div class="brand-subtitle">〜 Luck Pick 〜</div>
-      <p class="catchcopy">期待が導く、運命の舟券。</p>
-      <p class="instruction">期待度をゲージに設定して抽選！</p>
+      <h1>
+        <button
+          class="app-title-button"
+          id="appTitleButton"
+          type="button"
+          aria-label="はじめの期待度設定画面に戻る"
+        ><span class="title-luck">運</span>命の舟券</button>
+      </h1>
+      <div class="brand-divider" aria-hidden="true"></div>
+      <div class="brand-subtitle"><span class="brand-initial">L</span>uck <span class="brand-initial">P</span>ick</div>
+      <div class="brand-descriptor">BOAT RACE SIMULATOR</div>
+      <p class="catchcopy">予想をゲージに込めるシミュレーション</p>
+      <p class="instruction">最後の一点は、<span class="accent-word">運</span>任せ！！</p>
       <div class="beta-badge">β版</div>
     </header>
 
     <section class="content">
       <section id="settingsScreen" class="screen" aria-label="期待度設定画面">
         <section class="quick-guide" aria-labelledby="quickGuideTitle">
-          <h2 id="quickGuideTitle">かんたんな使い方</h2>
+          <h2 id="quickGuideTitle">使い方</h2>
           <ol>
-            <li>来そうだと思う艇ほどゲージを右へ動かします。</li>
-            <li>「1000回シミュレーション」を押してランキングを確認します。</li>
-            <li>最後に「運命の1点を決める」で買い目を1つ抽選します。</li>
+            <li>来そうと予想した艇のゲージを上昇させてください。</li>
+            <li>「1000回シミュレーション」でパターンの多い順ランクが出ます。</li>
+            <li>最後に「運命の1点」でランクの確率に応じて1点を選出します。</li>
           </ol>
         </section>
 
@@ -1032,7 +1412,6 @@
         </div>
 
         <h2 class="section-title">1. 各艇の期待度を設定</h2>
-        <p class="section-lead">「来そう」と感じる艇ほど、ゲージを右へ動かしてください。</p>
 
         <div class="boat-list" id="boatList"></div>
 
@@ -1043,7 +1422,7 @@
 
         <div class="actions">
           <button class="primary" id="simulateButton" type="button">1000回シミュレーション</button>
-          <button class="secondary" id="resetButton" type="button">ゲージを初期値に戻す</button>
+          <button class="secondary" id="resetButton" type="button">ゲージリセット</button>
         </div>
 
         <div class="error" id="errorMessage" aria-live="polite"></div>
@@ -1062,14 +1441,12 @@
           <h3>このアプリの抽選方法</h3>
           <p>
             各艇に設定した期待度をもとに、1着・2着・3着を順番に抽選します。
-            これを1000回繰り返して、出やすかった3連単をランキング化します。
+            これを1000回繰り返して、多く出た3連単をランキング化します。
           </p>
         </section>
       </section>
 
       <section id="resultsScreen" class="screen hidden" aria-label="シミュレーション結果画面">
-        <p class="result-lead">ランキングを確認して、そのまま運命の1点を決められます。</p>
-
         <div class="results-grid">
           <section class="ranking-card" id="rankingCard">
             <div class="ranking-head">
@@ -1077,31 +1454,19 @@
               <span class="simulation-note" id="rankingNote">上位5通り</span>
             </div>
             <div class="ranking-list" id="rankingList"></div>
-            <button class="ranking-toggle" id="rankingToggleButton" type="button">10位まで見る</button>
+            <div class="ranking-controls">
+              <button class="ranking-toggle" id="rankingToggleButton" type="button">10位まで見る</button>
+              <button class="adjust-button" id="adjustSettingsButton" type="button">はじめに戻る</button>
+            </div>
           </section>
 
           <section class="fate-card" id="fateCard">
-            <div class="fate-head">
-              <h2>運命の1点</h2>
-            </div>
+            <button class="fate-button" id="fateButton" type="button"><span class="fate-button-luck">運</span>命の1点</button>
 
-            <p class="fate-description">
-              シミュレーションで多く出た買い目ほど選ばれやすくなります。
-            </p>
-
-            <button class="fate-button" id="fateButton" type="button">運命の1点を決める</button>
-
-            <div class="fate-result" id="fateResult" aria-live="polite">
-              <span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>
-            </div>
+            <div class="fate-result" id="fateResult" aria-live="polite"></div>
 
             <div class="fate-meta" id="fateMeta"></div>
-
-            <div class="results-actions">
-              <button class="adjust-button" id="adjustSettingsButton" type="button">設定を調整する</button>
-            </div>
-          </section>
-        </div>
+          </section>       </div>
 
         <div class="error" id="resultsErrorMessage" aria-live="polite"></div>
 
@@ -1109,7 +1474,7 @@
           <h3>このアプリの抽選方法</h3>
           <p>
             「運命の1点」は、1000回分すべてのシミュレーション結果から、
-            出現回数を重みとして1点を決定します。ランキング1位が必ず選ばれるわけではありません。
+            出現回数を確率として1点を決定します。ランキング1位が必ず選ばれるわけではありません。
           </p>
         </section>
       </section>
@@ -1249,6 +1614,7 @@
 
     const Elements = {
       appRoot: document.getElementById("appRoot"),
+      appTitleButton: document.getElementById("appTitleButton"),
       settingsScreen: document.getElementById("settingsScreen"),
       resultsScreen: document.getElementById("resultsScreen"),
       returnNotice: document.getElementById("returnNotice"),
@@ -1573,10 +1939,10 @@
         Elements.progressCard.classList.add("hidden");
         this.renderProgress(0);
         Elements.rankingList.innerHTML = "";
-        Elements.fateResult.innerHTML =
-          '<span style="font-size:16px; color:#697386;">ボタンを押すと1点が選ばれます</span>';
+        Elements.fateCard.classList.remove("has-result");
+        Elements.fateResult.innerHTML = "";
         Elements.fateMeta.textContent = "";
-        Elements.fateButton.textContent = "運命の1点を決める";
+        Elements.fateButton.innerHTML = '<span class="fate-button-luck">運</span>命の1点';
         Elements.resultsErrorMessage.textContent = "";
         Elements.rankingToggleButton.classList.add("hidden");
       },
@@ -1764,7 +2130,8 @@
         const rank = AppState.simulation.ranking.findIndex(item => item.key === selected.key) + 1;
         Elements.fateMeta.textContent =
           `ランキング${rank}位・シミュレーション出現率 ${selected.rate.toFixed(1)}%`;
-        Elements.fateButton.textContent = "もう一度、運命の1点を決める";
+        Elements.fateButton.textContent = "もう一度";
+        Elements.fateCard.classList.add("has-result");
       } catch (error) {
         console.error(error);
         Elements.resultsErrorMessage.textContent = "運命の1点を抽選できませんでした。";
@@ -1837,6 +2204,7 @@
       Elements.resetButton.addEventListener("click", resetApp);
       Elements.fateButton.addEventListener("click", drawFatePick);
       Elements.adjustSettingsButton.addEventListener("click", adjustSettings);
+      Elements.appTitleButton.addEventListener("click", adjustSettings);
       Elements.rankingToggleButton.addEventListener("click", toggleRanking);
 
       UiRenderer.showScreen("settings");
