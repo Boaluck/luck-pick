@@ -1375,6 +1375,142 @@
         border-radius: 16px;
       }
     }
+
+
+    /* Phase4: unified collapsible information panels */
+    .info-disclosure {
+      margin-top: 18px;
+      overflow: hidden;
+      background: #fafbfd;
+      border: 1px solid #dce3ec;
+      border-radius: var(--item-radius, 14px);
+      box-shadow: 0 8px 22px rgba(46,71,107,.06);
+    }
+
+    .quick-guide.info-disclosure {
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    .explanation.info-disclosure {
+      padding: 0;
+    }
+
+    .info-disclosure summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 52px;
+      padding: 13px 16px;
+      color: var(--navy-text, #405877);
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .info-disclosure summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .info-disclosure summary::after {
+      content: "+";
+      flex: 0 0 auto;
+      width: 24px;
+      color: #77869a;
+      font-family: "Outfit", sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .info-disclosure[open] summary::after {
+      content: "−";
+    }
+
+    .info-disclosure summary:hover {
+      background: #f4f7fb;
+    }
+
+    .info-disclosure summary:focus-visible {
+      outline: 3px solid rgba(73,97,133,.18);
+      outline-offset: -3px;
+    }
+
+    .info-disclosure[open] summary {
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .info-disclosure-body {
+      padding: 14px 16px 16px;
+    }
+
+    .info-disclosure-body ol {
+      margin: 0;
+      padding-left: 1.4em;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .info-disclosure-body p {
+      margin: 0;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* Phase4: remove excessive empty space after Fate Pick result */
+    .fate-card.has-result {
+      min-height: 0;
+    }
+
+    .fate-card.has-result .fate-button {
+      margin-top: 24px;
+      margin-inline: auto;
+    }
+
+    @media (max-width: 620px) {
+      /* Keep the visual thumb larger on touch screens without changing desktop size. */
+      .boat-slider::-webkit-slider-thumb {
+        width: 32px;
+        height: 32px;
+      }
+
+      .boat-slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+      }
+
+      .info-disclosure summary {
+        min-height: 50px;
+        padding: 12px 14px;
+        font-size: 13px;
+      }
+
+      .info-disclosure-body {
+        padding: 12px 14px 14px;
+      }
+
+      .quick-guide.info-disclosure {
+        margin-bottom: 16px;
+      }
+
+      .results-grid .fate-card.has-result {
+        min-height: 0;
+      }
+
+      .fate-card.has-result .fate-button {
+        margin-top: 18px;
+      }
+    }
+
 </style>
 </head>
 <body>
@@ -1398,14 +1534,16 @@
 
     <section class="content">
       <section id="settingsScreen" class="screen" aria-label="期待度設定画面">
-        <section class="quick-guide" aria-labelledby="quickGuideTitle">
-          <h2 id="quickGuideTitle">使い方</h2>
-          <ol>
-            <li>来そうと予想した艇のゲージを上昇させてください。</li>
-            <li>「1000回シミュレーション」でパターンの多い順ランクが出ます。</li>
-            <li>最後に「運命の1点」でランクの確率に応じて1点を選出します。</li>
-          </ol>
-        </section>
+        <details class="quick-guide info-disclosure">
+          <summary>ⓘ 使い方</summary>
+          <div class="info-disclosure-body">
+            <ol>
+              <li>来そうと予想した艇のゲージを上昇させてください。</li>
+              <li>「1000回シミュレーション」でパターンの多い順ランクが出ます。</li>
+              <li>最後に「運命の1点」でランクの確率に応じて1点を選出します。</li>
+            </ol>
+          </div>
+        </details>
 
         <div class="return-notice hidden" id="returnNotice" aria-live="polite">
           前回の設定を保持しています
@@ -1437,13 +1575,15 @@
           </div>
         </section>
 
-        <section class="explanation">
-          <h3>このアプリの抽選方法</h3>
-          <p>
-            各艇に設定した期待度をもとに、1着・2着・3着を順番に抽選します。
-            これを1000回繰り返して、多く出た3連単をランキング化します。
-          </p>
-        </section>
+        <details class="explanation info-disclosure">
+          <summary>ⓘ このアプリの抽選方法</summary>
+          <div class="info-disclosure-body">
+            <p>
+              各艇に設定した期待度をもとに、1着・2着・3着を順番に抽選します。
+              これを1000回繰り返して、多く出た3連単をランキング化します。
+            </p>
+          </div>
+        </details>
       </section>
 
       <section id="resultsScreen" class="screen hidden" aria-label="シミュレーション結果画面">
@@ -1470,19 +1610,21 @@
 
         <div class="error" id="resultsErrorMessage" aria-live="polite"></div>
 
-        <section class="explanation">
-          <h3>このアプリの抽選方法</h3>
-          <p>
-            「運命の1点」は、1000回分すべてのシミュレーション結果から、
-            出現回数を確率として1点を決定します。ランキング1位が必ず選ばれるわけではありません。
-          </p>
-        </section>
+        <details class="explanation info-disclosure">
+          <summary>ⓘ このアプリの抽選方法</summary>
+          <div class="info-disclosure-body">
+            <p>
+              「運命の1点」は、1000回分すべてのシミュレーション結果から、
+              出現回数を確率として1点を決定します。ランキング1位が必ず選ばれるわけではありません。
+            </p>
+          </div>
+        </details>
       </section>
     </section>
 
     <footer class="release-footer">
       <p>本サービスは、設定した期待度をもとにランダム抽選を行う娯楽用ツールです。的中や利益を保証するものではありません。舟券の購入はご自身の判断と責任で行ってください。</p>
-      <p class="version">Luck Pick β v0.10.0 Phase2</p>
+      <p class="version">Luck Pick β v0.10.1 Phase4</p>
     </footer>
   </main>
 
