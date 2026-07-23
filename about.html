@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luck Pickについて｜運命の舟券</title>
+  <meta name="description" content="ボートレースの3連単を期待度とランダム抽選で選ぶ無料Webアプリ、Luck Pick（運命の舟券）の特徴や仕組みをご紹介します。">
+  <link rel="canonical" href="https://boaluck.github.io/luck-pick/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Outfit:wght@300;500;600;700&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon/favicon.ico" sizes="any">
+  <meta name="theme-color" content="#496185">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="Luck Pick">
+  <meta property="og:title" content="Luck Pickについて｜運命の舟券">
+  <meta property="og:description" content="期待度と運で3連単を選ぶ無料Webアプリ、Luck Pickの特徴や抽選方法をご紹介します。">
+  <meta property="og:url" content="https://boaluck.github.io/luck-pick/about.html">
+  <meta property="og:image" content="https://boaluck.github.io/luck-pick/ogp/og-image.png">
+  <style>
+    :root{--bg:#f4f7fb;--card:rgba(255,255,255,.97);--text:#172033;--sub:#697386;--line:#dde3ec;--navy:#496185;--navy-dark:#2e476b;--navy-soft:#eef3f9;--amber:#c89b3c;--shadow:0 18px 50px rgba(32,52,89,.12)}
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    body{margin:0;min-height:100vh;padding:24px 16px;background:radial-gradient(circle at top left,rgba(73,97,133,.14),transparent 34%),linear-gradient(180deg,#f9fbff 0%,var(--bg) 100%);color:var(--text);font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit}
+    .page{width:min(100%,820px);margin:0 auto;overflow:hidden;background:var(--card);border:1px solid rgba(255,255,255,.9);border-radius:24px;box-shadow:var(--shadow)}
+    .hero{padding:42px 36px 34px;text-align:center;border-bottom:1px solid var(--line)}
+    .eyebrow{margin:0 0 12px;color:var(--navy);font-family:"Outfit","Noto Sans JP",sans-serif;font-size:12px;font-weight:700;letter-spacing:.18em}
+    h1{margin:0;color:#232323;font-family:"Dela Gothic One","Noto Sans JP",sans-serif;font-size:clamp(30px,7vw,46px);font-weight:400;line-height:1.35;letter-spacing:.04em}.title-link{display:inline-block;color:inherit;text-decoration:none;border-radius:10px;transition:opacity .16s ease,transform .16s ease,box-shadow .16s ease}.title-link:hover{opacity:.84}.title-link:active{transform:scale(.985)}.title-link:focus-visible{outline:none;box-shadow:0 0 0 4px rgba(73,97,133,.16)}
+    .luck{color:var(--amber);font-size:1.2em}
+    .hero-copy{max-width:600px;margin:20px auto 0;color:var(--sub);font-size:15px;line-height:1.9}
+    .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border-radius:14px;text-decoration:none;font-weight:800}
+    .button-primary{color:#fff;background:linear-gradient(180deg,#496185,#2e476b);box-shadow:0 7px 16px rgba(46,71,107,.18)}
+    .button-secondary{color:var(--navy);background:var(--navy-soft);border:1px solid #cbd7e7}
+    .content{padding:30px 36px 38px}
+    .section{margin-top:18px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(46,71,107,.07)}
+    .section:first-child{margin-top:0}
+    .section-label{margin:0 0 6px;color:var(--amber);font-family:"Outfit","Noto Sans JP",sans-serif;font-size:12px;font-weight:700;letter-spacing:.12em}
+    h2{margin:0 0 13px;font-size:22px;line-height:1.5}
+    .section p{margin:0;color:var(--sub);font-size:14px;line-height:1.9}
+    .section p+p{margin-top:12px}
+    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:18px}
+    .step{padding:17px 15px;background:#fafbfd;border:1px solid #dce3ec;border-radius:14px}
+    .step-number{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;margin-bottom:10px;color:#fff;background:var(--navy);border-radius:50%;font-family:"Outfit",sans-serif;font-weight:700}
+    .step strong{display:block;margin-bottom:6px;font-size:14px}
+    .step span{display:block;color:var(--sub);font-size:12px;line-height:1.7}
+    .feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+    .feature{padding:18px;background:#fafbfd;border:1px solid #dce3ec;border-radius:14px}
+    .feature h3{margin:0 0 7px;font-size:15px}
+    .feature p{font-size:12px;line-height:1.75}
+    .notice{background:var(--navy-soft);border-color:#cbd7e7}
+    .footer{padding:22px 24px calc(24px + env(safe-area-inset-bottom));text-align:center;background:#f8faff;border-top:1px solid var(--line)}
+    .footer p{margin:0;color:#8791a3;font-size:11px;line-height:1.7}
+    .footer-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 0;margin-top:12px}
+    .footer-nav span,.footer-nav a{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;color:#536984;font-size:12px;font-weight:700;text-decoration:none;white-space:nowrap}
+    .footer-nav>*+*{border-left:1px solid #cfd8e5}
+    @media(max-width:620px){body{padding:10px}.page{border-radius:20px}.hero{padding:30px 18px 26px}.hero-copy{font-size:14px}.content{padding:18px 14px 24px}.section{padding:19px 16px;border-radius:16px}h2{font-size:19px}.steps,.feature-grid{grid-template-columns:1fr}.hero-actions{display:grid}.button{width:100%}.footer-nav span,.footer-nav a{padding:5px 9px;font-size:11px}.footer-nav>*:nth-child(3){border-left:0}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">ABOUT LUCK PICK</p>
+      <h1><a class="title-link" href="./index.html" aria-label="Luck Pickのアプリ画面に戻る"><span class="luck">運</span>命の舟券</a></h1>
+      <p class="hero-copy">Luck Pickは、自分の予想を期待度ゲージに込め、最後は少しだけ運に任せて3連単を選ぶ無料のボートレースシミュレーションアプリです。</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="./index.html">アプリを使う</a>
+        <a class="button button-secondary" href="#how-it-works">抽選方法を見る</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="section">
+        <p class="section-label">WHAT IS LUCK PICK?</p>
+        <h2>予想だけでも、運だけでもない。</h2>
+        <p>レースを考えても、最後の買い目がなかなか決められない。そんなとき、自分が感じた期待の強さを残しながら、最後の一押しを運に任せられるツールとしてLuck Pickを作りました。</p>
+        <p>専門的な予想データを提供するサービスではなく、ユーザー自身の感覚をゲージに反映して楽しむためのシンプルなWebアプリです。</p>
+      </section>
+
+      <section class="section" id="how-it-works">
+        <p class="section-label">HOW IT WORKS</p>
+        <h2>抽選の流れ</h2>
+        <p>設定した期待度を重みとして、1着・2着・3着を順番に抽選します。一度選ばれた艇は次の着順候補から除外され、残った艇の期待度で再計算されます。</p>
+        <div class="steps">
+          <div class="step"><span class="step-number">1</span><strong>期待度を設定</strong><span>来そうだと感じる艇のゲージを上げます。</span></div>
+          <div class="step"><span class="step-number">2</span><strong>1000回抽選</strong><span>同じ条件で抽選を繰り返し、3連単を集計します。</span></div>
+          <div class="step"><span class="step-number">3</span><strong>運命の1点</strong><span>1000回分すべての結果から、出現回数に応じて1点を選びます。</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">FEATURES</p>
+        <h2>Luck Pickの特徴</h2>
+        <div class="feature-grid">
+          <div class="feature"><h3>期待度ゲージ</h3><p>各艇に対して感じている期待の強さを、1〜100のゲージで設定できます。</p></div>
+          <div class="feature"><h3>ランキング表示</h3><p>1000回のシミュレーションで多く出現した3連単を上位から確認できます。</p></div>
+          <div class="feature"><h3>運命の1点</h3><p>ランキング1位に固定せず、全結果の出現回数を確率として最後の1点を抽選します。</p></div>
+          <div class="feature"><h3>無料・登録不要</h3><p>アカウント登録やインストールをせず、ブラウザからそのまま利用できます。</p></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="section-label">FOR YOU</p>
+        <h2>こんなときに</h2>
+        <p>買い目がなかなか決まらないとき、本命と穴で迷っているとき、最後の1点だけ運に任せたいときなどに、気軽なシミュレーションとしてお楽しみください。</p>
+      </section>
+
+      <section class="section notice">
+        <p class="section-label">IMPORTANT</p>
+        <h2>ご利用にあたって</h2>
+        <p>Luck Pickは、設定した期待度をもとにランダム抽選を行う娯楽用ツールです。AIによるレース予想や、的中・利益を保証するサービスではありません。舟券の購入はご自身の判断と責任で行ってください。</p>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <p>Luck Pick β v0.10.6 Phase2</p>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <span>📖 アプリについて</span><span>📜 更新履歴</span><span>🔒 プライバシーポリシー</span><span>✉ お問い合わせ</span>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>
