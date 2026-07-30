@@ -1,0 +1,68 @@
+{
+  "date": "2026-07-30",
+  "updatedAt": "2026-07-30T18:20:43+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260730",
+  "status": "ok",
+  "races": [
+    {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "マクール杯 ヴィーナスシリーズ第９戦"
+    },
+    {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "オール進入固定ＲＳ第１５戦スカパー第２８回ＪＬＣ杯"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "熱いぜ！夏男大集合"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "夏盛り！！三国観光産業社長杯"
+    },
+    {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "第３１回オーシャンカップ"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "男女Ｗ優勝戦 大阪スポーツカップ"
+    },
+    {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "山陽新聞社杯"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "徳山商工会議所青年部（青友会）５０周年記念競走"
+    },
+    {
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "九州スポーツ杯"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "西部ボートレース記者クラブ杯"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "中日スポーツ杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ大村 １"
+    }
+  ]
+}

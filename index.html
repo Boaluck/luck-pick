@@ -390,7 +390,16 @@ html[data-theme="dark"] .mini-boat.boat-result-1{border-color:#8d97a6;box-shadow
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const data = await response.json();
           const today = this.getJapanDateString();
-          const races = Array.isArray(data.races) ? data.races : [];
+          const races = Array.isArray(data.races)
+            ? data.races.filter(race =>
+                race &&
+                this.allVenues.some(([code, name]) =>
+                  code === race.stadiumCode && name === race.stadiumName
+                ) &&
+                typeof race.raceTitle === "string" &&
+                race.raceTitle.trim()
+              )
+            : [];
           if (data.date !== today || races.length === 0) {
             throw new Error("本日分の開催情報ではありません");
           }
@@ -404,7 +413,7 @@ html[data-theme="dark"] .mini-boat.boat-result-1{border-color:#8d97a6;box-shadow
           AppState.raceInfo.dataReady = false;
           AppState.raceInfo.races = [];
           this.populateVenueOptions([], true);
-          this.setStatus("本日の開催情報を取得できませんでした。レース場とレース名を手動で入力できます。", "warning");
+          this.setStatus("本日の開催情報を取得できませんでした。全24場から選択し、レース名を手動入力できます。", "warning");
           Elements.raceTitleInput.placeholder = "レース名を手入力してください";
           Elements.raceTitleHelper.textContent = "日次データが未更新、または取得に失敗しています。";
         }
