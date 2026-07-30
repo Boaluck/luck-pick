@@ -1,13 +1,23 @@
 {
-  "date": "2026-07-30",
-  "updatedAt": "2026-07-30T18:27:25+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260730",
+  "date": "2026-07-31",
+  "updatedAt": "2026-07-31T05:06:28+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260731",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "マクール杯 ヴィーナスシリーズ第９戦"
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "オールレディース 第５９回日刊スポーツ杯"
+    },
+    {
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "多摩川のおんなカップ"
+    },
+    {
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "マスターズリーグ第４戦★サッポロビールカップ"
     },
     {
       "stadiumCode": "08",
@@ -30,6 +40,11 @@
       "raceTitle": "第３１回オーシャンカップ"
     },
     {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "ダイスポカップ"
+    },
+    {
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "男女Ｗ優勝戦 大阪スポーツカップ"
@@ -48,6 +63,11 @@
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "九州スポーツ杯"
+    },
+    {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "ギラヴァンツ北九州杯"
     },
     {
       "stadiumCode": "22",
