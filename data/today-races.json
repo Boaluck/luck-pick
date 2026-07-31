@@ -1,7 +1,7 @@
 {
-  "date": "2026-07-31",
-  "updatedAt": "2026-07-31T05:06:28+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260731",
+  "date": "2026-08-01",
+  "updatedAt": "2026-08-01T05:12:02+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260801",
   "status": "ok",
   "races": [
     {
@@ -60,11 +60,6 @@
       "raceTitle": "徳山商工会議所青年部（青友会）５０周年記念競走"
     },
     {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "九州スポーツ杯"
-    },
-    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ギラヴァンツ北九州杯"
@@ -78,11 +73,6 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "中日スポーツ杯"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ大村 １"
     }
   ]
 }
