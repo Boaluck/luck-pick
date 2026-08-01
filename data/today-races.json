@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-01",
-  "updatedAt": "2026-08-01T05:12:02+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260801",
+  "date": "2026-08-02",
+  "updatedAt": "2026-08-02T03:15:07+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260802",
   "status": "ok",
   "races": [
     {
@@ -25,16 +25,6 @@
       "raceTitle": "オール進入固定ＲＳ第１５戦スカパー第２８回ＪＬＣ杯"
     },
     {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "熱いぜ！夏男大集合"
-    },
-    {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "夏盛り！！三国観光産業社長杯"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "第３１回オーシャンカップ"
@@ -55,14 +45,14 @@
       "raceTitle": "山陽新聞社杯"
     },
     {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "徳山商工会議所青年部（青友会）５０周年記念競走"
-    },
-    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ギラヴァンツ北九州杯"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ＢＴＳ高城開設２８周年記念"
     },
     {
       "stadiumCode": "22",
