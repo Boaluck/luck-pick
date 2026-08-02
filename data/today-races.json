@@ -1,13 +1,18 @@
 {
-  "date": "2026-08-02",
-  "updatedAt": "2026-08-02T03:15:07+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260802",
+  "date": "2026-08-03",
+  "updatedAt": "2026-08-03T03:15:33+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260803",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "オールレディース 第５９回日刊スポーツ杯"
+    },
+    {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "第３９回キリンカップ"
     },
     {
       "stadiumCode": "05",
@@ -25,24 +30,19 @@
       "raceTitle": "オール進入固定ＲＳ第１５戦スカパー第２８回ＪＬＣ杯"
     },
     {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "第３１回オーシャンカップ"
-    },
-    {
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "ダイスポカップ"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "男女Ｗ優勝戦 大阪スポーツカップ"
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第１１回ポカリスエットカップ"
     },
     {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "山陽新聞社杯"
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "オラレ下関オープン１２周年記念 山口新聞社杯"
     },
     {
       "stadiumCode": "20",
