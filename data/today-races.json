@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-03",
-  "updatedAt": "2026-08-03T03:15:33+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260803",
+  "date": "2026-08-04",
+  "updatedAt": "2026-08-04T05:19:39+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260804",
   "status": "ok",
   "races": [
     {
@@ -30,6 +30,16 @@
       "raceTitle": "オール進入固定ＲＳ第１５戦スカパー第２８回ＪＬＣ杯"
     },
     {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "ＢＯＡＴＢｏｙカップ"
+    },
+    {
+      "stadiumCode": "12",
+      "stadiumName": "住之江",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
+    },
+    {
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "ダイスポカップ"
@@ -45,24 +55,9 @@
       "raceTitle": "オラレ下関オープン１２周年記念 山口新聞社杯"
     },
     {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "ギラヴァンツ北九州杯"
-    },
-    {
       "stadiumCode": "21",
       "stadiumName": "芦屋",
       "raceTitle": "ＢＴＳ高城開設２８周年記念"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "西部ボートレース記者クラブ杯"
-    },
-    {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "中日スポーツ杯"
     }
   ]
 }
