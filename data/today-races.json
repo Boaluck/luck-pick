@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-04",
-  "updatedAt": "2026-08-04T05:19:39+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260804",
+  "date": "2026-08-05",
+  "updatedAt": "2026-08-05T05:14:13+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260805",
   "status": "ok",
   "races": [
     {
@@ -25,9 +25,9 @@
       "raceTitle": "マスターズリーグ第４戦★サッポロビールカップ"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "オール進入固定ＲＳ第１５戦スカパー第２８回ＪＬＣ杯"
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "開設１１周年記念ＢＴＳ名張モンスターカップ"
     },
     {
       "stadiumCode": "10",
@@ -40,9 +40,9 @@
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "ダイスポカップ"
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "第５７回渦王杯競走"
     },
     {
       "stadiumCode": "17",
