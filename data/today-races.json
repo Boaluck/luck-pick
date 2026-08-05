@@ -1,28 +1,18 @@
 {
-  "date": "2026-08-05",
-  "updatedAt": "2026-08-05T05:14:13+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260805",
+  "date": "2026-08-06",
+  "updatedAt": "2026-08-06T05:19:57+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260806",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "オールレディース 第５９回日刊スポーツ杯"
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "アサヒスーパードライカップ"
     },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
       "raceTitle": "第３９回キリンカップ"
-    },
-    {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "多摩川のおんなカップ"
-    },
-    {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "マスターズリーグ第４戦★サッポロビールカップ"
     },
     {
       "stadiumCode": "09",
@@ -50,14 +40,19 @@
       "raceTitle": "第１１回ポカリスエットカップ"
     },
     {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "第４０回レディースチャンピオン"
+    },
+    {
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "オラレ下関オープン１２周年記念 山口新聞社杯"
     },
     {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "ＢＴＳ高城開設２８周年記念"
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長賞"
     }
   ]
 }
