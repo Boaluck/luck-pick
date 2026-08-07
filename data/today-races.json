@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-07",
-  "updatedAt": "2026-08-07T10:39:28+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260807",
+  "date": "2026-08-08",
+  "updatedAt": "2026-08-08T02:36:42+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260808",
   "status": "ok",
   "races": [
     {
@@ -13,6 +13,11 @@
       "stadiumCode": "04",
       "stadiumName": "平和島",
       "raceTitle": "第３９回キリンカップ"
+    },
+    {
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "第３３回神奈川新聞社賞"
     },
     {
       "stadiumCode": "09",
@@ -38,6 +43,11 @@
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "サッポロビールカップ２０２６"
+    },
+    {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "第４４回天領杯"
     },
     {
       "stadiumCode": "17",
