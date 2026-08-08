@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-08",
-  "updatedAt": "2026-08-08T02:36:42+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260808",
+  "date": "2026-08-09",
+  "updatedAt": "2026-08-09T01:01:13+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260809",
   "status": "ok",
   "races": [
     {
@@ -10,9 +10,9 @@
       "raceTitle": "アサヒスーパードライカップ"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "第３９回キリンカップ"
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第４８回大江戸賞"
     },
     {
       "stadiumCode": "05",
@@ -35,6 +35,11 @@
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
     },
     {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "第５４回オール兵庫王座決定戦"
+    },
+    {
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "第５７回渦王杯競走"
@@ -50,24 +55,19 @@
       "raceTitle": "第４４回天領杯"
     },
     {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "第１１回ポカリスエットカップ"
-    },
-    {
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "第４０回レディースチャンピオン"
     },
     {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "オラレ下関オープン１２周年記念 山口新聞社杯"
-    },
-    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "日刊スポーツ杯お盆特選競走"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "お盆特選〜がばい王者決定戦〜"
     },
     {
       "stadiumCode": "24",
