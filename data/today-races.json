@@ -1,13 +1,18 @@
 {
-  "date": "2026-08-11",
-  "updatedAt": "2026-08-11T01:03:12+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260811",
+  "date": "2026-08-12",
+  "updatedAt": "2026-08-12T01:03:39+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260812",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "第６０回報知新聞社杯 お盆レース"
+    },
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "第４９回戸田ボート大賞・サンケイスポーツ杯"
     },
     {
       "stadiumCode": "03",
@@ -18,11 +23,6 @@
       "stadiumCode": "04",
       "stadiumName": "平和島",
       "raceTitle": "第６６回デイリースポーツサマーカップ"
-    },
-    {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "第３３回神奈川新聞社賞"
     },
     {
       "stadiumCode": "06",
@@ -45,19 +45,9 @@
       "raceTitle": "第５４回オール兵庫王座決定戦"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "サッポロビールカップ２０２６"
-    },
-    {
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "第４４回天領杯"
-    },
-    {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "第４０回レディースチャンピオン"
     },
     {
       "stadiumCode": "19",
@@ -75,9 +65,19 @@
       "raceTitle": "九州スポーツ杯争奪オール九州選抜戦"
     },
     {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "お盆特選レース"
+    },
+    {
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "お盆特選〜がばい王者決定戦〜"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "オールレディース競走"
     }
   ]
 }
