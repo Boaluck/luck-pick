@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-13",
-  "updatedAt": "2026-08-13T01:02:32+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260813",
+  "date": "2026-08-14",
+  "updatedAt": "2026-08-14T01:02:04+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260814",
   "status": "ok",
   "races": [
     {
@@ -40,6 +40,11 @@
       "raceTitle": "名鉄杯争奪２０２６納涼お盆レース"
     },
     {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "第５４回しぶき賞"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "大阪ダービー第４３回摂河泉競走"
@@ -50,9 +55,9 @@
       "raceTitle": "第５４回オール兵庫王座決定戦"
     },
     {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "第４４回天領杯"
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第５６回スポーツニッポン杯"
     },
     {
       "stadiumCode": "19",
