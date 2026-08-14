@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-14",
-  "updatedAt": "2026-08-14T01:02:04+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260814",
+  "date": "2026-08-15",
+  "updatedAt": "2026-08-15T00:56:39+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260815",
   "status": "ok",
   "races": [
     {
@@ -25,6 +25,11 @@
       "raceTitle": "第６６回デイリースポーツサマーカップ"
     },
     {
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "ＢＴＳ大郷開設記念第２８回大郷葉月杯"
+    },
+    {
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "中日スポーツ後援 湖西市長杯争奪戦 黒潮杯"
@@ -40,9 +45,19 @@
       "raceTitle": "名鉄杯争奪２０２６納涼お盆レース"
     },
     {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "中京スポーツ納涼しぶき杯争奪戦"
+    },
+    {
       "stadiumCode": "10",
       "stadiumName": "三国",
       "raceTitle": "第５４回しぶき賞"
+    },
+    {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "滋賀県知事杯争奪 第３０回びわこカップ"
     },
     {
       "stadiumCode": "12",
@@ -50,14 +65,14 @@
       "raceTitle": "大阪ダービー第４３回摂河泉競走"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "第５４回オール兵庫王座決定戦"
-    },
-    {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第５６回スポーツニッポン杯"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "黒神杯争奪戦"
     },
     {
       "stadiumCode": "19",
@@ -73,11 +88,6 @@
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "お盆特選レース"
-    },
-    {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "お盆特選〜がばい王者決定戦〜"
     },
     {
       "stadiumCode": "24",
