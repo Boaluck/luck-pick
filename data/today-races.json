@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-15",
-  "updatedAt": "2026-08-15T00:56:39+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260815",
+  "date": "2026-08-16",
+  "updatedAt": "2026-08-16T00:26:11+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260816",
   "status": "ok",
   "races": [
     {
@@ -13,11 +13,6 @@
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "第４９回戸田ボート大賞・サンケイスポーツ杯"
-    },
-    {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "第４８回大江戸賞"
     },
     {
       "stadiumCode": "04",
@@ -40,11 +35,6 @@
       "raceTitle": "第１０回愛知・名古屋アジア・アジアパラ大会協賛競走"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "名鉄杯争奪２０２６納涼お盆レース"
-    },
-    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "中京スポーツ納涼しぶき杯争奪戦"
@@ -65,6 +55,11 @@
       "raceTitle": "大阪ダービー第４３回摂河泉競走"
     },
     {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "ＢＴＳ土佐開設３０周年記念競走"
+    },
+    {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第５６回スポーツニッポン杯"
@@ -78,11 +73,6 @@
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "ＭＮＢＲ下関４ｔｈふく〜る下関オープン１４周年記念"
-    },
-    {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "九州スポーツ杯争奪オール九州選抜戦"
     },
     {
       "stadiumCode": "22",
