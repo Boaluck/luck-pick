@@ -1,38 +1,18 @@
 {
-  "date": "2026-08-16",
-  "updatedAt": "2026-08-16T00:26:11+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260816",
+  "date": "2026-08-17",
+  "updatedAt": "2026-08-17T00:26:24+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260817",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第６０回報知新聞社杯 お盆レース"
-    },
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "第４９回戸田ボート大賞・サンケイスポーツ杯"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "第６６回デイリースポーツサマーカップ"
-    },
-    {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "ＢＴＳ大郷開設記念第２８回大郷葉月杯"
-    },
-    {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "中日スポーツ後援 湖西市長杯争奪戦 黒潮杯"
-    },
-    {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "第１０回愛知・名古屋アジア・アジアパラ大会協賛競走"
     },
     {
       "stadiumCode": "09",
@@ -55,9 +35,19 @@
       "raceTitle": "大阪ダービー第４３回摂河泉競走"
     },
     {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "ＪＡＮＢＡＲＩ．ＴＶ ういちの放浪記杯"
+    },
+    {
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "ＢＴＳ土佐開設３０周年記念競走"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "ＲＮＣ杯争奪 サマーチャンピオンレース"
     },
     {
       "stadiumCode": "17",
@@ -70,9 +60,9 @@
       "raceTitle": "黒神杯争奪戦"
     },
     {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "ＭＮＢＲ下関４ｔｈふく〜る下関オープン１４周年記念"
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "山口シネマカップ"
     },
     {
       "stadiumCode": "22",
