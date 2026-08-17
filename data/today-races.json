@@ -1,14 +1,9 @@
 {
-  "date": "2026-08-17",
-  "updatedAt": "2026-08-17T00:26:24+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260817",
+  "date": "2026-08-18",
+  "updatedAt": "2026-08-18T00:29:56+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260818",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "第４９回戸田ボート大賞・サンケイスポーツ杯"
-    },
     {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
@@ -50,6 +45,11 @@
       "raceTitle": "ＲＮＣ杯争奪 サマーチャンピオンレース"
     },
     {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "ヴィーナスシリーズ第１０戦 第１６回クラリスカップ"
+    },
+    {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第５６回スポーツニッポン杯"
@@ -63,16 +63,6 @@
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "山口シネマカップ"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "お盆特選レース"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "オールレディース競走"
     }
   ]
 }
