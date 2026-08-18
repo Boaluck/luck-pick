@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-18",
-  "updatedAt": "2026-08-18T00:29:56+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260818",
+  "date": "2026-08-19",
+  "updatedAt": "2026-08-19T00:36:34+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260819",
   "status": "ok",
   "races": [
     {
@@ -23,11 +23,6 @@
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "滋賀県知事杯争奪 第３０回びわこカップ"
-    },
-    {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "大阪ダービー第４３回摂河泉競走"
     },
     {
       "stadiumCode": "13",
@@ -58,6 +53,11 @@
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "黒神杯争奪戦"
+    },
+    {
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "日刊スポーツ杯"
     },
     {
       "stadiumCode": "20",
