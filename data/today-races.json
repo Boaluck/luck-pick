@@ -1,9 +1,19 @@
 {
-  "date": "2026-08-19",
-  "updatedAt": "2026-08-19T00:36:34+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260819",
+  "date": "2026-08-20",
+  "updatedAt": "2026-08-20T00:36:11+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260820",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "ファイティングボートガイド杯"
+    },
+    {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "ａｕじぶん銀行賞"
+    },
     {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
@@ -13,11 +23,6 @@
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "中京スポーツ納涼しぶき杯争奪戦"
-    },
-    {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "第５４回しぶき賞"
     },
     {
       "stadiumCode": "11",
@@ -30,11 +35,6 @@
       "raceTitle": "ＪＡＮＢＡＲＩ．ＴＶ ういちの放浪記杯"
     },
     {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "ＢＴＳ土佐開設３０周年記念競走"
-    },
-    {
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "ＲＮＣ杯争奪 サマーチャンピオンレース"
@@ -43,11 +43,6 @@
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "ヴィーナスシリーズ第１０戦 第１６回クラリスカップ"
-    },
-    {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "第５６回スポーツニッポン杯"
     },
     {
       "stadiumCode": "18",
@@ -63,6 +58,21 @@
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "山口シネマカップ"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ニッカン・コム杯"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "ＢＴＳ三日月開設３０周年記念"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ミッドナイトボートレースｉｎ大村 ７"
     }
   ]
 }
