@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-20",
-  "updatedAt": "2026-08-20T00:36:11+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260820",
+  "date": "2026-08-21",
+  "updatedAt": "2026-08-21T00:38:34+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260821",
   "status": "ok",
   "races": [
     {
@@ -10,24 +10,24 @@
       "raceTitle": "ファイティングボートガイド杯"
     },
     {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第２６回スカッとさわやか杯"
+    },
+    {
       "stadiumCode": "04",
       "stadiumName": "平和島",
       "raceTitle": "ａｕじぶん銀行賞"
     },
     {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "ＢＴＳ大郷開設記念第２８回大郷葉月杯"
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "デイリースポーツ杯"
     },
     {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "中京スポーツ納涼しぶき杯争奪戦"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "滋賀県知事杯争奪 第３０回びわこカップ"
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "きょうも、あなたと 名鉄バス杯争奪戦"
     },
     {
       "stadiumCode": "13",
@@ -45,19 +45,9 @@
       "raceTitle": "ヴィーナスシリーズ第１０戦 第１６回クラリスカップ"
     },
     {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "黒神杯争奪戦"
-    },
-    {
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "日刊スポーツ杯"
-    },
-    {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "山口シネマカップ"
     },
     {
       "stadiumCode": "21",
