@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-21",
-  "updatedAt": "2026-08-21T00:38:34+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260821",
+  "date": "2026-08-22",
+  "updatedAt": "2026-08-22T00:38:28+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260822",
   "status": "ok",
   "races": [
     {
@@ -30,14 +30,9 @@
       "raceTitle": "きょうも、あなたと 名鉄バス杯争奪戦"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "ＪＡＮＢＡＲＩ．ＴＶ ういちの放浪記杯"
-    },
-    {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "ＲＮＣ杯争奪 サマーチャンピオンレース"
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "中日新聞・中日スポーツ 第４０回中日カップ"
     },
     {
       "stadiumCode": "16",
@@ -50,9 +45,19 @@
       "raceTitle": "日刊スポーツ杯"
     },
     {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "ビッグベアーズカップ"
+    },
+    {
       "stadiumCode": "21",
       "stadiumName": "芦屋",
       "raceTitle": "ニッカン・コム杯"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "ライジングゼファーフクオカ杯"
     },
     {
       "stadiumCode": "23",
