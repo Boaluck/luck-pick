@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-22",
-  "updatedAt": "2026-08-22T00:38:28+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260822",
+  "date": "2026-08-23",
+  "updatedAt": "2026-08-23T00:26:19+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260823",
   "status": "ok",
   "races": [
     {
@@ -38,6 +38,11 @@
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "ヴィーナスシリーズ第１０戦 第１６回クラリスカップ"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "ｔｙｓテレビ山口杯争奪戦"
     },
     {
       "stadiumCode": "19",
