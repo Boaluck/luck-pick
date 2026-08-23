@@ -1,23 +1,13 @@
 {
-  "date": "2026-08-23",
-  "updatedAt": "2026-08-23T00:26:19+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260823",
+  "date": "2026-08-24",
+  "updatedAt": "2026-08-24T00:27:32+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260824",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "ファイティングボートガイド杯"
-    },
     {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第２６回スカッとさわやか杯"
-    },
-    {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "ａｕじぶん銀行賞"
     },
     {
       "stadiumCode": "06",
@@ -35,9 +25,19 @@
       "raceTitle": "中日新聞・中日スポーツ 第４０回中日カップ"
     },
     {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "ヴィーナスシリーズ第１０戦 第１６回クラリスカップ"
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "ヴィーナスシリーズ第１１戦三国プリンセスカップ"
+    },
+    {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "スポーツニッポン杯しらなみ賞競走〜まくって〜"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "ＢＴＳまるがめ開設４０周年記念 報知グリーンカップ"
     },
     {
       "stadiumCode": "18",
@@ -63,16 +63,6 @@
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "ライジングゼファーフクオカ杯"
-    },
-    {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "ＢＴＳ三日月開設３０周年記念"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "ミッドナイトボートレースｉｎ大村 ７"
     }
   ]
 }
