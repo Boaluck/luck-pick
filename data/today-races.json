@@ -1,9 +1,14 @@
 {
-  "date": "2026-08-24",
-  "updatedAt": "2026-08-24T00:27:32+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260824",
+  "date": "2026-08-25",
+  "updatedAt": "2026-08-25T00:44:30+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260825",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "第７２回ボートレースメモリアル"
+    },
     {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
@@ -15,14 +20,14 @@
       "raceTitle": "デイリースポーツ杯"
     },
     {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "きょうも、あなたと 名鉄バス杯争奪戦"
-    },
-    {
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "中日新聞・中日スポーツ 第４０回中日カップ"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "男女Ｗ優勝戦"
     },
     {
       "stadiumCode": "10",
@@ -40,14 +45,14 @@
       "raceTitle": "ＢＴＳまるがめ開設４０周年記念 報知グリーンカップ"
     },
     {
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第５３回岩田杯"
+    },
+    {
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "ｔｙｓテレビ山口杯争奪戦"
-    },
-    {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "日刊スポーツ杯"
     },
     {
       "stadiumCode": "20",
