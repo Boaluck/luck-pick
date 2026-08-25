@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-25",
-  "updatedAt": "2026-08-25T00:44:30+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260825",
+  "date": "2026-08-26",
+  "updatedAt": "2026-08-26T00:49:23+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260826",
   "status": "ok",
   "races": [
     {
@@ -35,9 +35,19 @@
       "raceTitle": "ヴィーナスシリーズ第１１戦三国プリンセスカップ"
     },
     {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "ボートピア京都やわた開設１９周年記念"
+    },
+    {
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "スポーツニッポン杯しらなみ賞競走〜まくって〜"
+    },
+    {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "「あらたえエール シャインホップ」杯競走"
     },
     {
       "stadiumCode": "15",
@@ -58,11 +68,6 @@
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ビッグベアーズカップ"
-    },
-    {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "ニッカン・コム杯"
     },
     {
       "stadiumCode": "22",
