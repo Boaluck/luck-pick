@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-26",
-  "updatedAt": "2026-08-26T00:49:23+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260826",
+  "date": "2026-08-27",
+  "updatedAt": "2026-08-27T01:21:58+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260827",
   "status": "ok",
   "races": [
     {
@@ -10,14 +10,14 @@
       "raceTitle": "第７２回ボートレースメモリアル"
     },
     {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "第２６回スカッとさわやか杯"
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "オラレ刈羽開設１０周年記念第６４回東中スポーツ杯"
     },
     {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "デイリースポーツ杯"
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "日刊ゲンダイ杯争奪 蒲郡トトまるナイト特別"
     },
     {
       "stadiumCode": "08",
@@ -63,11 +63,6 @@
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "ｔｙｓテレビ山口杯争奪戦"
-    },
-    {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "ビッグベアーズカップ"
     },
     {
       "stadiumCode": "22",
