@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-28",
-  "updatedAt": "2026-08-28T09:19:06+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260828",
+  "date": "2026-08-29",
+  "updatedAt": "2026-08-29T08:58:05+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260829",
   "status": "ok",
   "races": [
     {
@@ -50,14 +50,19 @@
       "raceTitle": "「あらたえエール シャインホップ」杯競走"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "ＢＴＳまるがめ開設４０周年記念 報知グリーンカップ"
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "ＢＴＳ松江開設２６周年記念競走"
     },
     {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第５３回岩田杯"
+    },
+    {
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "ＢＴＳながとオープン６周年記念 新東通信杯"
     },
     {
       "stadiumCode": "23",
