@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-29",
-  "updatedAt": "2026-08-29T08:58:05+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260829",
+  "date": "2026-08-30",
+  "updatedAt": "2026-08-30T03:15:03+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260830",
   "status": "ok",
   "races": [
     {
@@ -20,9 +20,19 @@
       "raceTitle": "第１２回ホットマンカップ"
     },
     {
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "オールレディース静岡クラウンメロン杯"
+    },
+    {
       "stadiumCode": "07",
       "stadiumName": "蒲郡",
       "raceTitle": "日刊ゲンダイ杯争奪 蒲郡トトまるナイト特別"
+    },
+    {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "誠進社杯"
     },
     {
       "stadiumCode": "09",
@@ -30,19 +40,9 @@
       "raceTitle": "男女Ｗ優勝戦"
     },
     {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "ヴィーナスシリーズ第１１戦三国プリンセスカップ"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "ボートピア京都やわた開設１９周年記念"
-    },
-    {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "スポーツニッポン杯しらなみ賞競走〜まくって〜"
     },
     {
       "stadiumCode": "14",
@@ -63,6 +63,11 @@
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "ＢＴＳながとオープン６周年記念 新東通信杯"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ギラヴァンツ北九州カップ"
     },
     {
       "stadiumCode": "23",
