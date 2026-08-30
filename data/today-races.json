@@ -1,14 +1,9 @@
 {
-  "date": "2026-08-30",
-  "updatedAt": "2026-08-30T03:15:03+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260830",
+  "date": "2026-08-31",
+  "updatedAt": "2026-08-31T03:31:22+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260831",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第７２回ボートレースメモリアル"
-    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
@@ -35,19 +30,9 @@
       "raceTitle": "誠進社杯"
     },
     {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "男女Ｗ優勝戦"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "ボートピア京都やわた開設１９周年記念"
-    },
-    {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "「あらたえエール シャインホップ」杯競走"
     },
     {
       "stadiumCode": "16",
@@ -55,14 +40,19 @@
       "raceTitle": "ＢＴＳ松江開設２６周年記念競走"
     },
     {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "第５３回岩田杯"
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ徳山"
     },
     {
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "ＢＴＳながとオープン６周年記念 新東通信杯"
+    },
+    {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "マスターズリーグ第５戦九州スポーツ杯"
     },
     {
       "stadiumCode": "21",
