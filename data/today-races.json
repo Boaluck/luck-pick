@@ -1,14 +1,9 @@
 {
-  "date": "2026-08-31",
-  "updatedAt": "2026-08-31T03:31:22+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260831",
+  "date": "2026-09-01",
+  "updatedAt": "2026-09-01T05:43:54+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260901",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "オラレ刈羽開設１０周年記念第６４回東中スポーツ杯"
-    },
     {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
@@ -30,9 +25,14 @@
       "raceTitle": "誠進社杯"
     },
     {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "ボートピア京都やわた開設１９周年記念"
+      "stadiumCode": "12",
+      "stadiumName": "住之江",
+      "raceTitle": "日刊スポーツ杯争奪第３０回ブルースターカップ"
+    },
+    {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "尼崎あきんど倶楽部３０周年記念杯"
     },
     {
       "stadiumCode": "16",
@@ -60,9 +60,9 @@
       "raceTitle": "ギラヴァンツ北九州カップ"
     },
     {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "サマーモーニングバトル"
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ミッドナイトボートレースｉｎ大村 ８"
     }
   ]
 }
