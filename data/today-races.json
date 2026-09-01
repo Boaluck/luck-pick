@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-01",
-  "updatedAt": "2026-09-01T05:43:54+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260901",
+  "date": "2026-09-02",
+  "updatedAt": "2026-09-02T03:16:58+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260902",
   "status": "ok",
   "races": [
     {
@@ -13,11 +13,6 @@
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "オールレディース静岡クラウンメロン杯"
-    },
-    {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "日刊ゲンダイ杯争奪 蒲郡トトまるナイト特別"
     },
     {
       "stadiumCode": "08",
@@ -40,6 +35,11 @@
       "raceTitle": "ＢＴＳ松江開設２６周年記念競走"
     },
     {
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第１７回ＰａｙＰａｙ銀行賞"
+    },
+    {
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ徳山"
@@ -58,6 +58,11 @@
       "stadiumCode": "21",
       "stadiumName": "芦屋",
       "raceTitle": "ギラヴァンツ北九州カップ"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "三都市対抗戦 福岡観光コンベンションビューロー杯"
     },
     {
       "stadiumCode": "24",
