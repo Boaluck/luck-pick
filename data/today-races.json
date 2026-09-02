@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-02",
-  "updatedAt": "2026-09-02T03:16:58+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260902",
+  "date": "2026-09-03",
+  "updatedAt": "2026-09-03T03:30:05+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260903",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "第１２回ホットマンカップ"
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "サッポロビールカップ"
     },
     {
       "stadiumCode": "06",
@@ -18,6 +18,16 @@
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "誠進社杯"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "開設７４周年記念 ツッキー王座決定戦"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "三国港解禁ふくい甘えび杯"
     },
     {
       "stadiumCode": "12",
@@ -53,11 +63,6 @@
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "マスターズリーグ第５戦九州スポーツ杯"
-    },
-    {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "ギラヴァンツ北九州カップ"
     },
     {
       "stadiumCode": "22",
