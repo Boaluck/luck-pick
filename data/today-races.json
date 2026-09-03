@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-03",
-  "updatedAt": "2026-09-03T03:30:05+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260903",
+  "date": "2026-09-04",
+  "updatedAt": "2026-09-04T03:25:52+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260904",
   "status": "ok",
   "races": [
     {
@@ -15,9 +15,9 @@
       "raceTitle": "オールレディース静岡クラウンメロン杯"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "誠進社杯"
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "一般社団法人蒲郡市観光協会長杯"
     },
     {
       "stadiumCode": "09",
@@ -30,6 +30,11 @@
       "raceTitle": "三国港解禁ふくい甘えび杯"
     },
     {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "ルーキーシリーズ第１６戦 スカパー！・ＪＬＣ杯"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "日刊スポーツ杯争奪第３０回ブルースターカップ"
@@ -40,11 +45,6 @@
       "raceTitle": "尼崎あきんど倶楽部３０周年記念杯"
     },
     {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "ＢＴＳ松江開設２６周年記念競走"
-    },
-    {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第１７回ＰａｙＰａｙ銀行賞"
@@ -53,11 +53,6 @@
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ徳山"
-    },
-    {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "ＢＴＳながとオープン６周年記念 新東通信杯"
     },
     {
       "stadiumCode": "20",
