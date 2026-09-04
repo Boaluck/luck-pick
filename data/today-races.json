@@ -1,18 +1,28 @@
 {
-  "date": "2026-09-04",
-  "updatedAt": "2026-09-04T03:25:52+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260904",
+  "date": "2026-09-05",
+  "updatedAt": "2026-09-05T03:13:12+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260905",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "バスケで群馬を熱くする群馬クレインサンダーズカップ"
+    },
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "サッポロビールカップ"
     },
     {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "オールレディース静岡クラウンメロン杯"
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "月兎ソースカップ"
+    },
+    {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "第２３回サントリーカップ ほぼ女子戦"
     },
     {
       "stadiumCode": "07",
@@ -63,11 +73,6 @@
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "三都市対抗戦 福岡観光コンベンションビューロー杯"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "ミッドナイトボートレースｉｎ大村 ８"
     }
   ]
 }
