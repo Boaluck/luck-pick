@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-05",
-  "updatedAt": "2026-09-05T03:13:12+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260905",
+  "date": "2026-09-06",
+  "updatedAt": "2026-09-06T02:14:12+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260906",
   "status": "ok",
   "races": [
     {
@@ -50,24 +50,14 @@
       "raceTitle": "日刊スポーツ杯争奪第３０回ブルースターカップ"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "尼崎あきんど倶楽部３０周年記念杯"
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "ヴィーナスシリーズ第１２戦 マクール杯競走"
     },
     {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第１７回ＰａｙＰａｙ銀行賞"
-    },
-    {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ徳山"
-    },
-    {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "マスターズリーグ第５戦九州スポーツ杯"
     },
     {
       "stadiumCode": "22",
