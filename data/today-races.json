@@ -1,18 +1,13 @@
 {
-  "date": "2026-09-06",
-  "updatedAt": "2026-09-06T02:14:12+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260906",
+  "date": "2026-09-07",
+  "updatedAt": "2026-09-07T02:33:58+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260907",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "バスケで群馬を熱くする群馬クレインサンダーズカップ"
-    },
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "サッポロビールカップ"
     },
     {
       "stadiumCode": "03",
@@ -45,9 +40,9 @@
       "raceTitle": "ルーキーシリーズ第１６戦 スカパー！・ＪＬＣ杯"
     },
     {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "日刊スポーツ杯争奪第３０回ブルースターカップ"
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "第２５回報知ローズカップ争奪戦"
     },
     {
       "stadiumCode": "14",
@@ -55,14 +50,19 @@
       "raceTitle": "ヴィーナスシリーズ第１２戦 マクール杯競走"
     },
     {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "第１７回ＰａｙＰａｙ銀行賞"
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "大阪スポーツ杯"
     },
     {
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "三都市対抗戦 福岡観光コンベンションビューロー杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "開設７４周年記念 海の王者決定戦"
     }
   ]
 }
