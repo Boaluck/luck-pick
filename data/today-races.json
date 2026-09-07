@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-07",
-  "updatedAt": "2026-09-07T02:33:58+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260907",
+  "date": "2026-09-08",
+  "updatedAt": "2026-09-08T04:03:31+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260908",
   "status": "ok",
   "races": [
     {
@@ -53,11 +53,6 @@
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "大阪スポーツ杯"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "三都市対抗戦 福岡観光コンベンションビューロー杯"
     },
     {
       "stadiumCode": "24",
