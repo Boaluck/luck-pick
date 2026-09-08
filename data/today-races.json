@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-08",
-  "updatedAt": "2026-09-08T04:03:31+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260908",
+  "date": "2026-09-09",
+  "updatedAt": "2026-09-09T03:25:23+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260909",
   "status": "ok",
   "races": [
     {
@@ -20,19 +20,9 @@
       "raceTitle": "第２３回サントリーカップ ほぼ女子戦"
     },
     {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "一般社団法人蒲郡市観光協会長杯"
-    },
-    {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "開設７４周年記念 ツッキー王座決定戦"
-    },
-    {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "三国港解禁ふくい甘えび杯"
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ多摩川"
     },
     {
       "stadiumCode": "11",
@@ -53,6 +43,21 @@
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "大阪スポーツ杯"
+    },
+    {
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長賞"
+    },
+    {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "唐十杯"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長賞"
     },
     {
       "stadiumCode": "24",
