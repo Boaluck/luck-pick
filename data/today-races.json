@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-09",
-  "updatedAt": "2026-09-09T03:25:23+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260909",
+  "date": "2026-09-10",
+  "updatedAt": "2026-09-10T03:24:59+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260910",
   "status": "ok",
   "races": [
     {
@@ -23,11 +23,6 @@
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ多摩川"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "ルーキーシリーズ第１６戦 スカパー！・ＪＬＣ杯"
     },
     {
       "stadiumCode": "13",
