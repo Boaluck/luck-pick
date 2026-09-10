@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-10",
-  "updatedAt": "2026-09-10T03:24:59+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260910",
+  "date": "2026-09-11",
+  "updatedAt": "2026-09-11T03:14:09+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260911",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "バスケで群馬を熱くする群馬クレインサンダーズカップ"
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "第５回漫画アクションカップ"
     },
     {
       "stadiumCode": "03",
@@ -15,14 +15,19 @@
       "raceTitle": "月兎ソースカップ"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "第２３回サントリーカップ ほぼ女子戦"
-    },
-    {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ多摩川"
+    },
+    {
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "静岡朝日テレビサンライズカップ"
+    },
+    {
+      "stadiumCode": "12",
+      "stadiumName": "住之江",
+      "raceTitle": "報知新聞社賞第６２回ダイナミック敢闘旗"
     },
     {
       "stadiumCode": "13",
