@@ -1,18 +1,13 @@
 {
-  "date": "2026-09-11",
-  "updatedAt": "2026-09-11T03:14:09+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260911",
+  "date": "2026-09-12",
+  "updatedAt": "2026-09-12T03:18:05+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260912",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "第５回漫画アクションカップ"
-    },
-    {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "月兎ソースカップ"
     },
     {
       "stadiumCode": "05",
@@ -25,19 +20,24 @@
       "raceTitle": "静岡朝日テレビサンライズカップ"
     },
     {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "ヴィーナスシリーズ第１３戦常滑シンデレラカップ"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ津"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "福井ユナイテッド杯"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "報知新聞社賞第６２回ダイナミック敢闘旗"
-    },
-    {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "第２５回報知ローズカップ争奪戦"
-    },
-    {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "ヴィーナスシリーズ第１２戦 マクール杯競走"
     },
     {
       "stadiumCode": "16",
@@ -48,6 +48,11 @@
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長賞"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "ダイヤモンドカップ"
     },
     {
       "stadiumCode": "20",
