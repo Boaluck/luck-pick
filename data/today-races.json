@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-12",
-  "updatedAt": "2026-09-12T03:18:05+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260912",
+  "date": "2026-09-13",
+  "updatedAt": "2026-09-13T02:43:13+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260913",
   "status": "ok",
   "races": [
     {
@@ -20,6 +20,11 @@
       "raceTitle": "静岡朝日テレビサンライズカップ"
     },
     {
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "ルーキーシリーズ第１７戦スカパー！・ＪＬＣ杯"
+    },
+    {
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "ヴィーナスシリーズ第１３戦常滑シンデレラカップ"
@@ -35,14 +40,14 @@
       "raceTitle": "福井ユナイテッド杯"
     },
     {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "スポーツニッポン新聞社杯争奪 第５１回八景賞"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "報知新聞社賞第６２回ダイナミック敢闘旗"
-    },
-    {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "大阪スポーツ杯"
     },
     {
       "stadiumCode": "17",
@@ -55,6 +60,11 @@
       "raceTitle": "ダイヤモンドカップ"
     },
     {
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "山口朝日放送ビープくんカップ"
+    },
+    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "唐十杯"
@@ -65,9 +75,9 @@
       "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長賞"
     },
     {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "開設７４周年記念 海の王者決定戦"
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ福岡"
     }
   ]
 }
