@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-13",
-  "updatedAt": "2026-09-13T02:43:13+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260913",
+  "date": "2026-09-14",
+  "updatedAt": "2026-09-14T03:01:09+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260914",
   "status": "ok",
   "races": [
     {
@@ -10,9 +10,9 @@
       "raceTitle": "第５回漫画アクションカップ"
     },
     {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ多摩川"
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "第７１回日刊スポーツ旗〜東京大阪福岡三都市対抗戦〜"
     },
     {
       "stadiumCode": "06",
@@ -48,11 +48,6 @@
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "報知新聞社賞第６２回ダイナミック敢闘旗"
-    },
-    {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長賞"
     },
     {
       "stadiumCode": "18",
