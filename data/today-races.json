@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-16",
-  "updatedAt": "2026-09-16T03:49:17+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260916",
+  "date": "2026-09-17",
+  "updatedAt": "2026-09-17T03:46:44+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260917",
   "status": "ok",
   "races": [
     {
@@ -35,11 +35,6 @@
       "raceTitle": "スポーツニッポン新聞社杯争奪 第５１回八景賞"
     },
     {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "報知新聞社賞第６２回ダイナミック敢闘旗"
-    },
-    {
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "ＢＴＳ鳥取開設１５周年記念 鳥取市長杯"
@@ -48,6 +43,16 @@
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "アペックス杯競走"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "第１回香川ファイブアローズカップ"
+    },
+    {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "日刊スポーツ杯・ニッカン・コム杯"
     },
     {
       "stadiumCode": "18",
@@ -68,6 +73,11 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "唐津うまかもんカップ"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ミッドナイトボートレースｉｎ大村 ９"
     }
   ]
 }
