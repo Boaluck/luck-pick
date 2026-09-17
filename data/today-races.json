@@ -1,9 +1,19 @@
 {
-  "date": "2026-09-17",
-  "updatedAt": "2026-09-17T03:46:44+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260917",
+  "date": "2026-09-18",
+  "updatedAt": "2026-09-18T03:53:33+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260918",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "ＢＯＡＴＢｏｙカップ"
+    },
+    {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第２回大阪サンケイスポーツ杯"
+    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
@@ -20,19 +30,14 @@
       "raceTitle": "ルーキーシリーズ第１７戦スカパー！・ＪＬＣ杯"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "ヴィーナスシリーズ第１３戦常滑シンデレラカップ"
-    },
-    {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ津"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "スポーツニッポン新聞社杯争奪 第５１回八景賞"
+    },
+    {
+      "stadiumCode": "12",
+      "stadiumName": "住之江",
+      "raceTitle": "サンケイスポーツ旗争奪第５５回飛龍賞競走"
     },
     {
       "stadiumCode": "13",
@@ -55,14 +60,9 @@
       "raceTitle": "日刊スポーツ杯・ニッカン・コム杯"
     },
     {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "ダイヤモンドカップ"
-    },
-    {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "山口朝日放送ビープくんカップ"
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯宮島プリンセスカップ"
     },
     {
       "stadiumCode": "22",
