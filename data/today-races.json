@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-18",
-  "updatedAt": "2026-09-18T03:53:33+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260918",
+  "date": "2026-09-19",
+  "updatedAt": "2026-09-19T03:13:33+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260919",
   "status": "ok",
   "races": [
     {
@@ -25,14 +25,9 @@
       "raceTitle": "ウェイキーカップ開設７２周年記念"
     },
     {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "ルーキーシリーズ第１７戦スカパー！・ＪＬＣ杯"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "スポーツニッポン新聞社杯争奪 第５１回八景賞"
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "オラレ浜松４周年記念スポーツニッポン菊花杯"
     },
     {
       "stadiumCode": "12",
@@ -63,11 +58,6 @@
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯宮島プリンセスカップ"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ福岡"
     },
     {
       "stadiumCode": "23",
