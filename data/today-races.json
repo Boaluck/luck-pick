@@ -1,9 +1,14 @@
 {
-  "date": "2026-09-19",
-  "updatedAt": "2026-09-19T03:13:33+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260919",
+  "date": "2026-09-20",
+  "updatedAt": "2026-09-20T02:52:45+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260920",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "第２０回マンスリーＢＯＡＴＲＡＣＥ杯 男女Ｗ優勝戦"
+    },
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
@@ -15,11 +20,6 @@
       "raceTitle": "第２回大阪サンケイスポーツ杯"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "第７１回日刊スポーツ旗〜東京大阪福岡三都市対抗戦〜"
-    },
-    {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "ウェイキーカップ開設７２周年記念"
@@ -28,6 +28,11 @@
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "オラレ浜松４周年記念スポーツニッポン菊花杯"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "絶好調者三国ダービー"
     },
     {
       "stadiumCode": "12",
