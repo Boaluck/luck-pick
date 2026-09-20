@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-20",
-  "updatedAt": "2026-09-20T02:52:45+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260920",
+  "date": "2026-09-21",
+  "updatedAt": "2026-09-21T03:08:49+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260921",
   "status": "ok",
   "races": [
     {
@@ -30,6 +30,11 @@
       "raceTitle": "オラレ浜松４周年記念スポーツニッポン菊花杯"
     },
     {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪！バッチこいカップ"
+    },
+    {
       "stadiumCode": "10",
       "stadiumName": "三国",
       "raceTitle": "絶好調者三国ダービー"
@@ -43,11 +48,6 @@
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "ＢＴＳ鳥取開設１５周年記念 鳥取市長杯"
-    },
-    {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "アペックス杯競走"
     },
     {
       "stadiumCode": "15",
@@ -65,14 +65,9 @@
       "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯宮島プリンセスカップ"
     },
     {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "唐津うまかもんカップ"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "ミッドナイトボートレースｉｎ大村 ９"
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯争奪戦"
     }
   ]
 }
