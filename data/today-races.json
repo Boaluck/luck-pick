@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-21",
-  "updatedAt": "2026-09-21T03:08:49+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260921",
+  "date": "2026-09-22",
+  "updatedAt": "2026-09-22T04:55:06+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260922",
   "status": "ok",
   "races": [
     {
@@ -20,14 +20,14 @@
       "raceTitle": "第２回大阪サンケイスポーツ杯"
     },
     {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "ウェイキーカップ開設７２周年記念"
-    },
-    {
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "オラレ浜松４周年記念スポーツニッポン菊花杯"
+    },
+    {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "第１回ＢＯＡＴＲＡＣＥ振興会会長賞"
     },
     {
       "stadiumCode": "09",
@@ -40,19 +40,14 @@
       "raceTitle": "絶好調者三国ダービー"
     },
     {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "つるやパン提供 第１１回みんな大好き！サラダパン賞"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "サンケイスポーツ旗争奪第５５回飛龍賞競走"
-    },
-    {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "ＢＴＳ鳥取開設１５周年記念 鳥取市長杯"
-    },
-    {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "第１回香川ファイブアローズカップ"
     },
     {
       "stadiumCode": "16",
@@ -68,6 +63,16 @@
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯争奪戦"
+    },
+    {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "第１３回ヤングダービー"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "第２０回ＢＯＡＴＢｏｙ・ペラ坊ショップ杯"
     }
   ]
 }
