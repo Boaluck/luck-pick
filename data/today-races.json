@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-23",
-  "updatedAt": "2026-09-23T03:39:57+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260923",
+  "date": "2026-09-24",
+  "updatedAt": "2026-09-24T03:56:00+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260924",
   "status": "ok",
   "races": [
     {
@@ -13,11 +13,6 @@
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "ＢＯＡＴＢｏｙカップ"
-    },
-    {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "第２回大阪サンケイスポーツ杯"
     },
     {
       "stadiumCode": "06",
@@ -45,14 +40,9 @@
       "raceTitle": "つるやパン提供 第１１回みんな大好き！サラダパン賞"
     },
     {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "サンケイスポーツ旗争奪第５５回飛龍賞競走"
-    },
-    {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯宮島プリンセスカップ"
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
     },
     {
       "stadiumCode": "18",
@@ -60,9 +50,19 @@
       "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯争奪戦"
     },
     {
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "ＢＴＳ山口あじすオープン１５周年記念"
+    },
+    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "第１３回ヤングダービー"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "オールレディース マクール杯"
     },
     {
       "stadiumCode": "22",
