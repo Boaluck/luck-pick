@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-24",
-  "updatedAt": "2026-09-24T03:56:00+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260924",
+  "date": "2026-09-25",
+  "updatedAt": "2026-09-25T03:55:58+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260925",
   "status": "ok",
   "races": [
     {
@@ -10,14 +10,9 @@
       "raceTitle": "第２０回マンスリーＢＯＡＴＲＡＣＥ杯 男女Ｗ優勝戦"
     },
     {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "ＢＯＡＴＢｏｙカップ"
-    },
-    {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "オラレ浜松４周年記念スポーツニッポン菊花杯"
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "第３７回日本モーターボート選手会会長賞"
     },
     {
       "stadiumCode": "08",
