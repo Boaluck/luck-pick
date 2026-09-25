@@ -1,13 +1,18 @@
 {
-  "date": "2026-09-25",
-  "updatedAt": "2026-09-25T03:55:58+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260925",
+  "date": "2026-09-26",
+  "updatedAt": "2026-09-26T04:11:14+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260926",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第２０回マンスリーＢＯＡＴＲＡＣＥ杯 男女Ｗ優勝戦"
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "ＴＡＭＲＯＮＣＵＰ"
+    },
+    {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第９回ういちの江戸川ナイスぅ〜っ！カップ"
     },
     {
       "stadiumCode": "05",
@@ -25,11 +30,6 @@
       "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪！バッチこいカップ"
     },
     {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "絶好調者三国ダービー"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "つるやパン提供 第１１回みんな大好き！サラダパン賞"
@@ -38,6 +38,11 @@
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "四国新聞社杯"
     },
     {
       "stadiumCode": "18",
