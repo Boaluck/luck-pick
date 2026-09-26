@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-26",
-  "updatedAt": "2026-09-26T04:11:14+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260926",
+  "date": "2026-09-27",
+  "updatedAt": "2026-09-27T03:26:54+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260927",
   "status": "ok",
   "races": [
     {
@@ -40,14 +40,14 @@
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
     },
     {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長杯競走"
+    },
+    {
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "四国新聞社杯"
-    },
-    {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯争奪戦"
     },
     {
       "stadiumCode": "19",
