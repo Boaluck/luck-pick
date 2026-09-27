@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-27",
-  "updatedAt": "2026-09-27T03:26:54+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260927",
+  "date": "2026-09-28",
+  "updatedAt": "2026-09-28T03:56:36+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260928",
   "status": "ok",
   "races": [
     {
@@ -15,24 +15,19 @@
       "raceTitle": "第９回ういちの江戸川ナイスぅ〜っ！カップ"
     },
     {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "マスターズリーグ第６戦 俺の生きる道杯"
+    },
+    {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "第３７回日本モーターボート選手会会長賞"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "第１回ＢＯＡＴＲＡＣＥ振興会会長賞"
-    },
-    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪！バッチこいカップ"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "つるやパン提供 第１１回みんな大好き！サラダパン賞"
     },
     {
       "stadiumCode": "13",
@@ -50,14 +45,14 @@
       "raceTitle": "四国新聞社杯"
     },
     {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "児島キングカップ開設７４周年記念競走"
+    },
+    {
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "ＢＴＳ山口あじすオープン１５周年記念"
-    },
-    {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "第１３回ヤングダービー"
     },
     {
       "stadiumCode": "21",
@@ -65,9 +60,9 @@
       "raceTitle": "オールレディース マクール杯"
     },
     {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "第２０回ＢＯＡＴＢｏｙ・ペラ坊ショップ杯"
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ミッドナイトボートレースｉｎ大村 １０"
     }
   ]
 }
