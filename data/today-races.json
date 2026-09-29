@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-29",
-  "updatedAt": "2026-09-29T06:09:13+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260929",
+  "date": "2026-09-30",
+  "updatedAt": "2026-09-30T04:53:26+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20260930",
   "status": "ok",
   "races": [
     {
@@ -25,14 +25,19 @@
       "raceTitle": "第３７回日本モーターボート選手会会長賞"
     },
     {
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "中日スポーツシルバーカップ"
+    },
+    {
       "stadiumCode": "07",
       "stadiumName": "蒲郡",
       "raceTitle": "「いい風吹け」キリンビール晴れ風賞"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "津インクル開設１５周年記念レース"
     },
     {
       "stadiumCode": "14",
@@ -50,14 +55,9 @@
       "raceTitle": "児島キングカップ開設７４周年記念競走"
     },
     {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "ＢＴＳ山口あじすオープン１５周年記念"
-    },
-    {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "オールレディース マクール杯"
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "日刊スポーツ杯"
     },
     {
       "stadiumCode": "24",
