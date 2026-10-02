@@ -1,9 +1,14 @@
 {
-  "date": "2026-10-02",
-  "updatedAt": "2026-10-02T05:14:31+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261002",
+  "date": "2026-10-03",
+  "updatedAt": "2026-10-03T04:50:37+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261003",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "第７回日刊大衆杯"
+    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
@@ -25,6 +30,11 @@
       "raceTitle": "津インクル開設１５周年記念レース"
     },
     {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "第３回浪乃音酒造杯"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "２０２６東京・大阪・福岡三都市対抗戦"
@@ -33,16 +43,6 @@
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "ＢＴＳ京丹後開設１１周年記念競走"
-    },
-    {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "ＢＯＡＴＲＡＣＥ振興会会長杯競走"
-    },
-    {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "四国新聞社杯"
     },
     {
       "stadiumCode": "16",
@@ -68,11 +68,6 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "日刊スポーツ杯"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "ミッドナイトボートレースｉｎ大村 １０"
     }
   ]
 }
