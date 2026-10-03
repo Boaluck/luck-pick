@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-03",
-  "updatedAt": "2026-10-03T04:50:37+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261003",
+  "date": "2026-10-04",
+  "updatedAt": "2026-10-04T03:36:24+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261004",
   "status": "ok",
   "races": [
     {
@@ -10,9 +10,9 @@
       "raceTitle": "第７回日刊大衆杯"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "マスターズリーグ第６戦 俺の生きる道杯"
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "第１０回ドコモＳＭＴＢネット銀行賞"
     },
     {
       "stadiumCode": "06",
@@ -30,6 +30,11 @@
       "raceTitle": "津インクル開設１５周年記念レース"
     },
     {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "開設７３周年記念 北陸艇王決戦"
+    },
+    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "第３回浪乃音酒造杯"
@@ -43,11 +48,6 @@
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "ＢＴＳ京丹後開設１１周年記念競走"
-    },
-    {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "児島キングカップ開設７４周年記念競走"
     },
     {
       "stadiumCode": "18",
