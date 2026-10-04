@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-04",
-  "updatedAt": "2026-10-04T03:36:24+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261004",
+  "date": "2026-10-05",
+  "updatedAt": "2026-10-05T03:35:21+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261005",
   "status": "ok",
   "races": [
     {
@@ -13,16 +13,6 @@
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "第１０回ドコモＳＭＴＢネット銀行賞"
-    },
-    {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "中日スポーツシルバーカップ"
-    },
-    {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "「いい風吹け」キリンビール晴れ風賞"
     },
     {
       "stadiumCode": "09",
@@ -58,6 +48,11 @@
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "ヴィーナスシリーズ第１４戦 スターダム杯"
+    },
+    {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "ＭＮＢＲ若松４ｔｈかっぱくん杯"
     },
     {
       "stadiumCode": "22",
