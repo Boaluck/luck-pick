@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-05",
-  "updatedAt": "2026-10-05T03:35:21+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261005",
+  "date": "2026-10-06",
+  "updatedAt": "2026-10-06T06:55:33+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261006",
   "status": "ok",
   "races": [
     {
@@ -15,9 +15,9 @@
       "raceTitle": "第１０回ドコモＳＭＴＢネット銀行賞"
     },
     {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "津インクル開設１５周年記念レース"
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "生誕２５周年記念トコタンカップ"
     },
     {
       "stadiumCode": "10",
@@ -40,6 +40,11 @@
       "raceTitle": "ＢＴＳ京丹後開設１１周年記念競走"
     },
     {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "松茂町ほか二町ボートレース事業組合開設５８周年記念"
+    },
+    {
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "スカパー！・ＪＬＣ杯徳山ルーキーシリーズ第１８戦"
@@ -60,9 +65,9 @@
       "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯"
     },
     {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "日刊スポーツ杯"
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "日本モーターボート選手会会長杯"
     }
   ]
 }
