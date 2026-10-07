@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-07",
-  "updatedAt": "2026-10-07T05:06:27+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261007",
+  "date": "2026-10-08",
+  "updatedAt": "2026-10-08T05:31:00+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261008",
   "status": "ok",
   "races": [
     {
@@ -50,14 +50,14 @@
       "raceTitle": "デイリースポーツ杯"
     },
     {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "スカパー！・ＪＬＣ杯徳山ルーキーシリーズ第１８戦"
-    },
-    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ＭＮＢＲ若松４ｔｈかっぱくん杯"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "第１７回虹の松原カップ"
     },
     {
       "stadiumCode": "24",
