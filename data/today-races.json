@@ -1,13 +1,18 @@
 {
-  "date": "2026-10-08",
-  "updatedAt": "2026-10-08T05:31:00+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261008",
+  "date": "2026-10-09",
+  "updatedAt": "2026-10-09T05:36:12+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261009",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "第８回日本一しょうゆ杯"
+    },
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "第１１回加藤峻二杯"
     },
     {
       "stadiumCode": "03",
@@ -33,11 +38,6 @@
       "stadiumCode": "10",
       "stadiumName": "三国",
       "raceTitle": "開設７３周年記念 北陸艇王決戦"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "第３回浪乃音酒造杯"
     },
     {
       "stadiumCode": "14",
