@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-09",
-  "updatedAt": "2026-10-09T05:36:12+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261009",
+  "date": "2026-10-10",
+  "updatedAt": "2026-10-10T05:02:43+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261010",
   "status": "ok",
   "races": [
     {
@@ -20,9 +20,9 @@
       "raceTitle": "オールレディース 江戸川女王決定戦ＫＩＲＩＮＣＵＰ"
     },
     {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "第１０回ドコモＳＭＴＢネット銀行賞"
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "ＢＴＳ玉川２８周年記念Ｗａｖｅ２１杯"
     },
     {
       "stadiumCode": "07",
@@ -35,14 +35,19 @@
       "raceTitle": "生誕２５周年記念トコタンカップ"
     },
     {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "開設７３周年記念 北陸艇王決戦"
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "ファン感謝３Ｄａｙｓボートレースバトルトーナメント"
     },
     {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "松茂町ほか二町ボートレース事業組合開設５８周年記念"
+      "stadiumCode": "12",
+      "stadiumName": "住之江",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "ＢＴＳ西予開設１１周年記念 スポーツニッポンカップ"
     },
     {
       "stadiumCode": "16",
@@ -50,19 +55,19 @@
       "raceTitle": "デイリースポーツ杯"
     },
     {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "ＭＮＢＲ若松４ｔｈかっぱくん杯"
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "トライアングルカップ"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "日本トーター杯"
     },
     {
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "第１７回虹の松原カップ"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "日本モーターボート選手会会長杯"
     }
   ]
 }
