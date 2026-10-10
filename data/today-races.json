@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-10",
-  "updatedAt": "2026-10-10T05:02:43+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261010",
+  "date": "2026-10-11",
+  "updatedAt": "2026-10-11T04:11:18+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261011",
   "status": "ok",
   "races": [
     {
@@ -23,11 +23,6 @@
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "ＢＴＳ玉川２８周年記念Ｗａｖｅ２１杯"
-    },
-    {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "幸田町長杯争奪 秋の美味 筆柿レース"
     },
     {
       "stadiumCode": "08",
@@ -58,6 +53,11 @@
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "トライアングルカップ"
+    },
+    {
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "ＭＮＢＲ下関５ｔｈ ケーブルネット下関杯"
     },
     {
       "stadiumCode": "22",
