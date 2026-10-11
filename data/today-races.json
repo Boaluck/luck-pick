@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-11",
-  "updatedAt": "2026-10-11T04:11:18+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261011",
+  "date": "2026-10-12",
+  "updatedAt": "2026-10-12T04:25:38+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261012",
   "status": "ok",
   "races": [
     {
@@ -25,19 +25,24 @@
       "raceTitle": "ＢＴＳ玉川２８周年記念Ｗａｖｅ２１杯"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "生誕２５周年記念トコタンカップ"
-    },
-    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "ファン感謝３Ｄａｙｓボートレースバトルトーナメント"
     },
     {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "第１５回近江米カップ"
+    },
+    {
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
+    },
+    {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "スカパー！・ＪＬＣ杯ルーキーシリーズ第１９戦"
     },
     {
       "stadiumCode": "15",
