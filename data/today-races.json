@@ -1,33 +1,18 @@
 {
-  "date": "2026-10-12",
-  "updatedAt": "2026-10-12T04:25:38+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261012",
+  "date": "2026-10-13",
+  "updatedAt": "2026-10-13T07:26:40+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261013",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第８回日本一しょうゆ杯"
-    },
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "第１１回加藤峻二杯"
-    },
-    {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "オールレディース 江戸川女王決定戦ＫＩＲＩＮＣＵＰ"
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "開設７２周年記念トーキョー・ベイ・カップ"
     },
     {
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "ＢＴＳ玉川２８周年記念Ｗａｖｅ２１杯"
-    },
-    {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "ファン感謝３Ｄａｙｓボートレースバトルトーナメント"
     },
     {
       "stadiumCode": "11",
@@ -40,6 +25,11 @@
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
     },
     {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "楽天銀行賞"
+    },
+    {
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "スカパー！・ＪＬＣ杯ルーキーシリーズ第１９戦"
@@ -48,11 +38,6 @@
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "ＢＴＳ西予開設１１周年記念 スポーツニッポンカップ"
-    },
-    {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "デイリースポーツ杯"
     },
     {
       "stadiumCode": "18",
@@ -65,14 +50,14 @@
       "raceTitle": "ＭＮＢＲ下関５ｔｈ ケーブルネット下関杯"
     },
     {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "ヴィーナスＳ１５戦マクール杯ナイトプリンセスカップ"
+    },
+    {
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "日本トーター杯"
-    },
-    {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "第１７回虹の松原カップ"
     }
   ]
 }
