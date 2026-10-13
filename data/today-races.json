@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-13",
-  "updatedAt": "2026-10-13T07:26:40+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261013",
+  "date": "2026-10-14",
+  "updatedAt": "2026-10-14T05:33:45+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261014",
   "status": "ok",
   "races": [
     {
@@ -55,9 +55,19 @@
       "raceTitle": "ヴィーナスＳ１５戦マクール杯ナイトプリンセスカップ"
     },
     {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "山口シネマ杯"
+    },
+    {
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "日本トーター杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ＢＴＳ長洲開設１７周年記念〜ながす金魚杯〜"
     }
   ]
 }
