@@ -1,9 +1,14 @@
 {
-  "date": "2026-10-14",
-  "updatedAt": "2026-10-14T05:33:45+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261014",
+  "date": "2026-10-15",
+  "updatedAt": "2026-10-15T04:14:37+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261015",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "第１５回マスターズＶＳルーキーズ"
+    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
@@ -13,6 +18,11 @@
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "ＢＴＳ玉川２８周年記念Ｗａｖｅ２１杯"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "日本ＭＢ選手会会長杯第３４回たけふ菊人形賞"
     },
     {
       "stadiumCode": "11",
@@ -38,16 +48,6 @@
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "ＢＴＳ西予開設１１周年記念 スポーツニッポンカップ"
-    },
-    {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "トライアングルカップ"
-    },
-    {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "ＭＮＢＲ下関５ｔｈ ケーブルネット下関杯"
     },
     {
       "stadiumCode": "20",
