@@ -1,13 +1,23 @@
 {
-  "date": "2026-10-15",
-  "updatedAt": "2026-10-15T04:14:37+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261015",
+  "date": "2026-10-16",
+  "updatedAt": "2026-10-16T03:58:27+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261016",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "第１２回太田双葉ＣＣカップ Ｄ・Ｓ開設１３周年記念"
+    },
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "第１５回マスターズＶＳルーキーズ"
+    },
+    {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "メカニカルシティ稲城・第５０回日刊スポーツ杯"
     },
     {
       "stadiumCode": "04",
@@ -15,24 +25,19 @@
       "raceTitle": "開設７２周年記念トーキョー・ベイ・カップ"
     },
     {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "ＢＴＳ玉川２８周年記念Ｗａｖｅ２１杯"
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "秋の常滑温泉マーゴの湯競走"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "スポーツ報知ビクトリーカップ"
     },
     {
       "stadiumCode": "10",
       "stadiumName": "三国",
       "raceTitle": "日本ＭＢ選手会会長杯第３４回たけふ菊人形賞"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "第１５回近江米カップ"
-    },
-    {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ住之江"
     },
     {
       "stadiumCode": "13",
@@ -45,9 +50,9 @@
       "raceTitle": "スカパー！・ＪＬＣ杯ルーキーシリーズ第１９戦"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "ＢＴＳ西予開設１１周年記念 スポーツニッポンカップ"
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "ミッドナイトボートレース下関６ｔｈ 関釜フェリー杯"
     },
     {
       "stadiumCode": "20",
@@ -58,11 +63,6 @@
       "stadiumCode": "21",
       "stadiumName": "芦屋",
       "raceTitle": "山口シネマ杯"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "日本トーター杯"
     },
     {
       "stadiumCode": "24",
