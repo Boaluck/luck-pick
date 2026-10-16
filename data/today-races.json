@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-16",
-  "updatedAt": "2026-10-16T03:58:27+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261016",
+  "date": "2026-10-17",
+  "updatedAt": "2026-10-17T03:42:29+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261017",
   "status": "ok",
   "races": [
     {
@@ -48,6 +48,11 @@
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "スカパー！・ＪＬＣ杯ルーキーシリーズ第１９戦"
+    },
+    {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "トランスワードトロフィー２０２６"
     },
     {
       "stadiumCode": "19",
