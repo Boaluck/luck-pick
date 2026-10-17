@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-17",
-  "updatedAt": "2026-10-17T03:42:29+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261017",
+  "date": "2026-10-18",
+  "updatedAt": "2026-10-18T02:48:32+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261018",
   "status": "ok",
   "races": [
     {
@@ -40,19 +40,14 @@
       "raceTitle": "日本ＭＢ選手会会長杯第３４回たけふ菊人形賞"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "楽天銀行賞"
-    },
-    {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "スカパー！・ＪＬＣ杯ルーキーシリーズ第１９戦"
-    },
-    {
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "トランスワードトロフィー２０２６"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "ｙａｂ山口朝日放送杯争奪戦"
     },
     {
       "stadiumCode": "19",
@@ -70,9 +65,9 @@
       "raceTitle": "山口シネマ杯"
     },
     {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "ＢＴＳ長洲開設１７周年記念〜ながす金魚杯〜"
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "全日本王者決定戦（開設７３周年記念）"
     }
   ]
 }
