@@ -1,18 +1,13 @@
 {
-  "date": "2026-10-19",
-  "updatedAt": "2026-10-19T02:55:40+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261019",
+  "date": "2026-10-20",
+  "updatedAt": "2026-10-20T05:28:39+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261020",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "第１２回太田双葉ＣＣカップ Ｄ・Ｓ開設１３周年記念"
-    },
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "第１５回マスターズＶＳルーキーズ"
     },
     {
       "stadiumCode": "03",
@@ -40,9 +35,19 @@
       "raceTitle": "２０２６モーターボートレディスカップ"
     },
     {
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
+    },
+    {
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "トランスワードトロフィー２０２６"
+    },
+    {
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第４７回報知エキサイトカップＢＴＳ尾道開設６周年"
     },
     {
       "stadiumCode": "18",
