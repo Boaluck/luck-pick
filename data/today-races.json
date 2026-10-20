@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-20",
-  "updatedAt": "2026-10-20T05:28:39+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261020",
+  "date": "2026-10-21",
+  "updatedAt": "2026-10-21T04:05:15+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261021",
   "status": "ok",
   "races": [
     {
@@ -15,9 +15,9 @@
       "raceTitle": "メカニカルシティ稲城・第５０回日刊スポーツ杯"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "秋の常滑温泉マーゴの湯競走"
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "ＳＵＺＵＫＩスピードカップ"
     },
     {
       "stadiumCode": "09",
@@ -25,9 +25,9 @@
       "raceTitle": "スポーツ報知ビクトリーカップ"
     },
     {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "日本ＭＢ選手会会長杯第３４回たけふ菊人形賞"
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "ＰａｙＰａｙ銀行賞"
     },
     {
       "stadiumCode": "12",
@@ -38,6 +38,11 @@
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
+    },
+    {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "ＢＴＳ阿波かもじま開設４周年記念競走"
     },
     {
       "stadiumCode": "16",
@@ -55,9 +60,9 @@
       "raceTitle": "ｙａｂ山口朝日放送杯争奪戦"
     },
     {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "ミッドナイトボートレース下関６ｔｈ 関釜フェリー杯"
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "ＭＮＢＲ若松５ｔｈひめちゃん杯"
     },
     {
       "stadiumCode": "23",
