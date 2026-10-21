@@ -1,28 +1,28 @@
 {
-  "date": "2026-10-21",
-  "updatedAt": "2026-10-21T04:05:15+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261021",
+  "date": "2026-10-22",
+  "updatedAt": "2026-10-22T04:10:50+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261022",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第１２回太田双葉ＣＣカップ Ｄ・Ｓ開設１３周年記念"
-    },
     {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "メカニカルシティ稲城・第５０回日刊スポーツ杯"
     },
     {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "トランスワードトロフィー ヤングＶＳベテランバトル"
+    },
+    {
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "ルーキーＳ第２０戦第２７回スカパー！ＪＬＣカップ"
+    },
+    {
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "ＳＵＺＵＫＩスピードカップ"
-    },
-    {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "スポーツ報知ビクトリーカップ"
     },
     {
       "stadiumCode": "11",
@@ -68,6 +68,11 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "全日本王者決定戦（開設７３周年記念）"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "夜の九州スポーツ杯"
     }
   ]
 }
