@@ -1,14 +1,9 @@
 {
-  "date": "2026-10-22",
-  "updatedAt": "2026-10-22T04:10:50+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261022",
+  "date": "2026-10-23",
+  "updatedAt": "2026-10-23T04:05:55+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261023",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "メカニカルシティ稲城・第５０回日刊スポーツ杯"
-    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
@@ -45,11 +40,6 @@
       "raceTitle": "ＢＴＳ阿波かもじま開設４周年記念競走"
     },
     {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "トランスワードトロフィー２０２６"
-    },
-    {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第４７回報知エキサイトカップＢＴＳ尾道開設６周年"
@@ -63,6 +53,16 @@
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ＭＮＢＲ若松５ｔｈひめちゃん杯"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ＫＢＣラジオ杯"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "ボートレース福岡天神ストリートパーク開業記念競走"
     },
     {
       "stadiumCode": "23",
