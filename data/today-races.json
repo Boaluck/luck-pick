@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-23",
-  "updatedAt": "2026-10-23T04:05:55+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261023",
+  "date": "2026-10-24",
+  "updatedAt": "2026-10-24T03:59:08+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261024",
   "status": "ok",
   "races": [
     {
@@ -18,6 +18,16 @@
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "ＳＵＺＵＫＩスピードカップ"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "第１８回鳥羽一郎杯争奪戦"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "スポーツクラブ新田塚アーク杯"
     },
     {
       "stadiumCode": "11",
@@ -45,11 +55,6 @@
       "raceTitle": "第４７回報知エキサイトカップＢＴＳ尾道開設６周年"
     },
     {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "ｙａｂ山口朝日放送杯争奪戦"
-    },
-    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ＭＮＢＲ若松５ｔｈひめちゃん杯"
@@ -63,11 +68,6 @@
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "ボートレース福岡天神ストリートパーク開業記念競走"
-    },
-    {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "全日本王者決定戦（開設７３周年記念）"
     },
     {
       "stadiumCode": "24",
