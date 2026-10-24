@@ -1,9 +1,14 @@
 {
-  "date": "2026-10-24",
-  "updatedAt": "2026-10-24T03:59:08+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261024",
+  "date": "2026-10-25",
+  "updatedAt": "2026-10-25T02:59:53+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261025",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "第１９回マクール杯 ヴィーナスシリーズ第１６戦"
+    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
@@ -20,6 +25,11 @@
       "raceTitle": "ＳＵＺＵＫＩスピードカップ"
     },
     {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "スポーツ報知杯争奪第１７回ビクトリーカップ"
+    },
+    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "第１８回鳥羽一郎杯争奪戦"
@@ -33,16 +43,6 @@
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "ＰａｙＰａｙ銀行賞"
-    },
-    {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "２０２６モーターボートレディスカップ"
-    },
-    {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ尼崎"
     },
     {
       "stadiumCode": "14",
