@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-25",
-  "updatedAt": "2026-10-25T02:59:53+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261025",
+  "date": "2026-10-26",
+  "updatedAt": "2026-10-26T03:17:19+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261026",
   "status": "ok",
   "races": [
     {
@@ -45,19 +45,9 @@
       "raceTitle": "ＰａｙＰａｙ銀行賞"
     },
     {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "ＢＴＳ阿波かもじま開設４周年記念競走"
-    },
-    {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "第４７回報知エキサイトカップＢＴＳ尾道開設６周年"
-    },
-    {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "ＭＮＢＲ若松５ｔｈひめちゃん杯"
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "丸亀市・北海道京極町親子都市締結１０周年記念"
     },
     {
       "stadiumCode": "21",
