@@ -1,13 +1,18 @@
 {
-  "date": "2026-10-26",
-  "updatedAt": "2026-10-26T03:17:19+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261026",
+  "date": "2026-10-27",
+  "updatedAt": "2026-10-27T05:22:25+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261027",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "第１９回マクール杯 ヴィーナスシリーズ第１６戦"
+    },
+    {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第５０回報知新聞社杯"
     },
     {
       "stadiumCode": "04",
@@ -20,9 +25,9 @@
       "raceTitle": "ルーキーＳ第２０戦第２７回スカパー！ＪＬＣカップ"
     },
     {
-      "stadiumCode": "06",
-      "stadiumName": "浜名湖",
-      "raceTitle": "ＳＵＺＵＫＩスピードカップ"
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "日刊スポーツ杯争奪 第５６回蒲郡大賞典"
     },
     {
       "stadiumCode": "08",
@@ -40,9 +45,9 @@
       "raceTitle": "スポーツクラブ新田塚アーク杯"
     },
     {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "ＰａｙＰａｙ銀行賞"
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "第７３回ボートレースダービー"
     },
     {
       "stadiumCode": "15",
@@ -50,14 +55,19 @@
       "raceTitle": "丸亀市・北海道京極町親子都市締結１０周年記念"
     },
     {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "ＫＢＣラジオ杯"
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "第８回児島商工会議所会頭賞"
     },
     {
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "ボートレース福岡天神ストリートパーク開業記念競走"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "トータリゼータエンジニアリング杯"
     },
     {
       "stadiumCode": "24",
