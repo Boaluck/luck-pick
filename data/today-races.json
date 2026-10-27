@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-27",
-  "updatedAt": "2026-10-27T05:22:25+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261027",
+  "date": "2026-10-28",
+  "updatedAt": "2026-10-28T04:57:46+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261028",
   "status": "ok",
   "races": [
     {
@@ -13,16 +13,6 @@
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第５０回報知新聞社杯"
-    },
-    {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "トランスワードトロフィー ヤングＶＳベテランバトル"
-    },
-    {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "ルーキーＳ第２０戦第２７回スカパー！ＪＬＣカップ"
     },
     {
       "stadiumCode": "07",
@@ -68,11 +58,6 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "トータリゼータエンジニアリング杯"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "夜の九州スポーツ杯"
     }
   ]
 }
