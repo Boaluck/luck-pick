@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-28",
-  "updatedAt": "2026-10-28T04:57:46+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261028",
+  "date": "2026-10-29",
+  "updatedAt": "2026-10-29T05:09:28+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261029",
   "status": "ok",
   "races": [
     {
@@ -25,19 +25,14 @@
       "raceTitle": "スポーツ報知杯争奪第１７回ビクトリーカップ"
     },
     {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "第１８回鳥羽一郎杯争奪戦"
-    },
-    {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "スポーツクラブ新田塚アーク杯"
-    },
-    {
       "stadiumCode": "13",
       "stadiumName": "尼崎",
       "raceTitle": "第７３回ボートレースダービー"
+    },
+    {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "ＢＴＳオラレ美馬開設１７周年記念競走"
     },
     {
       "stadiumCode": "15",
@@ -50,9 +45,9 @@
       "raceTitle": "第８回児島商工会議所会頭賞"
     },
     {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "ボートレース福岡天神ストリートパーク開業記念競走"
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "マスターズリーグ第７戦"
     },
     {
       "stadiumCode": "23",
