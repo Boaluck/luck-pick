@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-29",
-  "updatedAt": "2026-10-29T05:09:28+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261029",
+  "date": "2026-10-30",
+  "updatedAt": "2026-10-30T05:07:04+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261030",
   "status": "ok",
   "races": [
     {
@@ -13,6 +13,11 @@
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第５０回報知新聞社杯"
+    },
+    {
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "中京スポーツもみじ杯"
     },
     {
       "stadiumCode": "07",
@@ -53,6 +58,11 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "トータリゼータエンジニアリング杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "サンケイスポーツ杯"
     }
   ]
 }
