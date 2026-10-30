@@ -1,18 +1,23 @@
 {
-  "date": "2026-10-30",
-  "updatedAt": "2026-10-30T05:07:04+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261030",
+  "date": "2026-10-31",
+  "updatedAt": "2026-10-31T04:53:05+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261031",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第１９回マクール杯 ヴィーナスシリーズ第１６戦"
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "第５８回報知新聞社杯"
     },
     {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第５０回報知新聞社杯"
+    },
+    {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "第１回ＦＣ東京杯"
     },
     {
       "stadiumCode": "06",
@@ -25,9 +30,9 @@
       "raceTitle": "日刊スポーツ杯争奪 第５６回蒲郡大賞典"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "スポーツ報知杯争奪第１７回ビクトリーカップ"
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "津オールレディース マクール杯"
     },
     {
       "stadiumCode": "13",
