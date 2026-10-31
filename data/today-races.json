@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-31",
-  "updatedAt": "2026-10-31T04:53:05+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261031",
+  "date": "2026-11-01",
+  "updatedAt": "2026-11-01T04:10:34+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261101",
   "status": "ok",
   "races": [
     {
@@ -45,14 +45,9 @@
       "raceTitle": "ＢＴＳオラレ美馬開設１７周年記念競走"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "丸亀市・北海道京極町親子都市締結１０周年記念"
-    },
-    {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "第８回児島商工会議所会頭賞"
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "ルーキーシリーズ第２１戦スカパー！・ＪＬＣ杯"
     },
     {
       "stadiumCode": "18",
@@ -60,9 +55,19 @@
       "raceTitle": "マスターズリーグ第７戦"
     },
     {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "トータリゼータエンジニアリング杯"
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "ＭＮＢＲ下関７ｔｈ ＢＯＡＴＢｏｙカップ"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ＢＴＳオラレ日南開設１５周年記念"
+    },
+    {
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "ばんえい十勝杯"
     },
     {
       "stadiumCode": "24",
