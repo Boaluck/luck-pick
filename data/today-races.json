@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-01",
-  "updatedAt": "2026-11-01T04:10:34+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261101",
+  "date": "2026-11-02",
+  "updatedAt": "2026-11-02T04:26:29+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261102",
   "status": "ok",
   "races": [
     {
@@ -25,24 +25,19 @@
       "raceTitle": "中京スポーツもみじ杯"
     },
     {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "日刊スポーツ杯争奪 第５６回蒲郡大賞典"
-    },
-    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "津オールレディース マクール杯"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "第７３回ボートレースダービー"
-    },
-    {
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "ＢＴＳオラレ美馬開設１７周年記念競走"
+    },
+    {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "楽天銀行賞"
     },
     {
       "stadiumCode": "17",
