@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-02",
-  "updatedAt": "2026-11-02T04:26:29+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261102",
+  "date": "2026-11-03",
+  "updatedAt": "2026-11-03T08:02:06+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261103",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "第３８回日本モーターボート選手会会長杯"
+    },
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "第５８回報知新聞社杯"
-    },
-    {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "第５０回報知新聞社杯"
     },
     {
       "stadiumCode": "04",
@@ -30,9 +30,9 @@
       "raceTitle": "津オールレディース マクール杯"
     },
     {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "ＢＴＳオラレ美馬開設１７周年記念競走"
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "新東通信杯"
     },
     {
       "stadiumCode": "15",
