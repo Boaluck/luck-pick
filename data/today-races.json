@@ -1,18 +1,13 @@
 {
-  "date": "2026-11-03",
-  "updatedAt": "2026-11-03T08:02:06+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261103",
+  "date": "2026-11-04",
+  "updatedAt": "2026-11-04T05:51:08+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261104",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "第３８回日本モーターボート選手会会長杯"
-    },
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "第５８回報知新聞社杯"
     },
     {
       "stadiumCode": "04",
@@ -23,6 +18,11 @@
       "stadiumCode": "06",
       "stadiumName": "浜名湖",
       "raceTitle": "中京スポーツもみじ杯"
+    },
+    {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "日刊Ｓ＆ニッカンＣ杯争奪第３６回マリンキング決定戦"
     },
     {
       "stadiumCode": "09",
@@ -43,11 +43,6 @@
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "ルーキーシリーズ第２１戦スカパー！・ＪＬＣ杯"
-    },
-    {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "マスターズリーグ第７戦"
     },
     {
       "stadiumCode": "19",
