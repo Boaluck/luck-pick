@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-05",
-  "updatedAt": "2026-11-05T06:10:22+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261105",
+  "date": "2026-11-06",
+  "updatedAt": "2026-11-06T06:24:24+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261106",
   "status": "ok",
   "races": [
     {
@@ -10,24 +10,24 @@
       "raceTitle": "第３８回日本モーターボート選手会会長杯"
     },
     {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯"
+    },
+    {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第２回Ｓａｍｍｙカップ"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "第１回ＦＣ東京杯"
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "ヴィーナスＳ第１７戦是政プリンセスカップ"
     },
     {
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "日刊Ｓ＆ニッカンＣ杯争奪第３６回マリンキング決定戦"
-    },
-    {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "津オールレディース マクール杯"
     },
     {
       "stadiumCode": "10",
@@ -45,6 +45,11 @@
       "raceTitle": "第５４回高松宮記念特別競走"
     },
     {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "大渦大賞開設７３周年記念競走"
+    },
+    {
       "stadiumCode": "15",
       "stadiumName": "丸亀",
       "raceTitle": "楽天銀行賞"
@@ -55,14 +60,14 @@
       "raceTitle": "ルーキーシリーズ第２１戦スカパー！・ＪＬＣ杯"
     },
     {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "ＢＴＳオラレ日南開設１５周年記念"
-    },
-    {
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "ばんえい十勝杯"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "ＢＴＳみやき開設１７周年記念"
     }
   ]
 }
