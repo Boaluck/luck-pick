@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-06",
-  "updatedAt": "2026-11-06T06:24:24+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261106",
+  "date": "2026-11-07",
+  "updatedAt": "2026-11-07T05:45:59+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261107",
   "status": "ok",
   "races": [
     {
@@ -50,19 +50,9 @@
       "raceTitle": "大渦大賞開設７３周年記念競走"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "楽天銀行賞"
-    },
-    {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "ルーキーシリーズ第２１戦スカパー！・ＪＬＣ杯"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "ばんえい十勝杯"
+      "stadiumCode": "19",
+      "stadiumName": "下関",
+      "raceTitle": "スポーツ報知杯"
     },
     {
       "stadiumCode": "23",
