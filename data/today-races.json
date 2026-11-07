@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-07",
-  "updatedAt": "2026-11-07T05:45:59+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261107",
+  "date": "2026-11-08",
+  "updatedAt": "2026-11-08T04:18:11+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261108",
   "status": "ok",
   "races": [
     {
@@ -30,11 +30,6 @@
       "raceTitle": "日刊Ｓ＆ニッカンＣ杯争奪第３６回マリンキング決定戦"
     },
     {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "新東通信杯"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "奥村佃煮提供第４回びわこお魚０９２９ＣＵＰ"
@@ -53,6 +48,11 @@
       "stadiumCode": "19",
       "stadiumName": "下関",
       "raceTitle": "スポーツ報知杯"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "ＢＴＳ宮崎開設１２周年記念"
     },
     {
       "stadiumCode": "23",
