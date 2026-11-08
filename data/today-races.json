@@ -1,28 +1,23 @@
 {
-  "date": "2026-11-08",
-  "updatedAt": "2026-11-08T04:18:11+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261108",
+  "date": "2026-11-09",
+  "updatedAt": "2026-11-09T04:26:41+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261109",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "01",
-      "stadiumName": "桐生",
-      "raceTitle": "第３８回日本モーターボート選手会会長杯"
-    },
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯"
     },
     {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "第２回Ｓａｍｍｙカップ"
-    },
-    {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "ヴィーナスＳ第１７戦是政プリンセスカップ"
+    },
+    {
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪『ボートガマ一代』カップ"
     },
     {
       "stadiumCode": "08",
@@ -43,6 +38,11 @@
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "大渦大賞開設７３周年記念競走"
+    },
+    {
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "宮島オータムカップ"
     },
     {
       "stadiumCode": "19",
