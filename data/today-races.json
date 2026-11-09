@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-09",
-  "updatedAt": "2026-11-09T04:26:41+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261109",
+  "date": "2026-11-10",
+  "updatedAt": "2026-11-10T08:43:37+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261110",
   "status": "ok",
   "races": [
     {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "マンスリーＢＯＡＴＲＡＣＥ杯"
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "第２５回府中市長杯"
     },
     {
       "stadiumCode": "05",
@@ -23,6 +23,16 @@
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "日刊Ｓ＆ニッカンＣ杯争奪第３６回マリンキング決定戦"
+    },
+    {
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "ルーキーシリーズ第２２戦スカパー！・ＪＬＣ杯争奪戦"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "近畿・関東・九州支部集結！モーニングバトル"
     },
     {
       "stadiumCode": "11",
@@ -55,9 +65,9 @@
       "raceTitle": "ＢＴＳ宮崎開設１２周年記念"
     },
     {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "ＢＴＳみやき開設１７周年記念"
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "創刊７８周年記念・スポーツニッポン杯"
     }
   ]
 }
