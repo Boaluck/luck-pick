@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-10",
-  "updatedAt": "2026-11-10T08:43:37+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261110",
+  "date": "2026-11-11",
+  "updatedAt": "2026-11-11T06:14:27+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261111",
   "status": "ok",
   "races": [
     {
@@ -20,11 +20,6 @@
       "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪『ボートガマ一代』カップ"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "日刊Ｓ＆ニッカンＣ杯争奪第３６回マリンキング決定戦"
-    },
-    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "ルーキーシリーズ第２２戦スカパー！・ＪＬＣ杯争奪戦"
@@ -35,19 +30,14 @@
       "raceTitle": "近畿・関東・九州支部集結！モーニングバトル"
     },
     {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "奥村佃煮提供第４回びわこお魚０９２９ＣＵＰ"
-    },
-    {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "第５４回高松宮記念特別競走"
-    },
-    {
       "stadiumCode": "14",
       "stadiumName": "鳴門",
       "raceTitle": "大渦大賞開設７３周年記念競走"
+    },
+    {
+      "stadiumCode": "16",
+      "stadiumName": "児島",
+      "raceTitle": "スポーツ報知杯"
     },
     {
       "stadiumCode": "17",
@@ -68,6 +58,11 @@
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "創刊７８周年記念・スポーツニッポン杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "アサヒビールカップ"
     }
   ]
 }
