@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-11",
-  "updatedAt": "2026-11-11T06:14:27+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261111",
+  "date": "2026-11-12",
+  "updatedAt": "2026-11-12T06:48:49+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261112",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "ＢＡＣＨプラザ杯"
+    },
     {
       "stadiumCode": "04",
       "stadiumName": "平和島",
       "raceTitle": "第２５回府中市長杯"
-    },
-    {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "ヴィーナスＳ第１７戦是政プリンセスカップ"
     },
     {
       "stadiumCode": "07",
@@ -30,9 +30,9 @@
       "raceTitle": "近畿・関東・九州支部集結！モーニングバトル"
     },
     {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "大渦大賞開設７３周年記念競走"
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "マンスリーボートレース杯"
     },
     {
       "stadiumCode": "16",
@@ -58,6 +58,11 @@
       "stadiumCode": "22",
       "stadiumName": "福岡",
       "raceTitle": "創刊７８周年記念・スポーツニッポン杯"
+    },
+    {
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "ヴィーナスシリーズ第１８戦 マクール杯"
     },
     {
       "stadiumCode": "24",
