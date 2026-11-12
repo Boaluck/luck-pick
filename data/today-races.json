@@ -1,13 +1,18 @@
 {
-  "date": "2026-11-12",
-  "updatedAt": "2026-11-12T06:48:49+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261112",
+  "date": "2026-11-13",
+  "updatedAt": "2026-11-13T06:47:02+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261113",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "02",
       "stadiumName": "戸田",
       "raceTitle": "ＢＡＣＨプラザ杯"
+    },
+    {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第１回ＢＯＡＴＲＡＣＥ振興会会長賞"
     },
     {
       "stadiumCode": "04",
@@ -18,6 +23,11 @@
       "stadiumCode": "07",
       "stadiumName": "蒲郡",
       "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪『ボートガマ一代』カップ"
+    },
+    {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎとこなめ"
     },
     {
       "stadiumCode": "09",
@@ -40,19 +50,9 @@
       "raceTitle": "スポーツ報知杯"
     },
     {
-      "stadiumCode": "17",
-      "stadiumName": "宮島",
-      "raceTitle": "宮島オータムカップ"
-    },
-    {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "スポーツ報知杯"
-    },
-    {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "ＢＴＳ宮崎開設１２周年記念"
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "ドコモＳＭＴＢネット銀行賞"
     },
     {
       "stadiumCode": "22",
