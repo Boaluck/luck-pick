@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-13",
-  "updatedAt": "2026-11-13T06:47:02+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261113",
+  "date": "2026-11-14",
+  "updatedAt": "2026-11-14T06:19:24+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261114",
   "status": "ok",
   "races": [
     {
@@ -38,6 +38,11 @@
       "stadiumCode": "10",
       "stadiumName": "三国",
       "raceTitle": "近畿・関東・九州支部集結！モーニングバトル"
+    },
+    {
+      "stadiumCode": "11",
+      "stadiumName": "びわこ",
+      "raceTitle": "開設７４周年記念 びわこ大賞"
     },
     {
       "stadiumCode": "13",
