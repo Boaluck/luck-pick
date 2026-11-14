@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-14",
-  "updatedAt": "2026-11-14T06:19:24+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261114",
+  "date": "2026-11-15",
+  "updatedAt": "2026-11-15T04:49:53+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261115",
   "status": "ok",
   "races": [
     {
@@ -15,16 +15,6 @@
       "raceTitle": "第１回ＢＯＡＴＲＡＣＥ振興会会長賞"
     },
     {
-      "stadiumCode": "04",
-      "stadiumName": "平和島",
-      "raceTitle": "第２５回府中市長杯"
-    },
-    {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "ＤＭＭ．ｃｏｍ杯争奪『ボートガマ一代』カップ"
-    },
-    {
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎとこなめ"
@@ -33,11 +23,6 @@
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "ルーキーシリーズ第２２戦スカパー！・ＪＬＣ杯争奪戦"
-    },
-    {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "近畿・関東・九州支部集結！モーニングバトル"
     },
     {
       "stadiumCode": "11",
@@ -50,9 +35,19 @@
       "raceTitle": "マンスリーボートレース杯"
     },
     {
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "京極賞開設７４周年記念競走"
+    },
+    {
       "stadiumCode": "16",
       "stadiumName": "児島",
       "raceTitle": "スポーツ報知杯"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "デイリースポーツ杯争奪戦"
     },
     {
       "stadiumCode": "20",
