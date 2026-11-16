@@ -1,13 +1,23 @@
 {
-  "date": "2026-11-16",
-  "updatedAt": "2026-11-16T05:14:54+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261116",
+  "date": "2026-11-17",
+  "updatedAt": "2026-11-17T08:41:00+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261117",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "第１２回寿司の美喜仁杯"
+    },
     {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第１回ＢＯＡＴＲＡＣＥ振興会会長賞"
+    },
+    {
+      "stadiumCode": "04",
+      "stadiumName": "平和島",
+      "raceTitle": "第１回山佐ネクスト〜モンキーターンカップ"
     },
     {
       "stadiumCode": "08",
@@ -30,9 +40,9 @@
       "raceTitle": "京極賞開設７４周年記念競走"
     },
     {
-      "stadiumCode": "16",
-      "stadiumName": "児島",
-      "raceTitle": "スポーツ報知杯"
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第１４回東洋観光グループ杯"
     },
     {
       "stadiumCode": "18",
@@ -48,11 +58,6 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "ヴィーナスシリーズ第１８戦 マクール杯"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "アサヒビールカップ"
     }
   ]
 }
