@@ -1,13 +1,18 @@
 {
-  "date": "2026-11-17",
-  "updatedAt": "2026-11-17T08:41:00+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261117",
+  "date": "2026-11-18",
+  "updatedAt": "2026-11-18T07:49:03+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261118",
   "status": "ok",
   "races": [
     {
       "stadiumCode": "01",
       "stadiumName": "桐生",
       "raceTitle": "第１２回寿司の美喜仁杯"
+    },
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "ＡＬ・ＲＢ大宮アルディージャＷＯＭＥＮカップ"
     },
     {
       "stadiumCode": "03",
@@ -30,9 +35,9 @@
       "raceTitle": "開設７４周年記念 びわこ大賞"
     },
     {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "マンスリーボートレース杯"
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ鳴門"
     },
     {
       "stadiumCode": "15",
@@ -53,11 +58,6 @@
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "ドコモＳＭＴＢネット銀行賞"
-    },
-    {
-      "stadiumCode": "23",
-      "stadiumName": "唐津",
-      "raceTitle": "ヴィーナスシリーズ第１８戦 マクール杯"
     }
   ]
 }
