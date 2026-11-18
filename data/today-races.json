@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-18",
-  "updatedAt": "2026-11-18T07:49:03+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261118",
+  "date": "2026-11-19",
+  "updatedAt": "2026-11-19T07:30:49+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261119",
   "status": "ok",
   "races": [
     {
@@ -15,19 +15,14 @@
       "raceTitle": "ＡＬ・ＲＢ大宮アルディージャＷＯＭＥＮカップ"
     },
     {
-      "stadiumCode": "03",
-      "stadiumName": "江戸川",
-      "raceTitle": "第１回ＢＯＡＴＲＡＣＥ振興会会長賞"
-    },
-    {
       "stadiumCode": "04",
       "stadiumName": "平和島",
       "raceTitle": "第１回山佐ネクスト〜モンキーターンカップ"
     },
     {
-      "stadiumCode": "08",
-      "stadiumName": "常滑",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎとこなめ"
+      "stadiumCode": "09",
+      "stadiumName": "津",
+      "raceTitle": "津市合併２０周年記念カップ"
     },
     {
       "stadiumCode": "11",
@@ -55,9 +50,14 @@
       "raceTitle": "デイリースポーツ杯争奪戦"
     },
     {
-      "stadiumCode": "20",
-      "stadiumName": "若松",
-      "raceTitle": "ドコモＳＭＴＢネット銀行賞"
+      "stadiumCode": "22",
+      "stadiumName": "福岡",
+      "raceTitle": "ルーキーシリーズ第２３戦・スカパー！ＪＬＣ杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "十勝ばんえい競馬杯"
     }
   ]
 }
