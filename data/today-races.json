@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-19",
-  "updatedAt": "2026-11-19T07:30:49+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261119",
+  "date": "2026-11-20",
+  "updatedAt": "2026-11-20T07:37:05+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261120",
   "status": "ok",
   "races": [
     {
@@ -25,9 +25,9 @@
       "raceTitle": "津市合併２０周年記念カップ"
     },
     {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "開設７４周年記念 びわこ大賞"
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "阪神電車 ジェット・シルバー杯"
     },
     {
       "stadiumCode": "14",
@@ -48,6 +48,11 @@
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "デイリースポーツ杯争奪戦"
+    },
+    {
+      "stadiumCode": "21",
+      "stadiumName": "芦屋",
+      "raceTitle": "マスターズリーグ第８戦"
     },
     {
       "stadiumCode": "22",
