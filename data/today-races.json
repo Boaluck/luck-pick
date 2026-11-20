@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-20",
-  "updatedAt": "2026-11-20T07:37:05+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261120",
+  "date": "2026-11-21",
+  "updatedAt": "2026-11-21T07:11:01+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261121",
   "status": "ok",
   "races": [
     {
@@ -20,9 +20,29 @@
       "raceTitle": "第１回山佐ネクスト〜モンキーターンカップ"
     },
     {
+      "stadiumCode": "05",
+      "stadiumName": "多摩川",
+      "raceTitle": "第３回坂上忍杯"
+    },
+    {
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "三遠ネオフェニックス杯"
+    },
+    {
       "stadiumCode": "09",
       "stadiumName": "津",
       "raceTitle": "津市合併２０周年記念カップ"
+    },
+    {
+      "stadiumCode": "10",
+      "stadiumName": "三国",
+      "raceTitle": "スズキ・カープラザカップ"
+    },
+    {
+      "stadiumCode": "12",
+      "stadiumName": "住之江",
+      "raceTitle": "サンテレビ杯争奪ボートの時間！ご視聴ありがとう競走"
     },
     {
       "stadiumCode": "13",
@@ -35,19 +55,9 @@
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎ鳴門"
     },
     {
-      "stadiumCode": "15",
-      "stadiumName": "丸亀",
-      "raceTitle": "京極賞開設７４周年記念競走"
-    },
-    {
       "stadiumCode": "17",
       "stadiumName": "宮島",
       "raceTitle": "第１４回東洋観光グループ杯"
-    },
-    {
-      "stadiumCode": "18",
-      "stadiumName": "徳山",
-      "raceTitle": "デイリースポーツ杯争奪戦"
     },
     {
       "stadiumCode": "21",
