@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-23",
-  "updatedAt": "2026-11-23T05:57:51+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261123",
+  "date": "2026-11-24",
+  "updatedAt": "2026-11-24T11:04:02+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261124",
   "status": "ok",
   "races": [
     {
@@ -18,6 +18,11 @@
       "stadiumCode": "07",
       "stadiumName": "蒲郡",
       "raceTitle": "三遠ネオフェニックス杯"
+    },
+    {
+      "stadiumCode": "08",
+      "stadiumName": "常滑",
+      "raceTitle": "第２９回チャレンジカップ／Ｇ２レディースＣＣ"
     },
     {
       "stadiumCode": "09",
@@ -45,9 +50,14 @@
       "raceTitle": "阪神電車 ジェット・シルバー杯"
     },
     {
-      "stadiumCode": "14",
-      "stadiumName": "鳴門",
-      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ鳴門"
+      "stadiumCode": "15",
+      "stadiumName": "丸亀",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎまるがめ"
+    },
+    {
+      "stadiumCode": "18",
+      "stadiumName": "徳山",
+      "raceTitle": "新周南新聞社杯争奪戦"
     },
     {
       "stadiumCode": "19",
