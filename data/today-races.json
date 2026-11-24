@@ -1,33 +1,18 @@
 {
-  "date": "2026-11-24",
-  "updatedAt": "2026-11-24T11:04:02+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261124",
+  "date": "2026-11-25",
+  "updatedAt": "2026-11-25T08:48:26+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261125",
   "status": "ok",
   "races": [
-    {
-      "stadiumCode": "02",
-      "stadiumName": "戸田",
-      "raceTitle": "ＡＬ・ＲＢ大宮アルディージャＷＯＭＥＮカップ"
-    },
     {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
       "raceTitle": "第３回坂上忍杯"
     },
     {
-      "stadiumCode": "07",
-      "stadiumName": "蒲郡",
-      "raceTitle": "三遠ネオフェニックス杯"
-    },
-    {
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "第２９回チャレンジカップ／Ｇ２レディースＣＣ"
-    },
-    {
-      "stadiumCode": "09",
-      "stadiumName": "津",
-      "raceTitle": "津市合併２０周年記念カップ"
     },
     {
       "stadiumCode": "10",
@@ -55,6 +40,11 @@
       "raceTitle": "にっぽん未来プロジェクト競走ｉｎまるがめ"
     },
     {
+      "stadiumCode": "17",
+      "stadiumName": "宮島",
+      "raceTitle": "第２３回日本モーターボート選手会会長賞"
+    },
+    {
       "stadiumCode": "18",
       "stadiumName": "徳山",
       "raceTitle": "新周南新聞社杯争奪戦"
@@ -65,14 +55,14 @@
       "raceTitle": "新日本プロレス杯"
     },
     {
+      "stadiumCode": "20",
+      "stadiumName": "若松",
+      "raceTitle": "日総希カップ"
+    },
+    {
       "stadiumCode": "21",
       "stadiumName": "芦屋",
       "raceTitle": "マスターズリーグ第８戦"
-    },
-    {
-      "stadiumCode": "22",
-      "stadiumName": "福岡",
-      "raceTitle": "ルーキーシリーズ第２３戦・スカパー！ＪＬＣ杯"
     },
     {
       "stadiumCode": "24",
