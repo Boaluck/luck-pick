@@ -1,9 +1,14 @@
 {
-  "date": "2026-11-25",
-  "updatedAt": "2026-11-25T08:48:26+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261125",
+  "date": "2026-11-26",
+  "updatedAt": "2026-11-26T08:30:42+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261126",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "03",
+      "stadiumName": "江戸川",
+      "raceTitle": "第５０回デイリースポーツ杯・フィールズカップ"
+    },
     {
       "stadiumCode": "05",
       "stadiumName": "多摩川",
@@ -28,11 +33,6 @@
       "stadiumCode": "12",
       "stadiumName": "住之江",
       "raceTitle": "サンテレビ杯争奪ボートの時間！ご視聴ありがとう競走"
-    },
-    {
-      "stadiumCode": "13",
-      "stadiumName": "尼崎",
-      "raceTitle": "阪神電車 ジェット・シルバー杯"
     },
     {
       "stadiumCode": "15",
@@ -60,14 +60,9 @@
       "raceTitle": "日総希カップ"
     },
     {
-      "stadiumCode": "21",
-      "stadiumName": "芦屋",
-      "raceTitle": "マスターズリーグ第８戦"
-    },
-    {
-      "stadiumCode": "24",
-      "stadiumName": "大村",
-      "raceTitle": "十勝ばんえい競馬杯"
+      "stadiumCode": "23",
+      "stadiumName": "唐津",
+      "raceTitle": "ニッカン・コム杯"
     }
   ]
 }
