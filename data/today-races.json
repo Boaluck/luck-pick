@@ -1,18 +1,28 @@
 {
-  "date": "2026-11-26",
-  "updatedAt": "2026-11-26T08:30:42+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261126",
+  "date": "2026-11-27",
+  "updatedAt": "2026-11-27T08:37:20+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261127",
   "status": "ok",
   "races": [
+    {
+      "stadiumCode": "01",
+      "stadiumName": "桐生",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ桐生"
+    },
+    {
+      "stadiumCode": "02",
+      "stadiumName": "戸田",
+      "raceTitle": "にっぽん未来プロジェクト競走ｉｎ戸田"
+    },
     {
       "stadiumCode": "03",
       "stadiumName": "江戸川",
       "raceTitle": "第５０回デイリースポーツ杯・フィールズカップ"
     },
     {
-      "stadiumCode": "05",
-      "stadiumName": "多摩川",
-      "raceTitle": "第３回坂上忍杯"
+      "stadiumCode": "07",
+      "stadiumName": "蒲郡",
+      "raceTitle": "マクール杯争奪 男女ハーフバトル"
     },
     {
       "stadiumCode": "08",
@@ -20,19 +30,19 @@
       "raceTitle": "第２９回チャレンジカップ／Ｇ２レディースＣＣ"
     },
     {
-      "stadiumCode": "10",
-      "stadiumName": "三国",
-      "raceTitle": "スズキ・カープラザカップ"
-    },
-    {
       "stadiumCode": "11",
       "stadiumName": "びわこ",
       "raceTitle": "キリンカップ２０２６"
     },
     {
-      "stadiumCode": "12",
-      "stadiumName": "住之江",
-      "raceTitle": "サンテレビ杯争奪ボートの時間！ご視聴ありがとう競走"
+      "stadiumCode": "13",
+      "stadiumName": "尼崎",
+      "raceTitle": "サッポロビールカップ"
+    },
+    {
+      "stadiumCode": "14",
+      "stadiumName": "鳴門",
+      "raceTitle": "ＲＶパークで快適 あらたえの湯なるみ丸杯競走"
     },
     {
       "stadiumCode": "15",
@@ -50,11 +60,6 @@
       "raceTitle": "新周南新聞社杯争奪戦"
     },
     {
-      "stadiumCode": "19",
-      "stadiumName": "下関",
-      "raceTitle": "新日本プロレス杯"
-    },
-    {
       "stadiumCode": "20",
       "stadiumName": "若松",
       "raceTitle": "日総希カップ"
@@ -63,6 +68,11 @@
       "stadiumCode": "23",
       "stadiumName": "唐津",
       "raceTitle": "ニッカン・コム杯"
+    },
+    {
+      "stadiumCode": "24",
+      "stadiumName": "大村",
+      "raceTitle": "ＡＵＴＵＭＮ ＣＵＰ"
     }
   ]
 }
