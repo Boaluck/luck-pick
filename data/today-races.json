@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-27",
-  "updatedAt": "2026-11-27T08:37:20+09:00",
-  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261127",
+  "date": "2026-11-28",
+  "updatedAt": "2026-11-28T08:18:14+09:00",
+  "source": "https://www.boatrace.jp/owpc/pc/race/index?hd=20261128",
   "status": "ok",
   "races": [
     {
@@ -20,6 +20,11 @@
       "raceTitle": "第５０回デイリースポーツ杯・フィールズカップ"
     },
     {
+      "stadiumCode": "06",
+      "stadiumName": "浜名湖",
+      "raceTitle": "Ｍｏｏｏｖｉ浜名湖７周年記念三ケ日みかん杯"
+    },
+    {
       "stadiumCode": "07",
       "stadiumName": "蒲郡",
       "raceTitle": "マクール杯争奪 男女ハーフバトル"
@@ -28,11 +33,6 @@
       "stadiumCode": "08",
       "stadiumName": "常滑",
       "raceTitle": "第２９回チャレンジカップ／Ｇ２レディースＣＣ"
-    },
-    {
-      "stadiumCode": "11",
-      "stadiumName": "びわこ",
-      "raceTitle": "キリンカップ２０２６"
     },
     {
       "stadiumCode": "13",
